@@ -39,4 +39,8 @@
 | REQ-MOD-008 | Each API endpoint belongs to exactly one module | IS-102 | N/A | N/A | API-* | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Ownership matrix | Future PKG | FULLY_MAPPED |
 | REQ-MOD-009 | Each durable entity/table has exactly one owner | IS-102 | ENTITY-* | N/A | N/A | N/A | N/A | N/A | N/A | FOREIGN_TABLE_WRITE | N/A | N/A | Ownership matrix | Future PKG | FULLY_MAPPED |
 
+| REQ-HDRIVE-001 | Canonical project root is H:\people | IS-104 / IS-100 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | INVALID_PROJECT_ROOT | N/A | N/A | drive:validate | Future guard PKG | FULLY_MAPPED |
+| REQ-HDRIVE-003 | No intentional project-controlled writes to C:\ | IS-104 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | FORBIDDEN_WRITE_TARGET | N/A | N/A | drive:validate | Future guard PKG | FULLY_MAPPED |
+| REQ-HDRIVE-010 | Unavoidable external C:\ writes distinguished from violations | IS-104 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary review | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

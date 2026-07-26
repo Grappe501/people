@@ -16,7 +16,8 @@
 | PEOPLE-IS-101 | Technology Decision Specification | 1 | APPROVED | Program | IS-100 + Catalog 09 | ADR-001…020 OPEN | 100% docs |
 | PEOPLE-IS-102 | Module Boundary Specification | 1 | APPROVED | Program | IS-100 + IS-101 | ISSUE-MOD-001/002 | 100% docs |
 | PEOPLE-IS-103 | Environment Architecture | 1 | APPROVED | Program | IS-102 | open ADRs for env brands | 100% docs |
-| PEOPLE-IS-104 | H-Drive Workspace Protocol | 1 | Next Ready | — | IS-103 | ISSUE-HDRIVE-001 | 0% |
+| PEOPLE-IS-104 | H-Drive Workspace Protocol | 1 | APPROVED | Program | IS-103 | ADR-020 / ISSUE-HDRIVE-001 (guard code) | 100% docs |
+| PEOPLE-IS-105 | GitHub and Netlify Architecture | 1 | Next Ready | — | IS-104 | — | 0% |
 
 ## Queued Phase 1 siblings
 

@@ -1,9 +1,9 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0",
-  "previousBuild": "PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION-1.0",
-  "nextRecommendedBuild": "PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0",
+  "buildId": "PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0",
+  "previousBuild": "PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0",
+  "nextRecommendedBuild": "PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0",
   "programId": "PEOPLE-IMPLEMENTATION-SPECIFICATION-LIBRARY-1.0",
   "phase": "0",
   "phaseName": "Complete Design",

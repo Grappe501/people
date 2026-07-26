@@ -14,7 +14,7 @@
 | ISSUE-CANONICAL-001 | Canonical person integration boundary requires exact contract | CRITICAL | Yes before promotion implementation | Promotion IS | OPEN |
 | ISSUE-RETENTION-001 | Exact retention durations require policy approval | HIGH | Yes before production launch; not blocking early docs | Launch | OPEN |
 | ISSUE-NOTIFY-001 | Version 1 notification channels require formal selection | MEDIUM | No for docs; yes before notification implementation | Notify IS | OPEN |
-| ISSUE-HDRIVE-001 | H-drive-only execution enforcement mechanism requires formal design | CRITICAL | Yes before development tooling / package installation | Phase 1 / ADR-020 / IS-104 | OPEN |
+| ISSUE-HDRIVE-001 | H-drive-only execution enforcement mechanism requires formal design; IS-104 documents operational standard; automated guard still pending ADR-020 | CRITICAL | Yes before development tooling / package installation | Phase 1 / ADR-020 / IS-104 | OPEN |
 | ISSUE-CATALOG-009 | Catalog 09 Traceability DESIGN COMPLETE (foundation); full inventory remains amendment-driven | MEDIUM | No for library close; yes for claiming system-wide completeness | Amendments / IS phases | OPEN |
 | ISSUE-REPO-001 | Target docs/ layout (master/volumes/…) not yet migrated from live Volume tree | MEDIUM | No for docs authorship; yes before layout cutover package | IS-100 follow-on | OPEN |
 | ISSUE-REPO-002 | Exact .gitignore / cache env vars depend on framework ADRs | MEDIUM | Yes before app scaffolding | IS-101 / ADR-020 | OPEN |

@@ -903,3 +903,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next IS document is PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0. Provider-specific env var brands finalize with ADR acceptance. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-103; `reports/PEOPLE_IS_103_COMPLETION_REPORT.md` |
 | Revisit trigger | ADR acceptance changing env var brands; IS-105 staging topology decision |
+
+### D-067
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0 is the canonical H-Drive Workspace Protocol for every build machine. Path: `docs/implementation_specs/100_platform/PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL.md`. It defines canonical root `H:\people`, directory conventions, allowed/prohibited writes, session environment variables, package-manager cache and temp strategies, Git/Cursor expectations, Node/future Prisma/tooling redirection policy, validation via `drive:validate`, failure/recovery, and exception handling. It preserves the honest limitation that only project-controlled and project-configurable artifacts are enforceable; OS/third-party writes to `C:\` are documented rather than falsely claimed eliminated. Existing `.tmp`/`.npm-cache` paths remain approved pending future cutover to IS-100 `tmp/`/`local/`. Repository guard **code** remains NOT AUTHORIZED (ADR-020 OPEN). Application implementation remains NOT AUTHORIZED. |
+| Reason | Make H-drive workspace compliance an auditable operational standard before GitHub/Netlify architecture (IS-105) and before any authorized tooling installs. |
+| Alternatives | Claim total elimination of all `C:\` writes; defer workspace rules until coding; implement guard without ADR-020. |
+| Consequences | Next IS document is PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0. ISSUE-HDRIVE-001 remains open until ADR-020 acceptance/implementation. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-104; `PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md`; `reports/PEOPLE_IS_104_COMPLETION_REPORT.md` |
+| Revisit trigger | ADR-020 acceptance; path cutover package; new non-redirectable tool exception |

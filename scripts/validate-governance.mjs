@@ -194,6 +194,7 @@ if (active) {
     active.nextRecommendedBuild === "PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-STATE-MACHINE-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-ERROR-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-AUDIT-EVENT-CATALOG-1.0" ||

@@ -34,16 +34,19 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | Repository Architecture | `docs/implementation_specs/100_platform/PEOPLE-IS-100-REPOSITORY-ARCHITECTURE.md` |
 | Technology Decisions | `docs/implementation_specs/100_platform/PEOPLE-IS-101-TECHNOLOGY-DECISION-SPECIFICATION.md` |
 | Module Boundaries | `docs/implementation_specs/100_platform/PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION.md` |
+| Environment Architecture | `docs/implementation_specs/100_platform/PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE.md` |
+| H-Drive Workspace Protocol | `docs/implementation_specs/100_platform/PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL.md` |
+| Commit/Push/Deploy Protocol | `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
 
 ## Current next-ready work
 
-1. `PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0`  
+1. `PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0`  
 2. Parallel: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`
 
-Standing closeout: validate → commit → push → remote verify → Netlify only if authorized (`PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md`). Implementation not authorized.
+H-drive workspace standard: IS-104 (D-067). Closeout: D-065. Implementation not authorized.
 
 ## Allowed now
 

@@ -3,24 +3,21 @@
 ## Primary
 
 ```text
-PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0
+PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0
 ```
 
-**Type:** Documentation only. H-drive enforcement, caches, temp, guard design. **No application code.**
+**Type:** Documentation only. GitHub branch/PR model + Netlify site/env boundaries. **No application code.**
 
-## Standing closeout protocol (D-065)
+## Standing closeout (D-065)
 
-```text
-validate → indexes/RTM/report → commit → push → remote verify
-→ Netlify only if authorized deployable surface exists
-```
+validate → governance updates → completion report → commit → push → remote verify → Netlify only if authorized surface exists
 
 ## Closed / locked (recent)
 
 ```text
-D-065 PEOPLE-PROTOCOL-COMMIT-PUSH-DEPLOY-1.0
-D-066 PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0
-D-064 PEOPLE-IS-102 Module Boundaries
+D-067 PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0
+D-066 PEOPLE-IS-103 Environment Architecture
+D-065 Commit/Push/Deploy Protocol
 ```
 
 ## Parallel / required for freeze
@@ -35,4 +32,4 @@ PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 DOCUMENTATION_AND_SPECIFICATION_ONLY
 ```
 
-Gate G-10: **CLOSED** · Application code: **NOT AUTHORIZED**
+Gate G-10: **CLOSED**

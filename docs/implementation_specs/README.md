@@ -2,8 +2,9 @@
 
 **Program:** PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0  
 **Phase 0:** COMPLETE (D-060)  
-**Latest IS:** PEOPLE-IS-103 APPROVED (D-066)  
+**Latest IS:** PEOPLE-IS-104 APPROVED (D-067)  
 **Standing protocol:** PEOPLE-PROTOCOL-COMMIT-PUSH-DEPLOY-1.0 (D-065)  
+**H-drive standard:** PEOPLE-IS-104 + `PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md`  
 **Status:** DOCUMENTATION GOVERNANCE APPROVED — APPLICATION IMPLEMENTATION NOT AUTHORIZED  
 **Project root:** `H:\people`
 
@@ -37,9 +38,9 @@ Master Build → Volumes → Catalogs 00–09 → Protocols → ADRs → IS spec
 
 ## Current next-ready documents
 
-1. `PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0`  
+1. `PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0`  
 
-IS-103 **APPROVED** (D-066). Commit/push protocol restored (D-065).  
+IS-104 **APPROVED** (D-067).  
 
 ## Implementation prohibition
 
