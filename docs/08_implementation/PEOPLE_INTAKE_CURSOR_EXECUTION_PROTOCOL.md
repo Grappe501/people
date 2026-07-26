@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.4  
+**Version:** 1.5  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -65,6 +65,23 @@ Additional locks:
 1. **Catalog 01** is the sole production state authority — never redefine states in packages.  
 2. **Match Resolution ≠ Promotion** — neither owns the other.  
 3. No entity may be introduced without a complete IS-201 questionnaire card.
+
+### 9.0.2 Field extension doctrine (mandatory)
+
+Authority: PEOPLE-IS-202 §4.2; Decision Log D-071.
+
+```text
+New feature?
+  → Existing Entity? (IS-201)
+      → Existing Field? (IS-202)
+          YES → Reuse
+          NO  → Existing Value Object?
+                  YES → Reuse VO on entity (amend card)
+                  NO  → Update IS-202 or create ADR
+                        → Only then may packages reference the new field
+```
+
+Lifecycle/state fields MUST use Catalog 01 via `VO-CAT01-STATE` — never field-dictionary draft status labels.
 
 ---
 
@@ -186,11 +203,11 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0
+PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0
 ```
 
-Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0` (Slice 002 recommended)  
-Charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`
+Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
+Slices 001–002 complete.
 
 No application code until freeze APPROVED and Gate G-10 opens.
 

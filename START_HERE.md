@@ -39,20 +39,21 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | GitHub and Netlify Architecture | `docs/implementation_specs/100_platform/PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE.md` |
 | Domain Model | `docs/implementation_specs/200_domain/PEOPLE-IS-200-DOMAIN-MODEL.md` |
 | Entity Specifications | `docs/implementation_specs/200_domain/PEOPLE-IS-201-ENTITY-SPECIFICATIONS.md` |
+| Field and Value Objects | `docs/implementation_specs/200_domain/PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS.md` |
 | Commit/Push/Deploy Protocol | `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` |
 | Cursor Execution Protocol | `docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md` |
 | Audit / Freeze lane | `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md` |
-| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md` |
+| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_002_FINDINGS.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
 
 ## Current next-ready work
 
-1. `PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0` (primary)  
-2. Audit lane Slice 002 (independent — does not block #1)
+1. `PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0` (primary)  
+2. Audit lane freeze readiness (independent)
 
-Phase 1 complete. Phase 2: IS-200…201 approved. Catalog 01 = state authority. Match ≠ Promotion. Extend/evolve/reject doctrine active. Implementation not authorized.
+Phase 1 complete. Phase 2: IS-200…202 approved. Catalog 01 = state authority. Match ≠ Promotion. Entity + field doctrines active. Implementation not authorized.
 
 ## Allowed now
 

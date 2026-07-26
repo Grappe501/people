@@ -1,9 +1,14 @@
 # People Intake — Field Dictionary
 
-**Status:** draft_complete  
+> **SUPERSEDED AS CANONICAL FIELD AUTHORITY — AUDIT-SLICE-002 / D-071**  
+> **Canonical field and value-object definitions:** `docs/implementation_specs/200_domain/PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS.md`.  
+> **Canonical business-state enums:** Catalog 01 (not the `status` lists in this file).  
+> This file remains a **historical conceptual companion**. Where it conflicts with IS-202 or Catalog 01, those authorities win (ISSUE-AUDIT-001).
+
+**Status:** draft_complete — **SUPERSEDED (canonical fields → IS-202; states → Catalog 01)**  
 **Version:** 1.0  
 **Build:** PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0  
-**Note:** Conceptual fields. Physical column names deferred until schema audit.
+**Note:** Conceptual fields. Physical column names deferred to IS-300+. Prefer IS-202 cards for engineering.
 
 ---
 

@@ -1,9 +1,15 @@
 # People Intake — State Machines (Conceptual)
 
-**Status:** draft_complete  
+> **SUPERSEDED FOR PRODUCTION STATE AUTHORITY — AUDIT-SLICE-002 / D-071**  
+> This document is a **historical UX/workflow draft**.  
+> **Canonical production lifecycle states and transitions:** `docs/catalogs/catalog-01-state-machines/CATALOG_01_STATE_MACHINES.md` (Catalog 01).  
+> **Entity ownership of state fields:** PEOPLE-IS-201 / PEOPLE-IS-202 (`VO-CAT01-STATE`).  
+> Do **not** implement enums from the conceptual labels below. Retain this file for narrative UX context only.
+
+**Status:** draft_complete — **SUPERSEDED (production enums)**  
 **Version:** 1.0  
 **Build:** PEOPLE-WORKFLOW-UX-DESIGN-1.0  
-**Note:** Conceptual states for UX/workflow. Exact machine contracts and enums are finalized in later engineering design.
+**Note:** Conceptual states for UX/workflow. Exact machine contracts and enums are finalized in Catalog 01 (not in this file).
 
 ---
 

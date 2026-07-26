@@ -955,3 +955,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0. Audit lane continues independently. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-201; `reports/PEOPLE_IS_201_COMPLETION_REPORT.md`; `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md` |
 | Revisit trigger | IS-202 field reconciliation; ISSUE-MOD-001 closure; freeze campaign |
+
+### D-071
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0 is the canonical Field and Value Object Specifications dictionary. Path: `docs/implementation_specs/200_domain/PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS.md`. It defines value objects, the mandatory field questionnaire, core field cards (F1–F13), Catalog 01 as sole authority for lifecycle/state fields via VO-CAT01-STATE, UNKNOWN≠NO, raw≠normalized separation, and the field-level extend doctrine (reuse field → reuse VO → update IS-202/ADR → then packages). The historical field dictionary is subordinate. (2) AUDIT-SLICE-002 applies supersession banners to `docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md` and `docs/04_data/PEOPLE_INTAKE_FIELD_DICTIONARY.md` (findings: `reports/PEOPLE_AUDIT_SLICE_002_FINDINGS.md`). Application implementation remains NOT AUTHORIZED. |
+| Reason | Define atomic domain information units before database architecture; eliminate draft-status ambiguity without inventing Catalog 01 enums. |
+| Alternatives | Keep field dictionary as authority; embed physical SQL types now; redefine states in IS-202. |
+| Consequences | Next primary IS is PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0. Audit lane continues. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-202; AUDIT-SLICE-002 banners; `reports/PEOPLE_IS_202_COMPLETION_REPORT.md` |
+| Revisit trigger | IS-300 physical mapping; ISSUE-MOD-001; remaining unbannered draft peers |

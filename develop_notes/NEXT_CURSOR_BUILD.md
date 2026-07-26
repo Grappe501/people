@@ -3,10 +3,10 @@
 ## Primary sequence
 
 ```text
-PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0
+PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0
 ```
 
-Reconcile field dictionary conceptual statuses vs Catalog 01; specify value objects.
+Map IS-201 entities + IS-202 fields to physical schema architecture — **docs only; no migrations**.
 
 ## Independent governance lane
 
@@ -14,14 +14,14 @@ Reconcile field dictionary conceptual statuses vs Catalog 01; specify value obje
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-Next recommended slice: AUDIT-SLICE-002 (supersession banners on pre-catalog state docs).  
-Findings: `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md`
+Slices 001–002 complete. Continue Critical ADR/issue freeze readiness.
 
 ## Standing locks
 
 * Catalog 01 = sole state authority  
 * Match Resolution ≠ Promotion  
-* Extend / evolve / reject doctrine (IS-201 §5.3)
+* Entity admission questionnaire (IS-201)  
+* Field/VO reuse doctrine (IS-202)
 
 ## Mode
 

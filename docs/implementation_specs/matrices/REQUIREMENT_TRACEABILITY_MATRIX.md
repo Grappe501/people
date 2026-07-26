@@ -65,4 +65,10 @@
 | REQ-ENT-004 | Promotion must not redefine match outcomes | IS-201 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
 | REQ-ENT-005 | New entities require IS/ADR amendment | IS-201 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Admission gate | Docs | FULLY_MAPPED |
 
+| REQ-FLD-001 | Persisted business fields require IS-202 cards | IS-202 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Field dictionary review | Docs | FULLY_MAPPED |
+| REQ-FLD-002 | Lifecycle fields cite Catalog 01 only | IS-202 / Cat 01 | N/A | N/A | N/A | N/A | N/A | N/A | STATE-* | N/A | N/A | N/A | State/field review | Future PKG | FULLY_MAPPED |
+| REQ-FLD-003 | Raw and normalized fields remain distinct | IS-202 / D-030 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Norm tests | Future PKG | FULLY_MAPPED |
+| REQ-FLD-005 | UNKNOWN must not default to NO | IS-202 / D-030 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Preference tests | Future PKG | FULLY_MAPPED |
+| REQ-FLD-007 | New fields require IS-202/ADR before packages | IS-202 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Field doctrine | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.
