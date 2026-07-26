@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0",
+  "registry_id": "PEOPLE-TERMINOLOGY-INVENTORY-1.0",
+  "generated_at": "2026-07-26T03:59:02.962Z",
+  "semantic_locks": {
+    "unknown_is_not_no": true,
+    "page_is_queue_unit": true,
+    "entry_is_independent_row": true,
+    "canonical_person_not_owned_by_silent_intake_writes": true,
+    "promotion_is_controlled": true,
+    "claim_is_temporary": true,
+    "audit_event_not_operational_log": true
+  },
+  "terms": [
+    {
+      "term_id": "PEOPLE-TERM-0001",
+      "canonical_term": "People Intake",
+      "definition": "Secure paper-to-database intake application for volunteer sheets",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "1",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0002",
+      "canonical_term": "Canonical People Domain",
+      "definition": "Shared identity domain across ecosystem applications",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3/13",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0003",
+      "canonical_term": "Canonical Person",
+      "definition": "Shared trusted identity record; not the raw intake entry",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0/3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0004",
+      "canonical_term": "Batch",
+      "definition": "Collection of pages from one capture effort",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2/3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0005",
+      "canonical_term": "Page",
+      "definition": "One captured source sheet image; primary queue unit; up to supported entries",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0/2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0006",
+      "canonical_term": "Entry",
+      "definition": "One independently tracked person-intake row from a page",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0/3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0007",
+      "canonical_term": "Entry Field",
+      "definition": "A single transcribed attribute on an entry",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0008",
+      "canonical_term": "Source Image",
+      "definition": "Private original photograph/scan of a page",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0009",
+      "canonical_term": "Source Evidence",
+      "definition": "Original artifacts and raw transcription preserved for explanation",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0010",
+      "canonical_term": "Raw Transcription",
+      "definition": "Exactly what the operator typed from the sheet",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0011",
+      "canonical_term": "Normalized Value",
+      "definition": "Cleaned comparison form; raw retained",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0012",
+      "canonical_term": "Field Condition",
+      "definition": "BLANK/UNREADABLE/etc. metadata on a field",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0013",
+      "canonical_term": "Claim",
+      "definition": "Temporary expiring assignment of queue work; not permanent ownership",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0014",
+      "canonical_term": "Queue",
+      "definition": "Shared multi-user work list",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0015",
+      "canonical_term": "Draft",
+      "definition": "Unsubmitted transcription under an active claim",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0016",
+      "canonical_term": "Submission",
+      "definition": "Page submit after transcription validation",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0017",
+      "canonical_term": "Match Evaluation",
+      "definition": "Process/run producing candidates and tiers",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0018",
+      "canonical_term": "Match Candidate",
+      "definition": "Scored possible canonical person for an entry",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0019",
+      "canonical_term": "Match Signal",
+      "definition": "Explainable reason contributing to a candidate score",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0020",
+      "canonical_term": "Match Resolution",
+      "definition": "Final LINK/CREATE/DEFER/RETURN/NO_ACTION determination",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0021",
+      "canonical_term": "Promotion",
+      "definition": "Controlled link/contribute of intake entry to canonical domain",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0/3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0022",
+      "canonical_term": "Person Attribute",
+      "definition": "Canonical attribute with provenance",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0023",
+      "canonical_term": "Provenance",
+      "definition": "Trail of origin for a value or decision",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0/3",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0024",
+      "canonical_term": "Audit Event",
+      "definition": "Durable business-history record; distinct from operational logs",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "0/4",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0025",
+      "canonical_term": "Background Job",
+      "definition": "Async recoverable work unit",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "4",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0026",
+      "canonical_term": "Idempotency Key",
+      "definition": "Safe replay token for critical writes",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "4",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0027",
+      "canonical_term": "Correlation ID",
+      "definition": "Request/trace identifier across logs and audits",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "4",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0028",
+      "canonical_term": "Reviewer",
+      "definition": "Role resolving uncertain matches",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0029",
+      "canonical_term": "Data Entry User",
+      "definition": "Role claiming pages and transcribing entries",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0030",
+      "canonical_term": "Uploader",
+      "definition": "Role capturing/uploading batches",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0031",
+      "canonical_term": "Administrator",
+      "definition": "Role managing users, exceptions, overrides",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0032",
+      "canonical_term": "Owner",
+      "definition": "Role governing policy and high-risk configuration",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [],
+      "owning_volume": "2",
+      "related_terms": [],
+      "notes": ""
+    },
+    {
+      "term_id": "PEOPLE-TERM-0033",
+      "canonical_term": "UNKNOWN",
+      "definition": "Tri-state value when Yes/No not indicated; NEVER means NO",
+      "allowed_abbreviations": [],
+      "disallowed_or_deprecated_terms": [
+        "treating blank as NO"
+      ],
+      "owning_volume": "0",
+      "related_terms": [],
+      "notes": ""
+    }
+  ]
+}

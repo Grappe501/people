@@ -539,3 +539,68 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Pre-migration audit gate; no Prisma/SQL in this phase. |
 | Related files | Provenance; migration and rollback |
 | Revisit trigger | None expected before audit |
+
+### D-039
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Master Cursor Build Orchestration (phases 0–12) and Volume 0 Project Constitution are the execution control plane once Gate G-10 opens; they do not authorize coding while design freeze is DENIED. |
+| Reason | Reduce drift across long builds; keep a hard gate when Step 5B is written before freeze prerequisites are met. |
+| Alternatives | Begin Phase 0 immediately after writing orchestration; skip Volume 0. |
+| Consequences | Next build remains audit remediation; `applicationCodeAuthorized` stays false; Phase 0 slices stay BLOCKED in the implementation ledger. |
+| Related files | `PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md`; `PEOPLE_INTAKE_PROJECT_CONSTITUTION.md`; `implementation-ledger.json` |
+| Revisit trigger | Design freeze APPROVED |
+
+### D-040
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 0 — PEOPLE INTAKE PROJECT CONSTITUTION — is the highest-authority standing-orders document in the repository; Cursor must read it before every build session; it includes a Universal Engineering Constitution for the broader SOSWebsite ecosystem. |
+| Reason | Prevent drift; give AI and humans one non-negotiable reference without repeating full design volumes. |
+| Alternatives | Treat Volume 0 as optional summary; keep rules scattered across Steps 1–5B only. |
+| Consequences | Source-of-truth hierarchy places Volume 0 first; conflicts with draft prose require Decision Log resolution; ecosystem apps are expected to inherit universal principles where applicable. |
+| Related files | `PEOPLE_INTAKE_PROJECT_CONSTITUTION.md`; source-of-truth registry; Cursor execution protocol |
+| Revisit trigger | Owner amends constitution sections |
+
+### D-041
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 0 is structured as Preamble + Articles (mission, universal engineering constitution, Cursor oath, amendments, People Intake doctrines) and the documentation set is renumbered as library Volumes 0–7 (Constitution through Master Cursor Build Orchestration). |
+| Reason | Give every developer and AI the why behind the rules; make the design package read as one engineering manual with Constitution first. |
+| Alternatives | Keep informal section numbering; keep folder-based volume labels (1–8) as the reading taxonomy. |
+| Consequences | `documentation-index.json` uses library volumes 0–7; folder paths under `docs/` remain for link stability; `PEOPLE_INTAKE_DOCUMENTATION_LIBRARY.md` is the map. |
+| Related files | Constitution v3; Documentation Library; documentation-index.json |
+| Revisit trigger | Library volume added or renumbered |
+
+### D-042
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Before production code, build an Implementation Library: Volumes 8–12 (tech/DB/API/UI/components), Engineering Catalogs, Implementation Packages, and Volume 13 Canonical Platform Standards; Cursor must not invent endpoints, tables, states, errors, events, or components absent from these specs. |
+| Reason | Prevent architectural drift across hundreds of implementation slices; support a multi-year canonical people platform. |
+| Alternatives | Start Phase 0 coding immediately after orchestration; specify only while coding. |
+| Consequences | `applicationCodeAuthorized` remains false; next required build is still audit remediation + quality/ops freeze; coding uses IP packages referencing Volumes 8–13. |
+| Related files | `docs/09_*` … `docs/16_*`; Documentation Library v2 |
+| Revisit trigger | Gate G-10 opens |
+
+### D-043
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Execute PEOPLE-IMPLEMENTATION-SPECIFICATION-LIBRARY-1.0 via sequenced DOC-0…DOC-12 scripts; DOC-0 establishes inventory and canonical volume pointers without silently rewriting Volumes 0–7; existing docs/00_*…docs/16_* paths remain equivalent content homes; bootstrap specs are DRAFT_BOOTSTRAP until formal DOC scripts pass. |
+| Reason | Prevent duplicate/conflicting volumes and give Cursor a controlled documentation-production sequence. |
+| Alternatives | Mass-migrate all docs into docs/volumes/; treat bootstrap as final Vol 8–13. |
+| Consequences | Next script is DOC-1 (Volume 8 formal); production code remains prohibited; weighted docs progress starts at 5%. |
+| Related files | DOC-0 artifacts under data/documentation, docs/volumes, develop_notes |
+| Revisit trigger | DOC-12 specification freeze |

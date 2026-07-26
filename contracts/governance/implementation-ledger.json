@@ -1,0 +1,42 @@
+{
+  "project": "People Intake",
+  "version": "1.0",
+  "updatedAt": "2026-07-25",
+  "implementationAuthorized": false,
+  "gateG10": "closed",
+  "slices": [
+    {
+      "phase": "Pre",
+      "slice": "PEOPLE-CURSOR-BUILD-ORCHESTRATION-1.0",
+      "status": "COMPLETE",
+      "owner": "Cursor",
+      "started": "2026-07-25",
+      "completed": "2026-07-25",
+      "validation": "docs_only",
+      "deployment": "n/a",
+      "notes": "Step 5B playbook + Volume 0 constitution; coding dormant until freeze"
+    },
+    {
+      "phase": "Pre",
+      "slice": "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0",
+      "status": "NOT_STARTED",
+      "owner": null,
+      "started": null,
+      "completed": null,
+      "validation": null,
+      "deployment": null,
+      "notes": "Required before Phase 0"
+    },
+    {
+      "phase": "0",
+      "slice": "BUILD-0.1",
+      "status": "BLOCKED",
+      "owner": null,
+      "started": null,
+      "completed": null,
+      "validation": null,
+      "deployment": null,
+      "notes": "Awaiting Gate G-10"
+    }
+  ]
+}

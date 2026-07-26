@@ -1,30 +1,30 @@
 # Next Cursor Build
 
-## Build ID
+## Primary (documentation sequence Pass 2)
+
+```text
+PEOPLE-VOLUME-08-TECHNICAL-SPECIFICATIONS-1.0
+```
+
+**Type:** Documentation only. Formalize Volume 8 with the full 28-domain template, rule/invariant IDs, validators. Do not invent frozen policy for OD-B* / PENDING_FREEZE items.
+
+## Parallel / required for freeze
 
 ```text
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-## Type
+Quality/ops docs + close Critical audit findings remain mandatory before Gate G-9.
 
-Design remediation + quality/ops completion. **No application code.**
+## Completed
 
-## Must Accomplish
+- `PEOPLE-DOC-FOUNDATION-AND-INVENTORY-1.0` (DOC-0)
+- Prior bootstrap library under `docs/09_*`…`docs/16_*` (status: DRAFT_BOOTSTRAP — does not replace DOC-1…12)
 
-1. Resolve Critical findings F-C01–F-C04  
-2. Resolve or Owner-accept High findings  
-3. Close blocking open decisions OD-B01–OD-B12  
-4. Produce quality/testing/deployment/ops docs (DOC-044–052+)  
-5. Shared database compatibility report (read-only)  
-6. Publish canonical state dictionary  
-7. Re-run architecture validation  
-8. Issue freeze approval only if exit criteria pass  
-
-## After Successful Freeze
+## Mode
 
 ```text
-PEOPLE-CURSOR-BUILD-ORCHESTRATION-1.0
+DOCUMENTATION_AND_SPECIFICATION_ONLY
 ```
 
-Master Cursor build orchestration (Step 5B): phases, waves, validation gates, GitHub/Netlify checkpoints, rollback points.
+Production code: **PROHIBITED**

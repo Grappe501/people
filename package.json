@@ -2,11 +2,15 @@
   "name": "people-intake",
   "version": "0.0.0-governance",
   "private": true,
-  "description": "Governance and design foundation for the People Intake System.",
+  "description": "Governance, design, and documentation specification library for the People Intake System.",
   "type": "module",
   "scripts": {
     "drive:validate": "node scripts/validate-h-drive.mjs",
     "governance:validate": "node scripts/validate-governance.mjs",
-    "governance:all": "npm run drive:validate && npm run governance:validate"
+    "governance:all": "npm run drive:validate && npm run governance:validate",
+    "docs:inventory:build": "node scripts/documentation/build-doc-0-foundation.mjs",
+    "docs:inventory:validate": "node scripts/documentation/validate-documentation-inventory.mjs",
+    "docs:foundation:validate": "npm run docs:inventory:validate",
+    "docs:validate": "npm run docs:foundation:validate"
   }
 }

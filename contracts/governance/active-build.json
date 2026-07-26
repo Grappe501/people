@@ -1,22 +1,29 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0",
+  "buildId": "PEOPLE-DOC-FOUNDATION-AND-INVENTORY-1.0",
+  "programId": "PEOPLE-IMPLEMENTATION-SPECIFICATION-LIBRARY-1.0",
   "phase": "0",
   "phaseName": "Complete Design",
-  "status": "active",
+  "status": "complete",
   "applicationCodeAuthorized": false,
   "databaseChangesAuthorized": false,
   "migrationsAuthorized": false,
   "deploymentAuthorized": false,
   "designFreezeStatus": "blocked",
+  "buildMode": "DOCUMENTATION_AND_SPECIFICATION_ONLY",
+  "orchestrationPrepared": true,
+  "orchestrationActiveForCoding": false,
+  "implementationLibraryPrepared": true,
+  "documentationFoundationComplete": true,
   "authorizedPaths": [
     "docs/",
     "contracts/",
     "diagrams/",
     "develop_notes/",
     "scripts/",
-    "reports/"
+    "reports/",
+    "data/documentation/"
   ],
   "forbiddenPaths": [
     "src/",
@@ -37,9 +44,12 @@
     "No production secrets",
     "No production deployment",
     "No edits outside H:\\people",
-    "No implementation until Critical audit findings resolved and freeze signed"
+    "No implementation until Critical audit findings resolved and freeze signed",
+    "Documentation sequence DOC-0..DOC-12 only — no API handlers, React components, or ORM",
+    "Do not invent frozen architecture; mark missing decisions as proposed / PENDING_FREEZE"
   ],
-  "previousBuild": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
-  "nextRecommendedBuild": "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0",
-  "alternateNextIfRemediated": "PEOPLE-CURSOR-BUILD-ORCHESTRATION-1.0"
+  "previousBuild": "PEOPLE-IMPLEMENTATION-LIBRARY-1.0",
+  "nextRecommendedBuild": "PEOPLE-VOLUME-08-TECHNICAL-SPECIFICATIONS-1.0",
+  "parallelRequired": "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0",
+  "postFreezeBuild": "PEOPLE-PHASE-00-PACKAGE-01"
 }

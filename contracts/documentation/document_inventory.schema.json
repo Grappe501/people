@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/document_inventory.schema.json",
+  "title": "People Intake Document Inventory",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "registry_id",
+    "generated_at",
+    "project_root",
+    "documents"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "registry_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "project_root": {
+      "type": "string",
+      "const": "H:\\people"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "document_id",
+          "title",
+          "current_path",
+          "canonical_path",
+          "document_type",
+          "status",
+          "authority_level",
+          "is_canonical",
+          "is_duplicate"
+        ],
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "pattern": "^PEOPLE-DOC-\\d{4}$"
+          },
+          "title": {
+            "type": "string"
+          },
+          "current_path": {
+            "type": "string"
+          },
+          "canonical_path": {
+            "type": "string"
+          },
+          "document_type": {
+            "type": "string",
+            "enum": [
+              "volume",
+              "standard",
+              "catalog",
+              "register",
+              "report",
+              "runbook",
+              "decision",
+              "risk",
+              "diagram",
+              "template",
+              "working_note",
+              "implementation_package",
+              "unknown"
+            ]
+          },
+          "volume_number": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "PLANNED",
+              "PARTIAL",
+              "DRAFT",
+              "READY_FOR_REVIEW",
+              "APPROVED",
+              "FROZEN",
+              "SUPERSEDED",
+              "DUPLICATE",
+              "ARCHIVED",
+              "UNKNOWN"
+            ]
+          },
+          "authority_level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "source_origin": {
+            "type": "string"
+          },
+          "is_canonical": {
+            "type": "boolean"
+          },
+          "is_duplicate": {
+            "type": "boolean"
+          },
+          "supersedes_document_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "superseded_by_document_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "related_document_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "known_contradiction_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "open_decision_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "last_modified": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "content_hash": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

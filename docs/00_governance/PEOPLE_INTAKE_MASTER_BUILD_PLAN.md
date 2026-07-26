@@ -555,7 +555,7 @@ Dedicated GitHub repository. Dedicated Netlify site. Environments: local, develo
 
 # 21. Documentation Package
 
-Sixty governing documents across eight volumes as listed in `contracts/documentation/documentation-index.json`, covering governance, product, workflows, UX, data, security, engineering, quality/operations, and implementation control.
+Indexed documents organized as library Volumes 0–13 plus Engineering Catalogs (EC) and Implementation Packages (IP), as listed in `contracts/documentation/documentation-index.json` and mapped in `PEOPLE_INTAKE_DOCUMENTATION_LIBRARY.md`. Folder paths under `docs/` may retain historical numbering; library volume numbers are authoritative for reading order. Volume 0 — Project Constitution — is the mandatory first read. Volumes 8–13 convert design into an implementation system; production code remains forbidden until Gate G-10.
 
 ---
 

@@ -1,8 +1,10 @@
 # People Intake — Glossary
 
 **Status:** draft_complete  
-**Version:** 1.0  
-**Build:** PEOPLE-GOVERNANCE-FOUNDATION-1.0
+**Version:** 1.2  
+**Build:** PEOPLE-PROJECT-CONSTITUTION-3.0
+
+**Standing subset:** Canonical short definitions also live in Volume 0 Article XIV. If this file and Volume 0 disagree, stop and resolve via Decision Log — prefer accepted decisions, then Volume 0 standing orders.
 
 ---
 

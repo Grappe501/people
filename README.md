@@ -8,10 +8,44 @@ Secure, mobile-first paper-to-database intake for volunteer sign-up sheets.
 
 ## Current Phase
 
-**Phase 0: Complete Design** (in progress)  
-**Build:** `PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0`  
+**Phase 0: Complete Design** (implementation library ready; freeze still DENIED)  
+**Last completed build:** `PEOPLE-DOC-FOUNDATION-AND-INVENTORY-1.0` (DOC-0)  
 **Design freeze:** **DENIED** — no application code  
-**Next:** audit remediation + quality/ops freeze package
+**Next:** `PEOPLE-VOLUME-08-TECHNICAL-SPECIFICATIONS-1.0` (DOC-1)  
+**Also required for freeze:** audit remediation + Volume 5 quality/ops
+
+---
+
+## Supreme Document — Read Before Every Session
+
+```text
+docs/00_governance/PEOPLE_INTAKE_PROJECT_CONSTITUTION.md
+```
+
+### Documentation Library (Volumes 0–13 + EC + IP)
+
+| Vol | Title |
+| --- | --- |
+| 0 | Project Constitution |
+| 1 | Governance Foundation |
+| 2 | Workflow & User Experience |
+| 3 | Data, Matching & Storage |
+| 4 | Security, API & Engineering Contracts |
+| 5 | Quality, Operations & Design Freeze |
+| 6 | Architecture Audit & Design Validation |
+| 7 | Master Cursor Build Orchestration |
+| 8 | Technical Specifications |
+| 9 | Database Specifications |
+| 10 | API Specifications |
+| 11 | UI Specifications |
+| 12 | Component Library |
+| 13 | Canonical Platform Standards |
+| EC | Engineering Catalogs |
+| IP | Implementation Packages |
+
+Map: `docs/00_governance/PEOPLE_INTAKE_DOCUMENTATION_LIBRARY.md`
+
+Then: `contracts/governance/active-build.json`
 
 ---
 
@@ -24,16 +58,6 @@ H:\people
 ## H-Drive Warning
 
 No intentional project-controlled writes to `C:\`. See H-drive protocol.
-
----
-
-## Read First After Audit
-
-1. `reports/PEOPLE_ARCHITECTURE_FINDINGS_REPORT.md`
-2. `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md`
-3. `reports/PEOPLE_RISK_REGISTER.md`
-4. `docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md`
-5. `develop_notes/NEXT_CURSOR_BUILD.md`
 
 ---
 
@@ -52,6 +76,8 @@ npm run governance:all
 ## Prohibited
 
 Application code, Prisma migrations, production auth/storage config, Netlify app deploy for features — until freeze APPROVED and Gate G-10 opens.
+
+Do not invent endpoints, tables, states, errors, events, or components absent from Volumes 8–13 / EC / IP.
 
 ---
 

@@ -170,8 +170,12 @@ if (active) {
   else fail("active-build must set applicationCodeAuthorized=false");
   if (active.databaseChangesAuthorized === false) pass("active-build prohibits database changes");
   else fail("active-build must set databaseChangesAuthorized=false");
-  if (active.nextRecommendedBuild === "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0") {
-    pass("nextRecommendedBuild is PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0");
+  if (
+    active.nextRecommendedBuild === "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-08-TECHNICAL-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-DOC-FOUNDATION-AND-INVENTORY-1.0"
+  ) {
+    pass(`nextRecommendedBuild is ${active.nextRecommendedBuild}`);
   } else {
     fail(`Unexpected nextRecommendedBuild: ${active.nextRecommendedBuild}`);
   }
@@ -207,10 +211,13 @@ for (const s of schemas) {
 
 const index = parseJson("contracts/documentation/documentation-index.json");
 if (index) {
-  if (!Array.isArray(index.documents) || index.documents.length !== 60) {
-    fail(`documentation-index must list 60 documents (found ${index.documents?.length})`);
+  const expectedDocCount = index.totalDocuments ?? 63;
+  if (!Array.isArray(index.documents) || index.documents.length !== expectedDocCount) {
+    fail(
+      `documentation-index must list ${expectedDocCount} documents (found ${index.documents?.length})`
+    );
   } else {
-    pass("documentation-index lists 60 documents");
+    pass(`documentation-index lists ${expectedDocCount} documents`);
   }
   for (const doc of index.documents || []) {
     if (doc.status === "draft_complete" || doc.status === "approved" || doc.status === "frozen") {

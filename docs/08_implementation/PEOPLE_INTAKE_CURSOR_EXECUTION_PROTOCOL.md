@@ -1,9 +1,21 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.0  
-**Build:** PEOPLE-GOVERNANCE-FOUNDATION-1.0  
+**Version:** 1.2  
+**Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
+
+---
+
+## Supreme Document
+
+```text
+docs/00_governance/PEOPLE_INTAKE_PROJECT_CONSTITUTION.md
+```
+
+**VOLUME 0 — PROJECT CONSTITUTION** is mandatory before every build session. Follow **Article III — Cursor Implementation Oath**.
+
+Library map: `docs/00_governance/PEOPLE_INTAKE_DOCUMENTATION_LIBRARY.md` (Volumes 0–7).
 
 ---
 
@@ -12,15 +24,15 @@
 Cursor must:
 
 1. Confirm current directory is under `H:\people`.
-2. Read the master build plan.
-3. Read the H-drive protocol.
-4. Read the design-before-code protocol.
-5. Read the source-of-truth registry.
-6. Read the active-build registry (`contracts/governance/active-build.json`).
-7. Confirm the authorized phase.
-8. Confirm forbidden paths.
-9. Run the H-drive preflight (`npm run drive:validate` when Node scripts are available).
-10. Stop if a hard boundary is violated.
+2. **Read Volume 0** — Project Constitution (Preamble through applicable Articles; re-confirm standing orders if already loaded this session).
+3. Read the active-build registry (`contracts/governance/active-build.json`).
+4. Identify the relevant library volume(s) for the slice (see Documentation Library).
+5. Read the H-drive protocol and design-before-code protocol if not already internalized this session.
+6. If coding is authorized: read Volume 7 orchestration for the active phase/slice, then Volumes 8–12 / EC / IP package for that slice. Never invent endpoints, tables, states, or components.
+7. Confirm the authorized phase and forbidden paths.
+8. Run the H-drive preflight (`npm run drive:validate` when Node scripts are available).
+9. Stop if a hard boundary is violated.
+10. If `applicationCodeAuthorized` is false: do not create `src/` or other forbidden paths.
 
 ---
 
@@ -99,10 +111,12 @@ Respect:
 
 ---
 
-## Recommended Next Build (After This Foundation)
+## Recommended Next Build
 
 ```text
-PEOPLE-WORKFLOW-UX-DESIGN-1.0
+PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-That build remains design-only.
+Design remediation + quality/ops. No application code until freeze APPROVED and Gate G-10 opens.
+
+Orchestration reference: `docs/08_implementation/PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md`

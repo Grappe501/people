@@ -1,0 +1,105 @@
+{
+  "scriptId": "PEOPLE-DOC-FOUNDATION-AND-INVENTORY-1.0",
+  "generatedAt": "2026-07-26T03:54:45.382Z",
+  "hierarchy": [
+    "Volume 0 — Project Constitution",
+    "Approved design volumes 1–5 (partial for Vol 5)",
+    "Architecture Audit findings and resolutions (Vol 6)",
+    "Master Cursor Build Orchestration (Vol 7)",
+    "Specification volumes 8–13 (bootstrap exists; formal DOC-1… pending)",
+    "Implementation (Gate G-10 only)"
+  ],
+  "domains": {
+    "workflow": {
+      "volume": "2",
+      "primaryPaths": [
+        "docs/02_workflows/"
+      ],
+      "governingDocs": [
+        "docs/02_workflows/PEOPLE_INTAKE_CAPTURE_WORKFLOW.md",
+        "docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md",
+        "docs/02_workflows/PEOPLE_INTAKE_MATCHING_WORKFLOW.md",
+        "docs/02_workflows/PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md",
+        "docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md"
+      ]
+    },
+    "data": {
+      "volume": "3",
+      "primaryPaths": [
+        "docs/04_data/",
+        "docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md"
+      ],
+      "governingDocs": [
+        "docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md",
+        "docs/04_data/PEOPLE_INTAKE_DATABASE_ARCHITECTURE.md",
+        "docs/04_data/PEOPLE_INTAKE_MATCHING_ENGINE_SPEC.md",
+        "docs/04_data/PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT.md"
+      ]
+    },
+    "security": {
+      "volume": "4",
+      "primaryPaths": [
+        "docs/05_security/"
+      ],
+      "governingDocs": [
+        "docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md",
+        "docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md",
+        "docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md"
+      ]
+    },
+    "api": {
+      "volume": "4",
+      "primaryPaths": [
+        "docs/06_engineering/"
+      ],
+      "governingDocs": [
+        "docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md",
+        "docs/06_engineering/PEOPLE_INTAKE_ERROR_CONTRACT.md",
+        "docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md"
+      ]
+    },
+    "quality": {
+      "volume": "5",
+      "primaryPaths": [
+        "docs/07_quality/"
+      ],
+      "governingDocs": [],
+      "status": "INCOMPLETE — blocking freeze (OD-B12 / F-C01)"
+    },
+    "operations": {
+      "volume": "5",
+      "primaryPaths": [
+        "docs/07_quality/"
+      ],
+      "status": "INCOMPLETE — blocking freeze"
+    },
+    "implementation": {
+      "volume": "7",
+      "primaryPaths": [
+        "docs/08_implementation/",
+        "docs/16_implementation_packages/"
+      ],
+      "governingDocs": [
+        "docs/08_implementation/PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md",
+        "docs/00_governance/PEOPLE_INTAKE_PROJECT_CONSTITUTION.md"
+      ]
+    },
+    "constitution": {
+      "volume": "0",
+      "primaryPaths": [
+        "docs/00_governance/PEOPLE_INTAKE_PROJECT_CONSTITUTION.md"
+      ]
+    },
+    "audit": {
+      "volume": "6",
+      "primaryPaths": [
+        "reports/"
+      ],
+      "governingDocs": [
+        "reports/PEOPLE_ARCHITECTURE_FINDINGS_REPORT.md",
+        "reports/PEOPLE_OPEN_DECISIONS_REGISTER.md",
+        "docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md"
+      ]
+    }
+  }
+}
