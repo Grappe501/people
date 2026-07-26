@@ -6,7 +6,9 @@
 | Item | Value |
 | --- | --- |
 | Spec commit | `6619fcc` |
-| Remote verify | pending this evidence commit |
+| Evidence commit | `252e101` (file updated after remote verify) |
+| Remote `origin/master` | `252e101dfc7c8129f0c3200f8b0952ac8040179d` |
+| Local HEAD | matches remote |
 
 ## Validation
 
@@ -19,6 +21,7 @@
 | applicationCodeAuthorized | false |
 | migrationsAuthorized | false |
 | Netlify | N/A (no deployable surface / no `netlify.toml`) |
+| Push / remote verify | PASS |
 
 ## Standing doctrine locked (IS-303 §4 / Cursor §9.0.6)
 
