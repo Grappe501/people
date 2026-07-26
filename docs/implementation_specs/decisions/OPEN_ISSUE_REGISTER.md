@@ -28,4 +28,6 @@
 
 Related ADRs: ADR-001…ADR-020 in `DECISION_REGISTER.md`.  
 Audit lane charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`.  
-Latest findings: `reports/PEOPLE_AUDIT_SLICE_007_FINDINGS.md`.
+Latest findings: `reports/PEOPLE_AUDIT_SLICE_008_FINDINGS.md`.
+
+Phase 3 documentation complete (IS-300…305). Gate G-10 remains CLOSED. Implementation Authorization is a separate decision.

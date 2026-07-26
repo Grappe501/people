@@ -1033,3 +1033,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0. Gate G-10 remains closed. Phase 3 persistence architecture nearly complete (migration governance remains). |
 | Related files | PEOPLE-IS-304; AUDIT-SLICE-007; `reports/PEOPLE_IS_304_COMPLETION_REPORT.md` |
 | Revisit trigger | IS-305; ISSUE-MOD-002; ISSUE-CANONICAL-001 |
+
+### D-077
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0 is the canonical Migration Governance specification. Path: `docs/implementation_specs/300_database/PEOPLE-IS-305-MIGRATION-GOVERNANCE.md`. It defines how future MG-* migration packages will be governed (traceability to IS-300…304, scope allow/prohibit, validation/drift/evidence, safety/rollback/emergency stop, and authorization preconditions) without creating executable migrations. Standing doctrine: a migration implements an approved logical design and never creates one; no migration may introduce a table, relationship, constraint, or read model that is not already governed; executable schema is the final translation layer, never the source of architecture. (2) Phase 3 Database Architecture documentation is complete (IS-300…305). Completing IS-305 does NOT open Gate G-10 and does NOT set migrationsAuthorized or applicationCodeAuthorized. Implementation Authorization may be considered only after separate G-10 / freeze / ADR / audit evaluation. (3) AUDIT-SLICE-008 verifies docs-only posture and G-10 still closed. Next primary focus: PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0. |
+| Reason | Bridge design to future implementation with controlled change rules while remaining documentation-only. |
+| Alternatives | Author SQL/Prisma now; treat Phase 3 complete as auto G-10; skip migration governance. |
+| Consequences | Phase 3 docs complete. Gate G-10 remains closed. First physical schema package not authorized. |
+| Related files | PEOPLE-IS-305; AUDIT-SLICE-008; `reports/PEOPLE_IS_305_COMPLETION_REPORT.md` |
+| Revisit trigger | Gate G-10 review; ISSUE-FREEZE-001; ISSUE-DBA-001; first MG-* when authorized |

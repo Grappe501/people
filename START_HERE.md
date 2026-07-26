@@ -45,20 +45,21 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | Logical Relationships | `docs/implementation_specs/300_database/PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS.md` |
 | Logical Constraints & Integrity | `docs/implementation_specs/300_database/PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY.md` |
 | Read Model Specifications | `docs/implementation_specs/300_database/PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS.md` |
+| Migration Governance | `docs/implementation_specs/300_database/PEOPLE-IS-305-MIGRATION-GOVERNANCE.md` |
 | Commit/Push/Deploy Protocol | `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` |
 | Cursor Execution Protocol | `docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md` |
 | Audit / Freeze lane | `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md` |
-| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_007_FINDINGS.md` |
+| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_008_FINDINGS.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
 
 ## Current next-ready work
 
-1. `PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0` (primary — docs only)  
-2. Audit lane freeze readiness (independent)
+1. `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0` (primary — G-10 / freeze readiness)  
+2. Gate G-10 Review — **may be considered** only after prerequisites; **not** auto-granted
 
-Phase 3: IS-300…304 approved. Read models project truth and do not create it. **Implementation not authorized.**
+Phase 3: IS-300…305 approved (documentation complete). Migration doctrine locked. **Gate G-10 CLOSED. Implementation not authorized.**
 
 ## Allowed now
 

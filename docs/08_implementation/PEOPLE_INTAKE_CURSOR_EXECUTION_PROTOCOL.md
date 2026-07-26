@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 2.0  
+**Version:** 2.1  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -157,6 +157,19 @@ Read models are disposable. The governed domain is authoritative.
 
 No SQL view / materialized projection / reporting dual-write may appear unless backed by an `RM-*` card (or amendment/ADR). Queue and worklist projections MUST NOT accept claim/resolution authoritative writes.
 
+### 9.0.8 Migration doctrine (mandatory)
+
+Authority: PEOPLE-IS-305 §4; Decision Log D-077.
+
+```text
+A migration implements an approved logical design.
+A migration never creates a logical design.
+No migration may introduce a table, relationship, constraint, or read model that is not already governed.
+Executable schema is the final translation layer, never the source of architecture.
+```
+
+No migration artifact may be created unless `migrationsAuthorized` is true, Gate G-10 has passed, and a complete `MG-*` card exists. Completing IS-305 / Phase 3 documentation does **not** authorize migrations or open Gate G-10.
+
 ---
 
 ## 9.1 Start-of-Run Requirements
@@ -277,11 +290,12 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0
+PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-Slices 001–007 complete.
+Phase 3 (IS-300…305) documentation is complete.  
+Gate G-10 remains **CLOSED**. Implementation / migrations **NOT AUTHORIZED**.  
+Independent audit lane is now the primary focus for freeze/G-10 readiness.
 
 No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 

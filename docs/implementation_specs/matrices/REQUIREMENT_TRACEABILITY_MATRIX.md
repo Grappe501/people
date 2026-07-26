@@ -102,4 +102,10 @@
 | REQ-RM-005 | Queue/worklist projections remain non-owners | IS-304 / IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
 | REQ-RM-008 | IS-304 creates no SQL views/Prisma/migrations/caches | IS-304 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
 
+| REQ-MIG-001 | Executable migration packages require MG-* cards | IS-305 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Migration review | Future PKG | FULLY_MAPPED |
+| REQ-MIG-002 | Migrations only translate governed LT/REL/CON/RM | IS-305 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Trace gate | Future PKG | FULLY_MAPPED |
+| REQ-MIG-003 | Migrations must not invent logical design | IS-305 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Schema gate | Future PKG | FULLY_MAPPED |
+| REQ-MIG-008 | IS-305 creates no executable migrations / does not open G-10 | IS-305 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact + flag check | Docs | FULLY_MAPPED |
+| REQ-MIG-009 | migrationsAuthorized remains false until Gate G-10 Decision | IS-305 / G-10 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | active-build check | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.
