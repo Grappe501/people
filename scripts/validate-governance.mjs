@@ -108,6 +108,16 @@ const requiredDocs = [
   "docs/03_ux/PEOPLE_INTAKE_FORM_BEHAVIOR_SPEC.md",
   "docs/03_ux/PEOPLE_INTAKE_ACCESSIBILITY_SPEC.md",
   "docs/03_ux/PEOPLE_INTAKE_CONTENT_AND_COPY_GUIDE.md",
+  "docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md",
+  "docs/04_data/PEOPLE_INTAKE_DATABASE_ARCHITECTURE.md",
+  "docs/04_data/PEOPLE_INTAKE_ERD.md",
+  "docs/04_data/PEOPLE_INTAKE_FIELD_DICTIONARY.md",
+  "docs/04_data/PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT.md",
+  "docs/04_data/PEOPLE_INTAKE_MATCHING_ENGINE_SPEC.md",
+  "docs/04_data/PEOPLE_INTAKE_DATA_PROVENANCE.md",
+  "docs/04_data/PEOPLE_INTAKE_MIGRATION_AND_ROLLBACK.md",
+  "docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md",
+  "docs/05_security/PEOPLE_INTAKE_PRIVACY_AND_RETENTION.md",
   "docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md",
   "docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md",
   "docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md",
@@ -144,8 +154,8 @@ if (active) {
   else fail("active-build must set applicationCodeAuthorized=false");
   if (active.databaseChangesAuthorized === false) pass("active-build prohibits database changes");
   else fail("active-build must set databaseChangesAuthorized=false");
-  if (active.nextRecommendedBuild === "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0") {
-    pass("nextRecommendedBuild is PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0");
+  if (active.nextRecommendedBuild === "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0") {
+    pass("nextRecommendedBuild is PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0");
   } else {
     fail(`Unexpected nextRecommendedBuild: ${active.nextRecommendedBuild}`);
   }

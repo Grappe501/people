@@ -3,38 +3,35 @@
 ## Build ID
 
 ```text
-PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0
+PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0
 ```
 
 ## Type
 
-Design-only. **No application code. No database migrations.**
+Design-only. **No application code. No schema. No migrations. No production integration.**
 
 ---
 
-## Purpose
+## Will Design
 
-Completely design:
-
-- Canonical people integration
-- Intake domain model
-- Entity relationships
-- Field dictionary
-- Raw versus normalized data
-- Provenance
-- Match rules
-- Conflict handling
-- Database boundaries
-- Private image storage
-- File metadata
-- Retention
-- Migration strategy
-- Rollback strategy
+- Authentication and user approval
+- Role enforcement and database permissions
+- Storage authorization
+- Threat model and privacy controls
+- Session behavior
+- API contracts and service boundaries
+- Error contracts
+- Idempotency and concurrency
+- Background processing
+- Configuration and secret management
+- Logging
+- Security testing
+- RedDirt integration contract
 
 ---
 
 ## Preconditions
 
-1. `PEOPLE-WORKFLOW-UX-DESIGN-1.0` complete
-2. Workflow/UX docs marked `draft_complete`
-3. `applicationCodeAuthorized` remains `false`
+1. `PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0` complete
+2. `applicationCodeAuthorized` remains `false`
+3. `migrationsAuthorized` remains `false`

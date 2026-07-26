@@ -240,88 +240,88 @@
       "title": "PEOPLE_INTAKE_DOMAIN_MODEL",
       "path": "docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-023",
       "title": "PEOPLE_INTAKE_DATABASE_ARCHITECTURE",
       "path": "docs/04_data/PEOPLE_INTAKE_DATABASE_ARCHITECTURE.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-024",
       "title": "PEOPLE_INTAKE_ERD",
       "path": "docs/04_data/PEOPLE_INTAKE_ERD.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-025",
       "title": "PEOPLE_INTAKE_FIELD_DICTIONARY",
       "path": "docs/04_data/PEOPLE_INTAKE_FIELD_DICTIONARY.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-026",
       "title": "PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT",
       "path": "docs/04_data/PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-027",
       "title": "PEOPLE_INTAKE_MATCHING_ENGINE_SPEC",
       "path": "docs/04_data/PEOPLE_INTAKE_MATCHING_ENGINE_SPEC.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-028",
       "title": "PEOPLE_INTAKE_DATA_PROVENANCE",
       "path": "docs/04_data/PEOPLE_INTAKE_DATA_PROVENANCE.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-029",
       "title": "PEOPLE_INTAKE_MIGRATION_AND_ROLLBACK",
       "path": "docs/04_data/PEOPLE_INTAKE_MIGRATION_AND_ROLLBACK.md",
       "volume": "4",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-030",
@@ -350,22 +350,22 @@
       "title": "PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE",
       "path": "docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-033",
       "title": "PEOPLE_INTAKE_PRIVACY_AND_RETENTION",
       "path": "docs/05_security/PEOPLE_INTAKE_PRIVACY_AND_RETENTION.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-034",

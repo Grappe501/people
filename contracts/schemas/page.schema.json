@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/page.schema.json",
+  "title": "IntakePage",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "batch_id",
+    "page_number",
+    "status",
+    "version"
+  ],
+  "properties": {
+    "entry_count": {
+      "minimum": 0,
+      "type": "integer",
+      "maximum": 10
+    },
+    "id": {
+      "type": "string"
+    },
+    "batch_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "page_code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "page_number": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

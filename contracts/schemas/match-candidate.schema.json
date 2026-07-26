@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/match-candidate.schema.json",
+  "title": "MatchCandidate",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "intake_entry_id",
+    "candidate_person_id",
+    "confidence_tier",
+    "status"
+  ],
+  "properties": {
+    "score": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "SUGGESTED",
+        "SELECTED",
+        "REJECTED",
+        "SUPERSEDED",
+        "EXPIRED"
+      ]
+    },
+    "confidence_tier": {
+      "type": "string",
+      "enum": [
+        "EXACT",
+        "HIGH_CONFIDENCE",
+        "POSSIBLE",
+        "LOW_CONFIDENCE",
+        "NO_MATCH",
+        "CONFLICT"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

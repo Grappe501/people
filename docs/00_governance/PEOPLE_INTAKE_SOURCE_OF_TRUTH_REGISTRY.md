@@ -46,18 +46,15 @@ Lower layers may not silently redefine higher layers.
 
 ## Planned Canonical Files (Later Volumes)
 
-Workflow and UX volumes (DOC-008–DOC-021) are now `draft_complete` under `docs/02_workflows/` and `docs/03_ux/`.
+Workflow, UX, and data/storage volumes through DOC-029 / DOC-032 / DOC-033 are now `draft_complete`.
 
 | Area | Planned canonical file |
 | --- | --- |
-| Domain model | `docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md` |
-| Database architecture | `docs/04_data/PEOPLE_INTAKE_DATABASE_ARCHITECTURE.md` |
-| Canonical person contract | `docs/04_data/PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT.md` |
-| Matching engine | `docs/04_data/PEOPLE_INTAKE_MATCHING_ENGINE_SPEC.md` |
 | Auth architecture | `docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md` |
 | Authorization matrix | `docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md` |
-| Image storage | `docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md` |
+| Threat model | `docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md` |
 | API contracts | `docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md` |
+| Service contracts | `docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md` |
 | Test master plan | `docs/07_quality/PEOPLE_INTAKE_TEST_MASTER_PLAN.md` |
 | Deployment architecture | `docs/07_quality/PEOPLE_INTAKE_DEPLOYMENT_ARCHITECTURE.md` |
 | Design freeze report | `docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md` |

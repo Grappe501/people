@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/promotion-request.schema.json",
+  "title": "PromotionRequest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "intake_entry_id",
+    "match_resolution_id",
+    "request_type",
+    "status"
+  ],
+  "properties": {
+    "request_type": {
+      "type": "string",
+      "enum": [
+        "LINK_EXISTING",
+        "CREATE_NEW",
+        "ATTRIBUTE_UPDATE"
+      ]
+    },
+    "idempotency_key": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "IN_PROGRESS",
+        "SUCCEEDED",
+        "FAILED",
+        "RETRYING"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

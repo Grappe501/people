@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/audit-event.schema.json",
+  "title": "AuditEvent",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "event_type",
+    "created_at"
+  ],
+  "properties": {
+    "before_summary": {
+      "type": "string"
+    },
+    "event_type": {
+      "type": "string"
+    },
+    "after_summary": {
+      "type": "string"
+    },
+    "actor_user_id": {
+      "type": "string"
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

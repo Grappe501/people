@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/field-condition.schema.json",
+  "title": "FieldCondition",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "value"
+  ],
+  "properties": {
+    "value": {
+      "type": "string",
+      "enum": [
+        "PROVIDED",
+        "NOT_PROVIDED",
+        "UNREADABLE",
+        "AMBIGUOUS",
+        "CORRECTED"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

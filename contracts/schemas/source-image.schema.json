@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/source-image.schema.json",
+  "title": "SourceImage",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "page_id",
+    "upload_status"
+  ],
+  "properties": {
+    "conversion_status": {
+      "type": "string",
+      "enum": [
+        "NOT_REQUIRED",
+        "PENDING",
+        "PROCESSING",
+        "COMPLETE",
+        "FAILED"
+      ]
+    },
+    "sha256_hash": {
+      "type": "string"
+    },
+    "upload_status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "UPLOADING",
+        "UPLOADED",
+        "FAILED",
+        "REPLACED",
+        "QUARANTINED",
+        "DELETED"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

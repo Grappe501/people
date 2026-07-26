@@ -1,7 +1,7 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
+  "buildId": "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0",
   "phase": "0",
   "phaseName": "Complete Design",
   "status": "active",
@@ -32,10 +32,12 @@
     "No intentional project writes to C:\\",
     "No application code before design freeze",
     "No database changes",
+    "No migrations",
     "No production secrets",
     "No production deployment",
-    "No edits outside H:\\people"
+    "No edits outside H:\\people",
+    "No assumed live schema without audit"
   ],
-  "previousBuild": "PEOPLE-GOVERNANCE-FOUNDATION-1.0",
-  "nextRecommendedBuild": "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0"
+  "previousBuild": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
+  "nextRecommendedBuild": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0"
 }

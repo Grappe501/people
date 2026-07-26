@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/match-resolution.schema.json",
+  "title": "MatchResolution",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "intake_entry_id",
+    "resolution_type",
+    "resolution_method"
+  ],
+  "properties": {
+    "resolution_method": {
+      "type": "string",
+      "enum": [
+        "HUMAN",
+        "APPROVED_EXACT_RULE",
+        "ADMINISTRATIVE",
+        "SYSTEM_RECOVERY"
+      ]
+    },
+    "resolution_type": {
+      "type": "string",
+      "enum": [
+        "LINK_EXISTING",
+        "CREATE_NEW",
+        "RETURN_FOR_CORRECTION",
+        "DEFER",
+        "NO_ACTION"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

@@ -396,15 +396,86 @@ Statuses: `accepted` | `provisional` | `superseded` | `open`
 
 ## Open Non-Blocking Questions
 
-Deferred to later design volumes (especially data/matching/storage):
+Deferred primarily to security/engineering design and pre-migration audit:
 
-1. Exact private storage provider choice (Supabase Storage vs S3-compatible vs other).
-2. Preferred vs alternative canonical people integration model details against live RedDirt schema.
-3. Exact claim-renewal timing mechanics (30 minutes recommended).
-4. Exact auto-link criteria for EXACT matches.
-5. Whether no-match entries auto-create people immediately.
-6. Whether canonical people permit multiple active phones/emails.
-7. Retention default for source images.
-8. Exact match-score formula.
-9. Exact offline storage technology.
-10. Exact API routes, package versions, migration order, and production DB permissions.
+1. Exact existing canonical people tables (requires shared DB inspection).
+2. Exact database schema names and Postgres roles.
+3. Exact storage provider and bucket structure.
+4. Exact automatic-link rules and new-person auto-creation rules.
+5. Exact match-score formula.
+6. Exact retention periods.
+7. Exact encryption configuration.
+8. Exact API routes and promotion-service implementation.
+9. Exact Prisma model structure and migration sequence.
+10. Exact indexes after query-plan review.
+11. Exact person-attribute primary-value and consent supersession rules.
+12. Exact canonical-person merge workflow.
+
+---
+
+## Decisions Locked in PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0
+
+### D-029
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Batch, Page, Intake Entry, and Canonical Person are separate entities; page is the queue work item with 0–10 uniquely identified entries. |
+| Reason | Preserve page-centric operations and independent matching/provenance. |
+| Alternatives | Flat person-per-image; blob of people per page. |
+| Consequences | Distinct IDs, row numbers, and resolution per entry. |
+| Related files | Domain model; ERD; field dictionary |
+| Revisit trigger | Physical form capacity change |
+
+### D-030
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Raw transcription is preserved separately from normalized values; field conditions include PROVIDED, NOT_PROVIDED, UNREADABLE, AMBIGUOUS, CORRECTED; Unknown consent never becomes No. |
+| Reason | Evidence integrity and honest consent semantics. |
+| Alternatives | Store only normalized; boolean-only consent. |
+| Consequences | Correction history; preference history; UI Blank = UNKNOWN. |
+| Related files | Field dictionary; provenance |
+| Revisit trigger | Legal consent model change |
+
+### D-031
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Matching is post-transcription, conservative, and explainable; shared household contacts cannot independently establish identity; canonical contacts support multiple attributes; merges are outside routine intake. |
+| Reason | False duplicates are more dangerous than temporary duplicates. |
+| Alternatives | Aggressive auto-merge; flat single-phone/email overwrite. |
+| Consequences | Match candidates/resolutions; human review for uncertain cases. |
+| Related files | Matching engine; canonical person contract |
+| Revisit trigger | Approved exact-rule authorization changes |
+
+### D-032
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | People Intake uses controlled promotion into the shared canonical people domain; intake owns intake tables; images use private object storage with original vs display separation and temporary authorized access. |
+| Reason | Isolate risk from RedDirt while sharing people truth; keep images private. |
+| Alternatives | Direct canonical table writes; Postgres blobs; public CDN. |
+| Consequences | Promotion requests/results; signed URLs; compensation for storage/DB. |
+| Related files | Canonical contract; image storage; database architecture |
+| Revisit trigger | Pre-migration audit finding forcing Model A |
+
+### D-033
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Every promoted canonical value requires provenance; audit and corrections are append-only; migrations must be additive and compatibility-audited; no schema is written until the shared database is inspected. |
+| Reason | Traceability and safe coexistence with RedDirt. |
+| Alternatives | Silent overwrites; assume conceptual tables exist. |
+| Consequences | Pre-migration audit gate; no Prisma/SQL in this phase. |
+| Related files | Provenance; migration and rollback |
+| Revisit trigger | None expected before audit |

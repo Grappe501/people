@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/promotion-result.schema.json",
+  "title": "PromotionResult",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "promotion_request_id",
+    "outcome"
+  ],
+  "properties": {
+    "person_id": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": [
+        "PERSON_CREATED",
+        "PERSON_LINKED",
+        "ATTRIBUTES_UPDATED",
+        "REJECTED",
+        "FAILED"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/batch.schema.json",
+  "title": "IntakeBatch",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "batch_code",
+    "batch_name",
+    "priority",
+    "status"
+  ],
+  "properties": {
+    "batch_code": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "EVENT",
+        "MEETING",
+        "CANVASS",
+        "OFFICE_DROP",
+        "COMMUNITY_GROUP",
+        "VOLUNTEER_DRIVE",
+        "OTHER",
+        "UNKNOWN"
+      ]
+    },
+    "batch_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "UPLOADING",
+        "UPLOAD_PARTIAL",
+        "READY",
+        "IN_PROGRESS",
+        "NEEDS_ATTENTION",
+        "COMPLETED",
+        "ARCHIVED"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "NORMAL",
+        "HIGH",
+        "URGENT"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}

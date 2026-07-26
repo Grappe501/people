@@ -9,7 +9,7 @@ Secure, mobile-first paper-to-database intake for volunteer sign-up sheets.
 ## Current Phase
 
 **Phase 0: Complete Design** (in progress)  
-**Build:** `PEOPLE-WORKFLOW-UX-DESIGN-1.0` (workflow + UX package)  
+**Build:** `PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0` (data + matching + storage package)  
 **Design-before-code status:** Active — **no application code authorized**
 
 ---
@@ -38,8 +38,9 @@ docs/00_governance/PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md
 4. `docs/00_governance/PEOPLE_INTAKE_SOURCE_OF_TRUTH_REGISTRY.md`
 5. `docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md`
 6. `docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md`
-7. `docs/03_ux/PEOPLE_INTAKE_UX_ARCHITECTURE.md`
-8. `docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md`
+7. `docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md`
+8. `docs/04_data/PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT.md`
+9. `docs/04_data/PEOPLE_INTAKE_MATCHING_ENGINE_SPEC.md`
 
 ---
 
@@ -74,7 +75,7 @@ npm run governance:all
 ## Next Recommended Build
 
 ```text
-PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0
+PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0
 ```
 
 Design-only. See `develop_notes/NEXT_CURSOR_BUILD.md`.

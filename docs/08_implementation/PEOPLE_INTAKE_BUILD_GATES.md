@@ -75,7 +75,7 @@ Requires:
 
 ## Gate G-5: Data and Storage Design
 
-Future gate requiring:
+Requires:
 
 - Domain model
 - ERD
@@ -85,6 +85,10 @@ Future gate requiring:
 - Matching specification
 - Storage architecture
 - Migration strategy
+- Provenance
+- Privacy and retention
+
+**Status after PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0:** draft package complete (not frozen; no schema authorized)
 - Provenance
 
 ---

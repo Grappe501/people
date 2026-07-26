@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/entry.schema.json",
+  "title": "IntakeEntry",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "page_id",
+    "row_number"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "page_id": {
+      "type": "string"
+    },
+    "row_number": {
+      "minimum": 1,
+      "type": "integer",
+      "maximum": 10
+    },
+    "first_name_condition": {
+      "type": "string",
+      "enum": [
+        "PROVIDED",
+        "NOT_PROVIDED",
+        "UNREADABLE",
+        "AMBIGUOUS",
+        "CORRECTED"
+      ]
+    },
+    "volunteer_response": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "email_list_response": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "note": "Conceptual contract for PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0. Not a live database schema."
+}
