@@ -138,17 +138,15 @@ Requires:
 - UX friction review
 - Data-loss review
 
+**Status after PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0:** Audit **performed**; Gate **FAIL** until Critical/High remediation.
+
 ---
 
 ## Gate G-9: Design Freeze
 
 Requires explicit approval before implementation.
 
-Produces:
-
-- Design freeze report
-- Frozen contracts
-- Implementation handoff
+**Status after PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0:** **DENIED** — see `PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md`.
 
 ---
 

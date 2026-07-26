@@ -1,6 +1,6 @@
 # People Intake — Governance Validation Report
 
-Generated: 2026-07-26T03:24:54.496Z
+Generated: 2026-07-26T03:31:31.693Z
 
 ## Results
 
@@ -70,9 +70,11 @@ Generated: 2026-07-26T03:24:54.496Z
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
+- PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md
 - PASS: Document exists: README.md
 - PASS: Document exists: develop_notes/PEOPLE_GOVERNANCE_FOUNDATION_CLOSEOUT.md
 - PASS: Document exists: develop_notes/NEXT_CURSOR_BUILD.md
+- PASS: Document exists: reports/PEOPLE_ARCHITECTURE_FINDINGS_REPORT.md
 - PASS: docs/00_governance/PEOPLE_INTAKE_MASTER_BUILD_PLAN.md contains heading/marker: Governing Vision
 - PASS: docs/00_governance/PEOPLE_INTAKE_MASTER_BUILD_PLAN.md contains heading/marker: H-Drive
 - PASS: docs/00_governance/PEOPLE_INTAKE_MASTER_BUILD_PLAN.md contains heading/marker: Design Freeze
@@ -88,7 +90,8 @@ Generated: 2026-07-26T03:24:54.496Z
 - PASS: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md contains heading/marker: Gate G-10
 - PASS: active-build prohibits application code
 - PASS: active-build prohibits database changes
-- PASS: nextRecommendedBuild is PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0
+- PASS: nextRecommendedBuild is PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
+- PASS: designFreezeStatus is blocked
 - PASS: active-build projectRoot is H:\people
 - PASS: build-phase-registry has 10 phases
 - PASS: Schema parses: contracts/schemas/governance-document.schema.json
@@ -141,7 +144,8 @@ Generated: 2026-07-26T03:24:54.496Z
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
-- PASS: Seeded decisions found: 37
+- PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md
+- PASS: Seeded decisions found: 38
 - PASS: Decision IDs are unique
 - PASS: Prohibited path absent: src
 - PASS: Prohibited path absent: app

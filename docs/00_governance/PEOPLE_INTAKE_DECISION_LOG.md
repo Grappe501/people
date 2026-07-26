@@ -394,20 +394,26 @@ Statuses: `accepted` | `provisional` | `superseded` | `open`
 
 ---
 
+## Decisions Locked in PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0
+
+### D-038
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Design freeze is DENIED; implementation remains unauthorized until Critical findings are cleared and Gate G-9 is re-issued APPROVED. |
+| Reason | Audit found missing quality/ops package, unlocked auto-link/NO_MATCH policies, unaudited shared DB, and dual state vocabularies. |
+| Alternatives | Freeze anyway and fix during coding. |
+| Consequences | Next build is remediation + quality/ops; Step 5B orchestration waits for freeze. |
+| Related files | Architecture findings; freeze report; risk register |
+| Revisit trigger | Successful remediation re-audit |
+
+---
+
 ## Open Non-Blocking Questions
 
-Deferred to quality/deployment/operations freeze and environment audit:
-
-1. Exact Supabase project configuration and OAuth redirect URLs.
-2. Exact session timeout, claim timeout, signed URL lifetime.
-3. Exact upload-size limit and rate-limit numbers.
-4. Exact storage provider and background job mechanism.
-5. Exact API framework / queue worker hosting.
-6. Exact runtime database role names.
-7. Exact canonical-person service transport.
-8. Exact audit and technical log retention durations.
-9. Exact Content Security Policy and offline-draft technology.
-10. Exact production environment-variable names, monitoring, and alert routing.
+See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking and non-blocking lists after the architecture audit. The prior deferred list is superseded by that register.
 
 ---
 

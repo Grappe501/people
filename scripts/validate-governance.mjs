@@ -135,9 +135,11 @@ const requiredDocs = [
   "docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md",
   "docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md",
   "docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md",
+  "docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md",
   "README.md",
   "develop_notes/PEOPLE_GOVERNANCE_FOUNDATION_CLOSEOUT.md",
   "develop_notes/NEXT_CURSOR_BUILD.md",
+  "reports/PEOPLE_ARCHITECTURE_FINDINGS_REPORT.md",
 ];
 
 for (const doc of requiredDocs) {
@@ -168,10 +170,17 @@ if (active) {
   else fail("active-build must set applicationCodeAuthorized=false");
   if (active.databaseChangesAuthorized === false) pass("active-build prohibits database changes");
   else fail("active-build must set databaseChangesAuthorized=false");
-  if (active.nextRecommendedBuild === "PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0") {
-    pass("nextRecommendedBuild is PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0");
+  if (active.nextRecommendedBuild === "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0") {
+    pass("nextRecommendedBuild is PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0");
   } else {
     fail(`Unexpected nextRecommendedBuild: ${active.nextRecommendedBuild}`);
+  }
+  if (active.designFreezeStatus === "blocked" || active.designFreezeStatus === "denied") {
+    pass(`designFreezeStatus is ${active.designFreezeStatus}`);
+  } else if (active.designFreezeStatus === "approved") {
+    warn("designFreezeStatus is approved — confirm freeze report matches");
+  } else {
+    warn(`designFreezeStatus unexpected: ${active.designFreezeStatus}`);
   }
   if (String(active.projectRoot).toLowerCase().includes("h:\\people") || String(active.projectRoot).toLowerCase().includes("h:/people")) {
     pass("active-build projectRoot is H:\\people");

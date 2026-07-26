@@ -647,11 +647,11 @@
       "title": "PEOPLE_INTAKE_DESIGN_FREEZE_REPORT",
       "path": "docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md",
       "volume": "8",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-060",

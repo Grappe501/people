@@ -1,0 +1,20 @@
+{
+  "title": "DesignFreezeChecklist",
+  "build": "PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0",
+  "freezeApproved": false,
+  "gateG9": "FAIL",
+  "gateG10": "CLOSED",
+  "criticalFindingsOpen": ["F-C01", "F-C02", "F-C03", "F-C04"],
+  "blockingOpenDecisions": ["OD-B01", "OD-B02", "OD-B03", "OD-B04", "OD-B05", "OD-B06", "OD-B07", "OD-B08", "OD-B09", "OD-B10", "OD-B11", "OD-B12"],
+  "overallReadinessScore": 76,
+  "requiredBeforeReconsideration": [
+    "Zero critical findings",
+    "High findings resolved or owner-accepted",
+    "Quality/ops/deployment docs draft_complete",
+    "Shared DB compatibility report",
+    "Canonical state dictionary published",
+    "Auto-link and NO_MATCH create policies locked",
+    "Re-audit pass",
+    "Signed freeze approval"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "buildId": "PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0",
   "phase": "0",
   "phaseName": "Complete Design",
   "status": "active",
@@ -9,6 +9,7 @@
   "databaseChangesAuthorized": false,
   "migrationsAuthorized": false,
   "deploymentAuthorized": false,
+  "designFreezeStatus": "blocked",
   "authorizedPaths": [
     "docs/",
     "contracts/",
@@ -36,8 +37,9 @@
     "No production secrets",
     "No production deployment",
     "No edits outside H:\\people",
-    "No live auth/storage configuration"
+    "No implementation until Critical audit findings resolved and freeze signed"
   ],
-  "previousBuild": "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0",
-  "nextRecommendedBuild": "PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0"
+  "previousBuild": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "nextRecommendedBuild": "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0",
+  "alternateNextIfRemediated": "PEOPLE-CURSOR-BUILD-ORCHESTRATION-1.0"
 }

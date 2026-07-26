@@ -9,8 +9,9 @@ Secure, mobile-first paper-to-database intake for volunteer sign-up sheets.
 ## Current Phase
 
 **Phase 0: Complete Design** (in progress)  
-**Build:** `PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0` (security + API + engineering contracts)  
-**Design-before-code status:** Active — **no application code authorized**
+**Build:** `PEOPLE-ARCHITECTURE-AUDIT-AND-DESIGN-VALIDATION-1.0`  
+**Design freeze:** **DENIED** — no application code  
+**Next:** audit remediation + quality/ops freeze package
 
 ---
 
@@ -22,59 +23,38 @@ H:\people
 
 ## H-Drive Warning
 
-No intentional project-controlled writes to `C:\`. See:
-
-```text
-docs/00_governance/PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md
-```
+No intentional project-controlled writes to `C:\`. See H-drive protocol.
 
 ---
 
-## Read First
+## Read First After Audit
 
-1. `docs/00_governance/PEOPLE_INTAKE_MASTER_BUILD_PLAN.md`
-2. `docs/00_governance/PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md`
-3. `docs/00_governance/PEOPLE_INTAKE_DESIGN_BEFORE_CODE_PROTOCOL.md`
-4. `docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md`
-5. `docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md`
-6. `docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md`
-7. `docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md`
-8. `docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md`
+1. `reports/PEOPLE_ARCHITECTURE_FINDINGS_REPORT.md`
+2. `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md`
+3. `reports/PEOPLE_RISK_REGISTER.md`
+4. `docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md`
+5. `develop_notes/NEXT_CURSOR_BUILD.md`
 
 ---
 
-## Validation Commands
-
-From `H:\people`, with H-drive env vars set:
+## Validation
 
 ```powershell
 $env:TEMP="H:\people\.tmp"
 $env:TMP="H:\people\.tmp"
 $env:TMPDIR="H:\people\.tmp"
 $env:npm_config_cache="H:\people\.npm-cache"
-
-npm run drive:validate
-npm run governance:validate
 npm run governance:all
 ```
 
 ---
 
-## Prohibited Until Design Freeze + Gate G-10
+## Prohibited
 
-- `src/`
-- Application routes / React components
-- Prisma migrations
-- Auth / storage / matching implementation
-- Netlify functions
-- Production deployment
+Application code, Prisma migrations, production auth/storage config, Netlify app deploy for features — until freeze APPROVED and Gate G-10 opens.
 
 ---
 
-## Next Recommended Build
+## GitHub
 
-```text
-PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0
-```
-
-See `develop_notes/NEXT_CURSOR_BUILD.md`.
+https://github.com/Grappe501/people

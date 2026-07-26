@@ -3,13 +3,28 @@
 ## Build ID
 
 ```text
-PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0
+PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
 ## Type
 
-Final pre-implementation design package. **Still no application code** until design freeze + Gate G-10.
+Design remediation + quality/ops completion. **No application code.**
 
-## Will Design
+## Must Accomplish
 
-Testing · accessibility verification · performance/reliability · monitoring/alerting · incident response · backup/restore · deployment · GitHub/Netlify · environments · migration/storage runbooks · operator manuals · launch checklist · rollback · design audit · design freeze · implementation phases · Cursor execution sequence.
+1. Resolve Critical findings F-C01–F-C04  
+2. Resolve or Owner-accept High findings  
+3. Close blocking open decisions OD-B01–OD-B12  
+4. Produce quality/testing/deployment/ops docs (DOC-044–052+)  
+5. Shared database compatibility report (read-only)  
+6. Publish canonical state dictionary  
+7. Re-run architecture validation  
+8. Issue freeze approval only if exit criteria pass  
+
+## After Successful Freeze
+
+```text
+PEOPLE-CURSOR-BUILD-ORCHESTRATION-1.0
+```
+
+Master Cursor build orchestration (Step 5B): phases, waves, validation gates, GitHub/Netlify checkpoints, rollback points.
