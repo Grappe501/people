@@ -942,3 +942,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0. Audit lane may run remediation slices in parallel. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
 | Related files | PEOPLE-IS-200; audit lane charter; `reports/PEOPLE_IS_200_COMPLETION_REPORT.md` |
 | Revisit trigger | ISSUE-MOD-001/CANONICAL-001 resolution; IS-201 authorship; freeze campaign start |
+
+### D-070
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0 is the canonical Entity Specifications encyclopedia. Path: `docs/implementation_specs/200_domain/PEOPLE-IS-201-ENTITY-SPECIFICATIONS.md`. Every admitted entity must answer the mandatory questionnaire (why, owner, aggregate, identity, invariants, Catalog 01 lifecycle, module, modifiers, events, permissions, APIs, packages, tests). Catalog 01 remains the sole production state authority. Match Resolution and Promotion remain separate. Standing extension doctrine: belong to existing concept → extend; else evolve domain via IS/ADR or reject. (2) Audit lane slice AUDIT-SLICE-001 findings recorded at `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md` (field-dictionary/workflow status drift; open Critical issues unchanged). Application implementation remains NOT AUTHORIZED. |
+| Reason | Ensure every entity is fully specified before packages invent concepts; keep Catalog 01 and Match≠Promotion discipline; advance freeze readiness without blocking the primary IS lane. |
+| Alternatives | Defer entity cards until database phase; invent Catalog keys to fill permission/API gaps; merge matching and promotion. |
+| Consequences | Next primary IS is PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0. Audit lane continues independently. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-201; `reports/PEOPLE_IS_201_COMPLETION_REPORT.md`; `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md` |
+| Revisit trigger | IS-202 field reconciliation; ISSUE-MOD-001 closure; freeze campaign |

@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.3  
+**Version:** 1.4  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -46,6 +46,25 @@ Execution **stops** only for reserved gates:
 * Authorization to enable deployment (`deploymentAuthorized`) or Production go-live  
 * Legal, security, or business policy decisions reserved for Steve  
 * Hard-boundary violations (H-drive, forbidden paths, secret exposure, constitution conflicts)
+
+### 9.0.1 Domain extension doctrine (mandatory)
+
+Authority: PEOPLE-IS-200; PEOPLE-IS-201 §5.3; Decision Log D-070.
+
+```text
+Does the feature belong to an existing domain concept?
+
+YES → Extend the existing specification / entity card.
+NO  → Does the domain model need to evolve?
+        YES → Update governing IS / Decision Log / ADR.
+        NO  → Reject the implementation proposal.
+```
+
+Additional locks:
+
+1. **Catalog 01** is the sole production state authority — never redefine states in packages.  
+2. **Match Resolution ≠ Promotion** — neither owns the other.  
+3. No entity may be introduced without a complete IS-201 questionnaire card.
 
 ---
 
@@ -167,10 +186,10 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0
+PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0
 ```
 
-Independent lane (does not block primary): `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
+Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0` (Slice 002 recommended)  
 Charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`
 
 No application code until freeze APPROVED and Gate G-10 opens.

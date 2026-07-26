@@ -38,19 +38,21 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | H-Drive Workspace Protocol | `docs/implementation_specs/100_platform/PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL.md` |
 | GitHub and Netlify Architecture | `docs/implementation_specs/100_platform/PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE.md` |
 | Domain Model | `docs/implementation_specs/200_domain/PEOPLE-IS-200-DOMAIN-MODEL.md` |
+| Entity Specifications | `docs/implementation_specs/200_domain/PEOPLE-IS-201-ENTITY-SPECIFICATIONS.md` |
 | Commit/Push/Deploy Protocol | `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` |
 | Cursor Execution Protocol | `docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md` |
 | Audit / Freeze lane | `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md` |
+| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
 
 ## Current next-ready work
 
-1. `PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0` (primary sequence)  
-2. `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0` (independent lane — does not block #1)
+1. `PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0` (primary)  
+2. Audit lane Slice 002 (independent — does not block #1)
 
-Phase 1 platform (IS-100…105) complete — permanent baseline. Phase 2 started (IS-200). Closeout: D-065. Burt execution authority: Cursor Protocol §9.0. Implementation not authorized.
+Phase 1 complete. Phase 2: IS-200…201 approved. Catalog 01 = state authority. Match ≠ Promotion. Extend/evolve/reject doctrine active. Implementation not authorized.
 
 ## Allowed now
 

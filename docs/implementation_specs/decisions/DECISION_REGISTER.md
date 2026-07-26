@@ -20,6 +20,7 @@
 | D-067 | PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0 APPROVED |
 | D-068 | PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0 APPROVED; Phase 1 platform docs COMPLETE; Burt execution authority locked |
 | D-069 | PEOPLE-IS-200-DOMAIN-MODEL-1.0 APPROVED; audit/freeze independent lane chartered; Phase 2 started |
+| D-070 | PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0 APPROVED; entity admission questionnaire locked; AUDIT-SLICE-001 recorded |
 
 ## Phase 0 approved decisions
 

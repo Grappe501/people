@@ -3,8 +3,8 @@
 ## Work item
 
 ```text
-PEOPLE-IS-200-DOMAIN-MODEL-1.0 (D-069)
-+ PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 lane charter
+PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0 (D-070)
++ AUDIT-SLICE-001-POST-IS-200
 ```
 
 ## Validation
@@ -23,12 +23,7 @@ NONE
 
 ## Commit / Push / Remote
 
-```text
-Commit:  fecee46167e05870b9709383efe20d967a2e10b5
-Branch:  master
-Push:    PASS (4f4279d..fecee46)
-Remote:  PASS — origin/master contains commit
-```
+Filled after Git closeout.
 
 ## Netlify
 
@@ -42,21 +37,22 @@ NOT APPLICABLE — no authorized deployable surface exists
 NOT AUTHORIZED
 ```
 
-## Phase status
+## Standing locks confirmed
 
 ```text
-Phase 1 Platform — COMPLETE (permanent baseline)
-Phase 2 Domain — STARTED (IS-200 APPROVED)
+Catalog 01 = sole state authority
+Match Resolution ≠ Promotion
+Extend / evolve / reject doctrine active
 ```
 
 ## Next primary
 
 ```text
-PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0
+PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0
 ```
 
 ## Independent lane
 
 ```text
-PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 (ACTIVE)
+AUDIT-SLICE-001 complete; Slice 002 recommended
 ```

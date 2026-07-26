@@ -197,6 +197,7 @@ if (active) {
     active.nextRecommendedBuild === "PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-IS-200-DOMAIN-MODEL-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-STATE-MACHINE-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-ERROR-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-AUDIT-EVENT-CATALOG-1.0" ||

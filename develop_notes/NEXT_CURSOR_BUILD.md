@@ -3,34 +3,25 @@
 ## Primary sequence
 
 ```text
-PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0
+PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0
 ```
 
-**Type:** Documentation only. Entity-level specifications derived from IS-200. **No application code.**
+Reconcile field dictionary conceptual statuses vs Catalog 01; specify value objects.
 
-## Independent governance lane (parallel; does not block primary)
+## Independent governance lane
 
 ```text
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-Charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`
+Next recommended slice: AUDIT-SLICE-002 (supersession banners on pre-catalog state docs).  
+Findings: `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md`
 
-## Standing closeout (D-065)
+## Standing locks
 
-validate → governance updates → completion report → commit → push → remote verify → Netlify only if authorized surface exists
-
-## Burt execution authority
-
-Execute the full closeout chain. Stop only for reserved Steve gates.
-
-## Closed / locked (recent)
-
-```text
-D-069 PEOPLE-IS-200-DOMAIN-MODEL-1.0 + audit lane charter
-D-068 PEOPLE-IS-105 + Phase 1 platform COMPLETE
-Phase 1 — Platform Governance: COMPLETE (permanent baseline)
-```
+* Catalog 01 = sole state authority  
+* Match Resolution ≠ Promotion  
+* Extend / evolve / reject doctrine (IS-201 §5.3)
 
 ## Mode
 

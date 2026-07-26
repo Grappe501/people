@@ -23,6 +23,8 @@
 | ISSUE-GHN-001 | Optional rename of GitHub repo `people` → `people-intake-system` (IS-100 suggestion) | LOW | No | Ops / Decision Log | OPEN |
 | ISSUE-GHN-002 | Optional migrate default branch `master` → `main` | LOW | No | Ops / Decision Log | OPEN |
 | ISSUE-FREEZE-001 | Design freeze blocked pending Critical ADR/issue remediation via independent audit lane | CRITICAL | Yes before Gate G-10 | PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 | OPEN |
+| ISSUE-AUDIT-001 | Field dictionary / pre-catalog workflow status labels drift vs Catalog 01 (FIND-AUDIT-001/005) | MEDIUM | Yes before claiming enum finality | IS-202 / AUDIT-SLICE-002 | OPEN |
 
 Related ADRs: ADR-001…ADR-020 in `DECISION_REGISTER.md`.  
-Audit lane charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`.
+Audit lane charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`.  
+Latest findings: `reports/PEOPLE_AUDIT_SLICE_001_FINDINGS.md`.

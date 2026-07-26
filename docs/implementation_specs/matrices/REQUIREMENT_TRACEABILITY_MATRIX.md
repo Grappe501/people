@@ -59,4 +59,10 @@
 | REQ-DOM-014 | Canonical identity outside intake ownership | IS-200 / D-032 | Canonical Person | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Integration review | Future PKG | FULLY_MAPPED |
 | REQ-DOM-019 | Packages cite owning domain concept before code | IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Package gate | Future PKG | FULLY_MAPPED |
 
+| REQ-ENT-001 | Every admitted entity has complete questionnaire card | IS-201 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Entity encyclopedia review | Docs | FULLY_MAPPED |
+| REQ-ENT-002 | Lifecycles cite Catalog 01 only | IS-201 / Cat 01 | N/A | N/A | N/A | N/A | N/A | N/A | STATE-* | N/A | N/A | N/A | State review | Future PKG | FULLY_MAPPED |
+| REQ-ENT-003 | Match Resolution must not write canonical persons | IS-201 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-ENT-004 | Promotion must not redefine match outcomes | IS-201 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-ENT-005 | New entities require IS/ADR amendment | IS-201 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Admission gate | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.
