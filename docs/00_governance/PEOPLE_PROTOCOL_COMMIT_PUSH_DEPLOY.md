@@ -2,9 +2,15 @@
 
 **Document ID:** `PEOPLE-PROTOCOL-COMMIT-PUSH-DEPLOY-1.0`  
 **Status:** APPROVED STANDING ORDER  
-**Decision:** D-065  
+**Decision:** D-065 (execution authority clarified D-068 / IS-105 §9.15)  
 **Project root:** `H:\people`  
 **Applies to:** Every Burt (Cursor) return after a completed, validated documentation or implementation slice
+
+---
+
+## Execution authority
+
+Burt **executes** this protocol end-to-end. Do not relay ordinary validate/commit/push/verify/deploy-when-applicable steps to Steve. Stop only for reserved governance gates (ADR acceptance, scope change, implementation/deployment authorization, legal/security/business policy). See Cursor Execution Protocol §9.0.
 
 ---
 
@@ -21,7 +27,7 @@ APPLICATION CODE
   Not authorized until Gate G-10 / explicit authorization
 ```
 
-Documentation-first does **not** mean local-only work. Repository discipline remains mandatory.
+Documentation-first does **not** mean local-only work. Repository discipline remains mandatory. Netlify architecture: PEOPLE-IS-105.
 
 ---
 

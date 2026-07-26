@@ -1,9 +1,9 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0",
-  "previousBuild": "PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0",
-  "nextRecommendedBuild": "PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0",
+  "buildId": "PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0",
+  "previousBuild": "PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0",
+  "nextRecommendedBuild": "PEOPLE-IS-200-DOMAIN-MODEL-1.0",
   "programId": "PEOPLE-IMPLEMENTATION-SPECIFICATION-LIBRARY-1.0",
   "phase": "0",
   "phaseName": "Complete Design",
@@ -42,6 +42,7 @@
   "catalog09Complete": true,
   "catalog09Scope": "FOUNDATION_CONTRACT_WITH_SEEDED_MATRIX_ROWS",
   "catalogLibraryComplete": true,
+  "phase1PlatformComplete": true,
   "authorizedPaths": [
     "docs/",
     "contracts/",
@@ -60,7 +61,8 @@
     "migrations/",
     "components/",
     "public/",
-    "netlify/functions/"
+    "netlify/functions/",
+    ".github/workflows/"
   ],
   "hardBoundaries": [
     "No intentional project writes to C:\\",
@@ -79,7 +81,9 @@
     "Catalog 6 is foundation contract with seeded notifications — full inventory expands via amendment",
     "Catalog 7 is foundation contract with seeded jobs — full inventory expands via amendment",
     "Catalog 8 is foundation contract with seeded retention rules — full inventory and exact durations expand via amendment",
-    "Catalog 9 is foundation contract with seeded matrix rows — full cross-volume inventory expands via amendment / IS phases"
+    "Catalog 9 is foundation contract with seeded matrix rows — full cross-volume inventory expands via amendment / IS phases",
+    "No GitHub Actions workflows or netlify.toml until an authorized deployment/implementation package",
+    "Phase 1 platform docs (IS-100…105) complete — application implementation still not authorized"
   ],
   "completedCatalogs": [
     "PEOPLE-CATALOG-00-MASTER-REGISTRY-1.0",

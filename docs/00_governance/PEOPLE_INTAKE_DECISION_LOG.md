@@ -916,3 +916,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next IS document is PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0. ISSUE-HDRIVE-001 remains open until ADR-020 acceptance/implementation. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-104; `PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md`; `reports/PEOPLE_IS_104_COMPLETION_REPORT.md` |
 | Revisit trigger | ADR-020 acceptance; path cutover package; new non-redirectable tool exception |
+
+### D-068
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0 is the canonical GitHub and Netlify Architecture specification. Path: `docs/implementation_specs/100_platform/PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE.md`. It locks single-repo topology with canonical remote `https://github.com/Grappe501/people.git`, canonical integration branch `master` (rename to `main` requires Decision Log), branch prefixes, commit/tag conventions, GitHub Actions authorization boundary, dedicated Netlify site (D-018) mapped to Preview/Staging/Production without secret inheritance from unrelated sites, promotion/rollback/provenance/verification/secrets rules, multi-environment scaling without model change, and the honest limitation that GitHub Actions / Netlify agents execute outside `H:\people` while project-controlled config remains governed. It also locks Burt full execution authority within governance (validate/commit/push/verify/deploy-when-applicable) with stops only at reserved Steve gates (ADR acceptance, scope, implementation/deployment authorization, legal/security/business policy). Creating workflows, `netlify.toml`, site linking, and live deploys remains NOT AUTHORIZED. Phase 1 platform documentation (IS-100…105) is COMPLETE. Application implementation remains NOT AUTHORIZED. |
+| Reason | Define source-control and deployment architecture before application implementation so Burt has a complete platform framework without ambiguity. |
+| Alternatives | Shared SOSWebsite Netlify site; multi-repo product split; silent `master`→`main` rename; inventing app surface to force Netlify evidence. |
+| Consequences | Next IS document is PEOPLE-IS-200-DOMAIN-MODEL-1.0. Parallel freeze remediation remains required. ISSUE-GHN-001/002 open (non-blocking). ADR-009 remains OPEN/PROPOSED. Gate G-10 remains closed; `deploymentAuthorized` remains false. |
+| Related files | PEOPLE-IS-105; `reports/PEOPLE_IS_105_COMPLETION_REPORT.md`; Cursor Execution Protocol §9.0 |
+| Revisit trigger | Repo rename; default-branch migration; first authorized deploy package; ADR-009 acceptance |

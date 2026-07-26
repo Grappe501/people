@@ -43,4 +43,12 @@
 | REQ-HDRIVE-003 | No intentional project-controlled writes to C:\ | IS-104 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | FORBIDDEN_WRITE_TARGET | N/A | N/A | drive:validate | Future guard PKG | FULLY_MAPPED |
 | REQ-HDRIVE-010 | Unavoidable external C:\ writes distinguished from violations | IS-104 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary review | Docs | FULLY_MAPPED |
 
+| REQ-GHN-001 | Single governing GitHub repository | IS-105 / IS-100 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Remote topology review | Docs | FULLY_MAPPED |
+| REQ-GHN-003 | Canonical integration branch Decision-Log recognized | IS-105 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Branch policy review | Docs | FULLY_MAPPED |
+| REQ-GHN-009 | Dedicated Netlify site; no unrelated secret inheritance | IS-105 / D-018 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Hosting boundary review | Future deploy PKG | FULLY_MAPPED |
+| REQ-GHN-011 | Preview success must not authorize Production | IS-105 / IS-103 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Promotion review | Future deploy PKG | FULLY_MAPPED |
+| REQ-GHN-013 | Every authorized deploy records provenance | IS-105 / IS-103 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Deploy evidence review | Future deploy PKG | FULLY_MAPPED |
+| REQ-GHN-016 | Netlify N/A until authorized deployable surface | IS-105 / D-065 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Closeout review | Docs | FULLY_MAPPED |
+| REQ-GHN-017 | Burt executes closeout within governance | IS-105 / D-065 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Protocol review | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

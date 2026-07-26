@@ -2,9 +2,11 @@
 
 **Program:** PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0  
 **Phase 0:** COMPLETE (D-060)  
-**Latest IS:** PEOPLE-IS-104 APPROVED (D-067)  
+**Phase 1 platform:** COMPLETE (IS-100…105; D-068)  
+**Latest IS:** PEOPLE-IS-105 APPROVED (D-068)  
 **Standing protocol:** PEOPLE-PROTOCOL-COMMIT-PUSH-DEPLOY-1.0 (D-065)  
 **H-drive standard:** PEOPLE-IS-104 + `PEOPLE_INTAKE_H_DRIVE_PROTOCOL.md`  
+**GitHub/Netlify model:** PEOPLE-IS-105  
 **Status:** DOCUMENTATION GOVERNANCE APPROVED — APPLICATION IMPLEMENTATION NOT AUTHORIZED  
 **Project root:** `H:\people`
 
@@ -21,7 +23,7 @@ Master Build → Volumes → Catalogs 00–09 → Protocols → ADRs → IS spec
 | Path | Role |
 | --- | --- |
 | `000_program/` | Phase 0 IS-000…005 |
-| `100_platform/` | Phase 1 platform specs (IS-100…) |
+| `100_platform/` | Phase 1 platform specs (IS-100…105) |
 | `200_domain/` … `1400_authorization/` | Future phases |
 | `matrices/` | Traceability matrices |
 | `decisions/` | Decision + open-issue registers |
@@ -38,10 +40,11 @@ Master Build → Volumes → Catalogs 00–09 → Protocols → ADRs → IS spec
 
 ## Current next-ready documents
 
-1. `PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0`  
+1. `PEOPLE-IS-200-DOMAIN-MODEL-1.0`  
+2. Parallel: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`
 
-IS-104 **APPROVED** (D-067).  
+IS-105 **APPROVED** (D-068). Phase 1 platform documentation complete.
 
 ## Implementation prohibition
 
-No application source, migrations, Netlify functions, UI, live providers, production secrets, or deployments until Gate G-10 / explicit authorization. See `START_HERE.md` and PEOPLE-IS-100 §27.
+No application source, migrations, Netlify functions, UI, live providers, production secrets, GitHub Actions workflows, `netlify.toml`, or deployments until Gate G-10 / explicit authorization. See `START_HERE.md`, PEOPLE-IS-100 §27, and PEOPLE-IS-105 §27.

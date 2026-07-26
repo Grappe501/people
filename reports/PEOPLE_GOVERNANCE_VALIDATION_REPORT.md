@@ -1,6 +1,6 @@
 # People Intake — Governance Validation Report
 
-Generated: 2026-07-26T05:57:20.667Z
+Generated: 2026-07-26T06:03:31.995Z
 
 ## Results
 
@@ -90,7 +90,7 @@ Generated: 2026-07-26T05:57:20.667Z
 - PASS: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md contains heading/marker: Gate G-10
 - PASS: active-build prohibits application code
 - PASS: active-build prohibits database changes
-- PASS: nextRecommendedBuild is PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0
+- PASS: nextRecommendedBuild is PEOPLE-IS-200-DOMAIN-MODEL-1.0
 - PASS: designFreezeStatus is blocked
 - PASS: active-build projectRoot is H:\people
 - PASS: build-phase-registry has 10 phases
@@ -214,7 +214,7 @@ Generated: 2026-07-26T05:57:20.667Z
 - PASS: Indexed complete doc exists: docs/16_implementation_packages/PACKAGE_TEMPLATE.md
 - PASS: Indexed complete doc exists: docs/16_implementation_packages/PKG-0.0-SPEC-LIBRARY-BOOTSTRAP.md
 - PASS: Indexed complete doc exists: docs/16_implementation_packages/README.md
-- PASS: Seeded decisions found: 67
+- PASS: Seeded decisions found: 68
 - PASS: Decision IDs are unique
 - PASS: Prohibited path absent: src
 - PASS: Prohibited path absent: app

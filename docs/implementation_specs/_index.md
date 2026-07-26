@@ -2,10 +2,10 @@
 
 **Program ID:** PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0  
 **Phase 0:** COMPLETE (D-060)  
-**Phase 1:** IS-100…102 APPROVED; IS-103 next
+**Phase 1 Platform:** COMPLETE (IS-100…105; D-061…D-068 as applicable)
 
 | Document ID | Title | Phase | Status | Owner | Dependencies | Blocking Issues | Readiness |
-| --- | --- | --- | --- | --- | --- | --- | ---: |
+| --- | --- | --- | --- | ---: | --- | --- | ---: |
 | PEOPLE-IS-000 | Program Governance | 0 | APPROVED | Program | Program Design | — | 100% |
 | PEOPLE-IS-001 | Specification Template | 0 | APPROVED | Program | IS-000 | — | 100% |
 | PEOPLE-IS-002 | Naming and Identification Standard | 0 | APPROVED | Program | IS-000 | — | 100% |
@@ -17,14 +17,14 @@
 | PEOPLE-IS-102 | Module Boundary Specification | 1 | APPROVED | Program | IS-100 + IS-101 | ISSUE-MOD-001/002 | 100% docs |
 | PEOPLE-IS-103 | Environment Architecture | 1 | APPROVED | Program | IS-102 | open ADRs for env brands | 100% docs |
 | PEOPLE-IS-104 | H-Drive Workspace Protocol | 1 | APPROVED | Program | IS-103 | ADR-020 / ISSUE-HDRIVE-001 (guard code) | 100% docs |
-| PEOPLE-IS-105 | GitHub and Netlify Architecture | 1 | Next Ready | — | IS-104 | — | 0% |
+| PEOPLE-IS-105 | GitHub and Netlify Architecture | 1 | APPROVED | Program | IS-104 | ISSUE-GHN-001/002 (non-blocking); ADR-009 OPEN | 100% docs |
+| PEOPLE-IS-200 | Domain Model | 2 | Next Ready | — | Phase 1 platform | ADRs / freeze | 0% |
 
-## Queued Phase 1 siblings
+## Queued Phase 2
 
 | Document ID | Title | Status |
 | --- | --- | --- |
-| PEOPLE-IS-104 | H-Drive Workspace Protocol | Queued |
-| PEOPLE-IS-105 | GitHub and Netlify Architecture | Queued |
+| PEOPLE-IS-200 | Domain Model | Next Ready |
 
 ## Shared artifacts
 
@@ -38,7 +38,7 @@
 | Decision register | `decisions/DECISION_REGISTER.md` |
 | Open-issue register | `decisions/OPEN_ISSUE_REGISTER.md` |
 | Progress report | `reports/IMPLEMENTATION_SPECIFICATION_PROGRESS.md` |
-| IS-102 completion | `reports/PEOPLE_IS_102_COMPLETION_REPORT.md` |
+| IS-105 completion | `reports/PEOPLE_IS_105_COMPLETION_REPORT.md` |
 | ADR index | `docs/adr/_index.md` |
 | Spec template | `templates/IMPLEMENTATION_SPECIFICATION_TEMPLATE.md` |
 | Orientation | `H:\people\START_HERE.md` |

@@ -20,5 +20,7 @@
 | ISSUE-REPO-002 | Exact .gitignore / cache env vars depend on framework ADRs | MEDIUM | Yes before app scaffolding | IS-101 / ADR-020 | OPEN |
 | ISSUE-MOD-001 | Precise split of intake_entries ownership between MOD-DRAFTS and MOD-TRANSCRIPTIONS | HIGH | Yes before entry implementation packages | IS-102 follow-on / domain IS | OPEN |
 | ISSUE-MOD-002 | Whether reports/exports use shared read models or dedicated views | MEDIUM | Yes before reports/exports packages | IS-102 / reporting IS | OPEN |
+| ISSUE-GHN-001 | Optional rename of GitHub repo `people` → `people-intake-system` (IS-100 suggestion) | LOW | No | Ops / Decision Log | OPEN |
+| ISSUE-GHN-002 | Optional migrate default branch `master` → `main` | LOW | No | Ops / Decision Log | OPEN |
 
 Related ADRs: ADR-001…ADR-020 in `DECISION_REGISTER.md`.

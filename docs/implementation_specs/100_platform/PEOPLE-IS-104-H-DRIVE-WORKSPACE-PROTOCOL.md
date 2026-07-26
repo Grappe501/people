@@ -354,10 +354,11 @@ H-Drive Protocol; IS-100/103; D-065; open ADR-020 for code enforcement.
 | --- | --- | --- | --- |
 | 1.0 | 2026-07-26 | H-drive workspace operational standard | D-067 |
 
-## Next
+## Next (historical at approval; now complete)
 
 ```text
-PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0
+PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0  (APPROVED D-068)
+PEOPLE-IS-200-DOMAIN-MODEL-1.0                     (next)
 ```
 
 ## Final status

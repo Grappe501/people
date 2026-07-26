@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.2  
+**Version:** 1.3  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -16,6 +16,36 @@ docs/00_governance/PEOPLE_INTAKE_PROJECT_CONSTITUTION.md
 **VOLUME 0 — PROJECT CONSTITUTION** is mandatory before every build session. Follow **Article III — Cursor Implementation Oath**.
 
 Library map: `docs/00_governance/PEOPLE_INTAKE_DOCUMENTATION_LIBRARY.md` (Volumes 0–7).
+
+---
+
+## 9.0 Execution Authority (Burt)
+
+**Authority:** Decision Log D-068 / PEOPLE-IS-105 §9.15; standing closeout D-065.
+
+Burt (Cursor) has **full execution authority** within established governance. Instructions are directed to the implementation engineer, not to an operator relay.
+
+Burt MUST, when a slice is in scope and valid:
+
+1. **Execute** required validation.  
+2. **Generate** completion / evidence reports.  
+3. **Update** governance indexes, registers, and RTM.  
+4. **Commit** the slice.  
+5. **Push** to the canonical branch.  
+6. **Verify** the remote contains the commit.  
+7. **Deploy** only when an authorized deployable surface exists.  
+8. **Record** evidence in the completion report / latest Cursor report.
+
+Burt MUST NOT ask Steve to run ordinary closeout steps, wait for approval to validate/commit/push, or defer D-065 publication when the work item is otherwise complete.
+
+Execution **stops** only for reserved gates:
+
+* New ADR requiring acceptance  
+* Project scope change  
+* Authorization to begin application implementation (Gate G-10 / `applicationCodeAuthorized`)  
+* Authorization to enable deployment (`deploymentAuthorized`) or Production go-live  
+* Legal, security, or business policy decisions reserved for Steve  
+* Hard-boundary violations (H-drive, forbidden paths, secret exposure, constitution conflicts)
 
 ---
 
@@ -137,9 +167,11 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
+PEOPLE-IS-200-DOMAIN-MODEL-1.0
 ```
 
-Design remediation + quality/ops. No application code until freeze APPROVED and Gate G-10 opens.
+Parallel: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`
+
+Design remediation + quality/ops remain required for freeze. No application code until freeze APPROVED and Gate G-10 opens.
 
 Orchestration reference: `docs/08_implementation/PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md`
