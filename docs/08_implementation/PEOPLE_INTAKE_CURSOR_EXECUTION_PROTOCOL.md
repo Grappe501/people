@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.7  
+**Version:** 1.8  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -114,6 +114,16 @@ Need new persistence?
 ```
 
 Logical tables ≠ physical tables. No SQL/DDL in IS-301/IS-302 documentation packages.
+
+### 9.0.5 Relationship doctrine (mandatory)
+
+Authority: PEOPLE-IS-302 §4; Decision Log D-074.
+
+```text
+Relationships are governed business concepts, not implementation conveniences.
+No migration/ORM relationship may appear unless it exists in IS-302 (or amendment/ADR).
+No physical foreign key may invent a business relationship.
+```
 
 ---
 
@@ -235,11 +245,11 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0
+PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0
 ```
 
 Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-Slices 001–004 complete.
+Slices 001–005 complete.
 
 No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 

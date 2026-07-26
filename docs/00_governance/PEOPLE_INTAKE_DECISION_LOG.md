@@ -994,3 +994,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-301; AUDIT-SLICE-004; `reports/PEOPLE_IS_301_COMPLETION_REPORT.md` |
 | Revisit trigger | IS-302; shared DB audit; first authorized migration package |
+
+### D-074
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0 is the canonical Logical Relationship Specifications. Path: `docs/implementation_specs/300_database/PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS.md`. It defines REL-* topology with identity, cardinality, ownership, business rules, navigation, logical persistence expectations, audit/sensitivity/retention interaction, and future physical mapping guidance without SQL. Standing doctrine: relationships are governed business concepts, not implementation conveniences; no physical foreign key may invent a business relationship; no migration/ORM relationship may appear unless present in IS-302 (or amendment/ADR). (2) AUDIT-SLICE-005 verifies docs-only posture. Application implementation and migrationsAuthorized remain false. |
+| Reason | Complete logical persistence topology before constraints, read models, and migration governance. |
+| Alternatives | Let ORM invent relations; embed FK DDL now; skip relationship catalog. |
+| Consequences | Next primary IS is PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-302; AUDIT-SLICE-005; `reports/PEOPLE_IS_302_COMPLETION_REPORT.md` |
+| Revisit trigger | IS-303; ISSUE-CANONICAL-001 physical FK decision |

@@ -82,4 +82,9 @@
 | REQ-LTC-003 | No SQL/Prisma/migrations in IS-301 | IS-301 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
 | REQ-LTC-004 | READ_MODEL must not accept claim writes | IS-301 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
 
+| REQ-REL-001 | Persisted associations require REL-* cards | IS-302 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Relationship review | Docs | FULLY_MAPPED |
+| REQ-REL-002 | Physical FKs must not invent business relationships | IS-302 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Schema gate | Future PKG | FULLY_MAPPED |
+| REQ-REL-003 | Resolution must not own canonical person masters | IS-302 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-REL-004 | Queue projection must not write claims | IS-302 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

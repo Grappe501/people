@@ -3,10 +3,10 @@
 ## Primary
 
 ```text
-PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0
+PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0
 ```
 
-Docs only — logical relationships among LT-* tables. No SQL/Prisma/migrations.
+Docs only — uniqueness, checks, immutability, concurrency integrity. No SQL/Prisma/migrations.
 
 ## Independent lane
 
@@ -14,10 +14,16 @@ Docs only — logical relationships among LT-* tables. No SQL/Prisma/migrations.
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
+## Standing locks
+
+* Relationships = governed business concepts (IS-302)  
+* No physical FK may invent a business relationship  
+* Logical ≠ physical  
+
 ## Mode
 
 ```text
 DOCUMENTATION_AND_SPECIFICATION_ONLY
 ```
 
-Gate G-10: **CLOSED** · `migrationsAuthorized`: **false**
+Gate G-10: **CLOSED**

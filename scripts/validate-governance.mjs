@@ -201,6 +201,7 @@ if (active) {
     active.nextRecommendedBuild === "PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-STATE-MACHINE-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-ERROR-CATALOG-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-AUDIT-EVENT-CATALOG-1.0" ||
