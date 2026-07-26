@@ -1,38 +1,29 @@
 # Next Cursor Build
 
-## Primary
+## Locked posture
 
 ```text
-PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
+origin/master @ 23c28fd (or later if only posture-lock commits)
+Gate G-10: REMAIN CLOSED
+Implementation: NOT AUTHORIZED
 ```
 
-## Current slice status
+## Waiting on Steve
 
 ```text
-PEOPLE-G10-BLOCKER-REMEDIATION-PACKETS-1.0
-COMPLETE — packets prepared; decisions pending
+Steve ADR Decision Pass
+→ reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md
 ```
 
-## Gate G-10
+## Burt next slice (only after Steve decides)
 
-```text
-REMAIN CLOSED
-```
+1. Record Decision Log entries from signed packet blocks  
+2. Update Decision Register / ADR index / affected reports  
+3. Validate + next audit slice  
+4. Commit / push / remote verify  
 
-## Exact next action
+**Do not** reinterpret decisions, expand architecture, open G-10, or create MG-*.
 
-```text
-Steve reviews and dispositions blocking ADR packets
-per reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md
-```
+## Canonical posture doc
 
-## Burt posture
-
-Governance maintenance only. No migrations, schemas, ORM, APIs, or G-10 self-opening.
-
-## Key artifacts
-
-* `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`
-* `reports/PEOPLE_GATE_G10_BLOCKER_MASTER_REGISTER.md`
-* `reports/adr_decision_packets/`
-* `reports/PEOPLE_ISSUE_DBA_001_SHARED_DATABASE_AUDIT_PLAN.md`
+`docs/00_governance/PEOPLE_LOCKED_OPERATING_POSTURE.md`

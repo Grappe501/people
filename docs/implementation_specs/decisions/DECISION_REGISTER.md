@@ -31,6 +31,7 @@
 | D-078 | Audit/freeze primary; Gate G-10 readiness REMAIN CLOSED; issue triage; freeze still DENIED; AUDIT-SLICE-009 |
 | Post–D-078 | Canonical G-10 remediation plan locked; Burt governance-maintenance posture; G-10 meaning doctrine; reassessment = D-079+ |
 | Packets | PEOPLE-G10-BLOCKER-REMEDIATION-PACKETS-1.0 prepared; AUDIT-SLICE-010; decisions pending; G-10 still REMAIN CLOSED |
+| Posture | Locked operating posture: Steve ADR Decision Pass next; Burt records after; Ernie evaluates; G-10 closed |
 
 ## Phase 0 approved decisions
 

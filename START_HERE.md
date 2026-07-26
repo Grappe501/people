@@ -52,6 +52,7 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_010_FINDINGS.md` |
 | Gate G-10 readiness | `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md` |
 | G-10 remediation plan | `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md` |
+| Locked operating posture | `docs/00_governance/PEOPLE_LOCKED_OPERATING_POSTURE.md` |
 | Steve G-10 decision dashboard | `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md` |
 | G-10 blocker master register | `reports/PEOPLE_GATE_G10_BLOCKER_MASTER_REGISTER.md` |
 | ADR decision packet index | `reports/PEOPLE_BLOCKING_ADR_DECISION_PACKET_INDEX.md` |

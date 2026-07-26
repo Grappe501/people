@@ -1078,3 +1078,11 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Date | 2026-07-26 |
 | Status | recorded |
 | Note | Governance remediation slice prepared decision-ready ADR packets (ADR-001…020), blocker master register, ISSUE-DBA-001 audit plan (plan only), critical issue disposition matrix, design-freeze delta, remediation execution queue, and Steve decision dashboard. AUDIT-SLICE-010: PASS WITH FINDINGS. No ADR accepted. No issue closed solely by packet creation. Gate G-10 remains REMAIN CLOSED. Implementation / physical schema / migrations remain NOT AUTHORIZED. Design freeze remains DENIED. This is not a G-10 reassessment (D-079+ reserved for changed evidence). Next authority action: Steve ADR decision pass per `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`. |
+
+### Standing Confirmation — Locked Operating Posture (post packet slice)
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | Operating posture locked after PEOPLE-G10-BLOCKER-REMEDIATION-PACKETS-1.0: architecture COMPLETE; governance ACTIVE; Gate G-10 REMAIN CLOSED; implementation/physical schema/migrations NOT AUTHORIZED. Steve owns ADR Decision Pass via `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`. Burt may update governance artifacts only after Steve decisions are recorded; must not reinterpret decisions or expand architecture. Ernie evaluates impact after repo reflects decisions and advises on D-079+ G-10 reassessment readiness. Canonical text: `docs/00_governance/PEOPLE_LOCKED_OPERATING_POSTURE.md`. |
