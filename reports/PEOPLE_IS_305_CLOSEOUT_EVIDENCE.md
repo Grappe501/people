@@ -6,7 +6,9 @@
 | Item | Value |
 | --- | --- |
 | Spec commit | `c2e00aa` |
-| Remote verify | pending this evidence commit |
+| Evidence commit | `572a9ad` (file updated after remote verify) |
+| Remote `origin/master` | `572a9ad549ca19456d2b65800aa732b6a1da17ae` |
+| Local HEAD | matches remote |
 
 ## Validation
 
@@ -22,6 +24,7 @@
 | designFreezeStatus | blocked |
 | Gate G-10 | CLOSED |
 | Netlify | N/A |
+| Push / remote verify | PASS |
 
 ## Phase 3
 
