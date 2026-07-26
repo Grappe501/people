@@ -6,48 +6,33 @@
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-## Gate G-10 (D-078) — unchanged standards
+## Current slice status
 
 ```text
-Verdict: REMAIN CLOSED
-Evidence: reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md
-Canonical plan: docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md
-Future reassessment: D-079 or later (changed evidence only)
+PEOPLE-G10-BLOCKER-REMEDIATION-PACKETS-1.0
+COMPLETE — packets prepared; decisions pending
 ```
 
-## Canonical remediation (do not skip/reorder)
+## Gate G-10
 
 ```text
-1. Blocking ADRs resolve/accept (Steve)
-2. ISSUE-DBA-001
-3. Remaining Critical Issues
-4. Design Freeze APPROVED
-5. Fresh Gate G-10 Assessment
-6. Steve Implementation Authorization YES/NO
-7. If YES → MG-001 (under IS-305)
+REMAIN CLOSED
 ```
 
-## Burt posture until G-10 + Implementation Authorization
+## Exact next action
 
 ```text
-ALLOWED: audit, remediation, traceability, consistency,
-         documentation quality, evidence, governance reporting
-
-FORBIDDEN: migrations, schemas, ORM models, APIs,
-           or “getting ahead” implementation packages
+Steve reviews and dispositions blocking ADR packets
+per reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md
 ```
 
-## Doctrines
+## Burt posture
 
-```text
-Technical audit PASS ≠ Implementation Authorization
-G-10 FAIL ≠ architecture failed (prerequisites unsatisfied)
-```
+Governance maintenance only. No migrations, schemas, ORM, APIs, or G-10 self-opening.
 
-## Mode
+## Key artifacts
 
-```text
-DOCUMENTATION_AND_SPECIFICATION_ONLY
-```
-
-Gate G-10: **REMAIN CLOSED**
+* `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`
+* `reports/PEOPLE_GATE_G10_BLOCKER_MASTER_REGISTER.md`
+* `reports/adr_decision_packets/`
+* `reports/PEOPLE_ISSUE_DBA_001_SHARED_DATABASE_AUDIT_PLAN.md`

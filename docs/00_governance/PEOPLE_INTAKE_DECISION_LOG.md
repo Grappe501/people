@@ -1070,3 +1070,11 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Reason | Preserve credibility of D-078 criteria-based assessment and prevent premature design/implementation expansion. |
 | Related files | PEOPLE_GATE_G10_REMEDIATION_PLAN.md; Cursor protocol §9.0.9–§9.0.10; audit lane charter v1.1 |
 | Revisit trigger | D-079+ G-10 reassessment when remediation evidence changes |
+
+### Standing Note — PEOPLE-G10-BLOCKER-REMEDIATION-PACKETS-1.0
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | recorded |
+| Note | Governance remediation slice prepared decision-ready ADR packets (ADR-001…020), blocker master register, ISSUE-DBA-001 audit plan (plan only), critical issue disposition matrix, design-freeze delta, remediation execution queue, and Steve decision dashboard. AUDIT-SLICE-010: PASS WITH FINDINGS. No ADR accepted. No issue closed solely by packet creation. Gate G-10 remains REMAIN CLOSED. Implementation / physical schema / migrations remain NOT AUTHORIZED. Design freeze remains DENIED. This is not a G-10 reassessment (D-079+ reserved for changed evidence). Next authority action: Steve ADR decision pass per `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`. |

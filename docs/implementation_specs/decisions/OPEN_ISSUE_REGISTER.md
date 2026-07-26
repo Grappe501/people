@@ -31,6 +31,9 @@
 
 Related ADRs: ADR-001…ADR-020 all **OPEN / PROPOSED** (`docs/adr/_index.md`).  
 G-10 readiness: `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md` — **REMAIN CLOSED**.  
-Latest findings: `reports/PEOPLE_AUDIT_SLICE_009_FINDINGS.md`.
+Latest findings: `reports/PEOPLE_AUDIT_SLICE_010_FINDINGS.md`.  
+Steve decision surface: `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`.  
+G-10 blocker register: `reports/PEOPLE_GATE_G10_BLOCKER_MASTER_REGISTER.md`.
 
-Phase 3 documentation complete (IS-300…305). Gate G-10 remains CLOSED. Implementation Authorization is a separate Steve decision.
+Phase 3 documentation complete (IS-300…305). Gate G-10 remains CLOSED. Implementation Authorization is a separate Steve decision.  
+**G-10 blocker remediation packets prepared — no issues closed by packet creation alone.**

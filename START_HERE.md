@@ -49,20 +49,24 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | Commit/Push/Deploy Protocol | `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` |
 | Cursor Execution Protocol | `docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md` |
 | Audit / Freeze lane | `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md` |
-| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_009_FINDINGS.md` |
+| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_010_FINDINGS.md` |
 | Gate G-10 readiness | `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md` |
 | G-10 remediation plan | `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md` |
+| Steve G-10 decision dashboard | `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md` |
+| G-10 blocker master register | `reports/PEOPLE_GATE_G10_BLOCKER_MASTER_REGISTER.md` |
+| ADR decision packet index | `reports/PEOPLE_BLOCKING_ADR_DECISION_PACKET_INDEX.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
 
 ## Current next-ready work
 
-1. `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0` (primary — ADR/issue/freeze remediation)  
-2. Gate G-10 readiness: **REMAIN CLOSED** — `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md` (D-078)  
-3. Implementation Authorization — **not** in scope until Steve decides after G-10
+1. **Steve ADR decision pass** — `reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md`  
+2. `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0` continues  
+3. Gate G-10: **REMAIN CLOSED** — reassessment D-079+ only after material evidence changes  
 
-Phase 3: IS-300…305 approved (documentation complete). Design freeze **DENIED**. **Gate G-10 REMAIN CLOSED. Implementation not authorized.**
+Phase 3 docs complete. Design freeze **DENIED**. **Implementation not authorized.**  
+G-10 blocker remediation packets prepared (decisions pending).
 
 ## Allowed now
 

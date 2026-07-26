@@ -38,3 +38,15 @@ Full ADR markdown acceptances are created when the Decision Log accepts each ADR
 ```text
 APPLICATION IMPLEMENTATION: NOT AUTHORIZED
 ```
+
+## Decision packets (preparation only)
+
+Steve decision packets for ADR-001…020 (none accepted):
+
+```text
+reports/adr_decision_packets/ADR-NNN-DECISION-PACKET.md
+reports/PEOPLE_BLOCKING_ADR_DECISION_PACKET_INDEX.md
+reports/PEOPLE_STEVE_G10_DECISION_DASHBOARD.md
+```
+
+Status of all ADRs remains **OPEN / PROPOSED** until Decision Log acceptance.
