@@ -1059,3 +1059,14 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Gate G-10 remains closed. Primary lane remains audit/freeze. Implementation Authorization stays a separate future Steve decision. |
 | Related files | `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md`; `reports/PEOPLE_AUDIT_SLICE_009_FINDINGS.md`; design freeze report; open-issue register |
 | Revisit trigger | Design freeze APPROVED; blocking ADR acceptances; Critical issue closures; reassessment request |
+
+### Standing Confirmation — Post D-078 (G-10 remediation posture)
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) D-078 Gate G-10 verdict **REMAIN CLOSED** is affirmed; OPEN WITH CONDITIONS remains correctly rejected on current evidence. (2) Canonical G-10 remediation plan is locked at `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md` — sequence ADR → ISSUE-DBA-001 → Critical issues → Design Freeze → fresh G-10 assessment → Steve Implementation Authorization YES/NO → first MG-* if YES. No skip/reorder without Decision Log. (3) Burt pre–G-10 posture locked: governance maintenance only (audit/remediation/traceability/consistency/docs quality/evidence/reporting); forbidden to draft migrations, executable schemas, ORM models, APIs, or get-ahead implementation packages. (4) G-10 meaning doctrine locked: technical audit pass does not authorize implementation; Implementation Authorization is a separate Steve decision; failing G-10 does not mean the architecture failed — it means governance prerequisites remain unsatisfied. (5) Criteria remain stable; future Gate G-10 reassessment is Decision Log **D-079 or later** based on changed evidence, not lowered standards. (6) Primary focus remains PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0. Application/migrations remain unauthorized. |
+| Reason | Preserve credibility of D-078 criteria-based assessment and prevent premature design/implementation expansion. |
+| Related files | PEOPLE_GATE_G10_REMEDIATION_PLAN.md; Cursor protocol §9.0.9–§9.0.10; audit lane charter v1.1 |
+| Revisit trigger | D-079+ G-10 reassessment when remediation evidence changes |

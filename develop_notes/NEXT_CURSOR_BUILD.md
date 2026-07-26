@@ -6,29 +6,42 @@
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-## Gate G-10 readiness (D-078)
+## Gate G-10 (D-078) — unchanged standards
 
 ```text
 Verdict: REMAIN CLOSED
 Evidence: reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md
+Canonical plan: docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md
+Future reassessment: D-079 or later (changed evidence only)
 ```
 
-This does **not** authorize implementation. Implementation Authorization is a separate Steve decision after G-10 (if opened).
-
-## Ordered remediation (docs/governance only)
-
-1. Steve ADR acceptance for blocking ADRs (001–005, 020 minimum)  
-2. ISSUE-DBA-001 shared-DB compatibility audit (read-only)  
-3. Critical issue disposition per open-issue triage  
-4. Re-issue Design Freeze as APPROVED only when exit criteria pass  
-5. Re-run Gate G-10 readiness assessment  
-
-## Explicit non-goals
+## Canonical remediation (do not skip/reorder)
 
 ```text
-Do NOT open Gate G-10 by implication.
-Do NOT create migrations, SQL, Prisma, or application code.
-Do NOT treat Phase 3 complete or this audit as Implementation Authorization YES.
+1. Blocking ADRs resolve/accept (Steve)
+2. ISSUE-DBA-001
+3. Remaining Critical Issues
+4. Design Freeze APPROVED
+5. Fresh Gate G-10 Assessment
+6. Steve Implementation Authorization YES/NO
+7. If YES → MG-001 (under IS-305)
+```
+
+## Burt posture until G-10 + Implementation Authorization
+
+```text
+ALLOWED: audit, remediation, traceability, consistency,
+         documentation quality, evidence, governance reporting
+
+FORBIDDEN: migrations, schemas, ORM models, APIs,
+           or “getting ahead” implementation packages
+```
+
+## Doctrines
+
+```text
+Technical audit PASS ≠ Implementation Authorization
+G-10 FAIL ≠ architecture failed (prerequisites unsatisfied)
 ```
 
 ## Mode
@@ -37,5 +50,4 @@ Do NOT treat Phase 3 complete or this audit as Implementation Authorization YES.
 DOCUMENTATION_AND_SPECIFICATION_ONLY
 ```
 
-Gate G-10: **REMAIN CLOSED**  
-`migrationsAuthorized`: **false**
+Gate G-10: **REMAIN CLOSED**

@@ -1,17 +1,17 @@
 # PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE
 
 **Document ID:** `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-**Version:** 1.0  
-**Status:** ACTIVE — INDEPENDENT GOVERNANCE LANE  
-**Decision:** D-069 (lane charter accepted alongside IS-200)  
+**Version:** 1.1  
+**Status:** ACTIVE — **PRIMARY** GOVERNANCE LANE (post Phase 3 docs)  
+**Decision:** D-069 (charter); D-078 (G-10 REMAIN CLOSED); post–D-078 remediation plan locked  
 **Project root:** `H:\people`  
 **Implementation authorization:** `NOT AUTHORIZED` (this lane is documentation quality / freeze readiness only)
 
 ```text
-LANE TYPE: INDEPENDENT GOVERNANCE
-NOT PART OF THE PRIMARY IS SEQUENCE
-DOES NOT BLOCK PEOPLE-IS-200 / IS-201… PROGRESS
+LANE TYPE: INDEPENDENT GOVERNANCE — NOW PRIMARY FOCUS
+PHASE 3 DOCUMENTATION COMPLETE — DO NOT EXPAND DESIGN TO “GET AHEAD”
 REQUIRED BEFORE DESIGN FREEZE APPROVAL / GATE G-10 OPENING
+CRITERIA STABLE — EVIDENCE CHANGES — REASSESSMENT = D-079 OR LATER
 ```
 
 ---
@@ -105,7 +105,23 @@ Completing remediation findings is **necessary but not sufficient** for coding. 
 
 `contracts/governance/active-build.json` field `parallelRequired` continues to name this lane until freeze is signed.
 
-## 10. First recommended remediation focus (after IS-200)
+## 10. Canonical G-10 remediation (post D-078)
+
+Authority: `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md`
+
+```text
+1. Blocking ADRs resolve/accept
+2. ISSUE-DBA-001
+3. Remaining Critical Issues
+4. Design Freeze APPROVED
+5. Fresh Gate G-10 Assessment (D-079 or later)
+6. Steve Implementation Authorization YES/NO
+7. If YES → first MG-*
+```
+
+No skip/reorder without Decision Log. Do not draft migrations/schemas/ORM/APIs while G-10 is closed.
+
+### 10.1 Historical first focus (after IS-200) — retained
 
 1. Reconcile conceptual workflow status labels vs Catalog 01 (terminology drift).  
 2. Confirm ISSUE-MOD-001 / ISSUE-CANONICAL-001 remain visible and blocking for impl packages.  
@@ -118,3 +134,4 @@ Completing remediation findings is **necessary but not sufficient** for coding. 
 | Version | Date | Change | Approval |
 | --- | --- | --- | --- |
 | 1.0 | 2026-07-26 | Independent governance lane chartered | D-069 |
+| 1.1 | 2026-07-26 | Primary focus post Phase 3; canonical G-10 remediation; no design expansion | Post–D-078 |

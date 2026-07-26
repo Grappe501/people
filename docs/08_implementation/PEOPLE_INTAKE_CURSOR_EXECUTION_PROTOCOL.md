@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 2.1  
+**Version:** 2.2  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -169,6 +169,50 @@ Executable schema is the final translation layer, never the source of architectu
 ```
 
 No migration artifact may be created unless `migrationsAuthorized` is true, Gate G-10 has passed, and a complete `MG-*` card exists. Completing IS-305 / Phase 3 documentation does **not** authorize migrations or open Gate G-10.
+
+### 9.0.9 Pre–Gate G-10 Burt posture (mandatory)
+
+Authority: Post–D-078 standing confirmation; `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md`.
+
+Until Gate G-10 opens **and** Steve grants Implementation Authorization, Burt’s work is **governance maintenance**, not engineering expansion:
+
+```text
+ALLOWED:
+  Audit, remediation, traceability, consistency,
+  documentation quality, evidence generation, governance reporting
+
+FORBIDDEN:
+  Drafting migrations, executable schemas, ORM models, APIs,
+  or implementation packages beyond the approved governance sequence
+  ("getting ahead")
+```
+
+Do not expand Phase 3+ design to “prepare for coding.” Reduce uncertainty; keep criteria stable.
+
+### 9.0.10 Gate G-10 meaning doctrine (mandatory)
+
+Authority: Post–D-078 standing confirmation; Gate G-10 readiness assessment (D-078).
+
+```text
+Passing every technical audit
+does not
+authorize implementation.
+
+Implementation Authorization
+is a separate governance decision.
+
+Failing G-10
+does not mean
+the architecture failed.
+
+It means
+the governance prerequisites
+remain unsatisfied.
+```
+
+Future G-10 reassessment (Decision Log **D-079 or later**) must use the **same** three-outcome rubric and standards; only **evidence** may change — never lower the threshold to force OPEN.
+
+Canonical remediation sequence: `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md` — no skip/reorder without Decision Log.
 
 ---
 

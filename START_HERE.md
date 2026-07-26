@@ -51,6 +51,7 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | Audit / Freeze lane | `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md` |
 | Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_009_FINDINGS.md` |
 | Gate G-10 readiness | `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md` |
+| G-10 remediation plan | `docs/00_governance/PEOPLE_GATE_G10_REMEDIATION_PLAN.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
