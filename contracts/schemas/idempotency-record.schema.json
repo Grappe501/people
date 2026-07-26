@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "required": [
+    "key",
+    "operation",
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "result_reference": {
+      "type": "string"
+    }
+  },
+  "title": "IdempotencyRecord"
+}

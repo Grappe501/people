@@ -1,0 +1,19 @@
+{
+  "build": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "services": [
+    "AuthenticationService",
+    "AuthorizationService",
+    "BatchService",
+    "UploadService",
+    "PageQueueService",
+    "DraftService",
+    "TranscriptionService",
+    "MatchingService",
+    "MatchReviewService",
+    "PromotionService",
+    "ImageAccessService",
+    "AuditService",
+    "ErrorAndRecoveryService"
+  ],
+  "title": "ServiceRegistry"
+}

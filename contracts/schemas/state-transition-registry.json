@@ -1,0 +1,47 @@
+{
+  "transitions": [
+    {
+      "to": "CLAIMED_FOR_ENTRY",
+      "action": "CLAIM_PAGE",
+      "from": "READY_FOR_ENTRY",
+      "roles": [
+        "DATA_ENTRY",
+        "ADMIN",
+        "OWNER"
+      ]
+    },
+    {
+      "to": "READY_FOR_MATCHING",
+      "action": "SUBMIT_PAGE",
+      "from": "ENTRY_IN_PROGRESS",
+      "roles": [
+        "DATA_ENTRY",
+        "ADMIN",
+        "OWNER"
+      ]
+    },
+    {
+      "to": "READY_FOR_MATCHING",
+      "action": "RESUBMIT_CORRECTION",
+      "from": "NEEDS_ENTRY_CORRECTION",
+      "roles": [
+        "DATA_ENTRY",
+        "ADMIN",
+        "OWNER"
+      ]
+    },
+    {
+      "to": "PROMOTION_PENDING_OR_COMPLETED",
+      "action": "RESOLVE_MATCH",
+      "from": "NEEDS_MATCH_REVIEW",
+      "roles": [
+        "REVIEWER",
+        "ADMIN",
+        "OWNER"
+      ]
+    }
+  ],
+  "build": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "note": "Invalid transitions must be rejected. Conceptual names; engineering enums finalized later.",
+  "title": "StateTransitionRegistry"
+}

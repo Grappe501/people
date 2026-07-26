@@ -3,35 +3,13 @@
 ## Build ID
 
 ```text
-PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0
+PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0
 ```
 
 ## Type
 
-Design-only. **No application code. No schema. No migrations. No production integration.**
-
----
+Final pre-implementation design package. **Still no application code** until design freeze + Gate G-10.
 
 ## Will Design
 
-- Authentication and user approval
-- Role enforcement and database permissions
-- Storage authorization
-- Threat model and privacy controls
-- Session behavior
-- API contracts and service boundaries
-- Error contracts
-- Idempotency and concurrency
-- Background processing
-- Configuration and secret management
-- Logging
-- Security testing
-- RedDirt integration contract
-
----
-
-## Preconditions
-
-1. `PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0` complete
-2. `applicationCodeAuthorized` remains `false`
-3. `migrationsAuthorized` remains `false`
+Testing · accessibility verification · performance/reliability · monitoring/alerting · incident response · backup/restore · deployment · GitHub/Netlify · environments · migration/storage runbooks · operator manuals · launch checklist · rollback · design audit · design freeze · implementation phases · Cursor execution sequence.

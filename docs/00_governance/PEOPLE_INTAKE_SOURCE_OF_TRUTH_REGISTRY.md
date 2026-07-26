@@ -46,18 +46,17 @@ Lower layers may not silently redefine higher layers.
 
 ## Planned Canonical Files (Later Volumes)
 
-Workflow, UX, and data/storage volumes through DOC-029 / DOC-032 / DOC-033 are now `draft_complete`.
+Volumes through security/engineering (DOC-030–DOC-043 and related) are `draft_complete`. Remaining focus:
 
 | Area | Planned canonical file |
 | --- | --- |
-| Auth architecture | `docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md` |
-| Authorization matrix | `docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md` |
-| Threat model | `docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md` |
-| API contracts | `docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md` |
-| Service contracts | `docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md` |
 | Test master plan | `docs/07_quality/PEOPLE_INTAKE_TEST_MASTER_PLAN.md` |
+| Test case catalog | `docs/07_quality/PEOPLE_INTAKE_TEST_CASE_CATALOG.md` |
 | Deployment architecture | `docs/07_quality/PEOPLE_INTAKE_DEPLOYMENT_ARCHITECTURE.md` |
+| Netlify / DB / storage runbooks | `docs/07_quality/PEOPLE_INTAKE_*_RUNBOOK.md` |
+| Operator manual / launch checklist | `docs/07_quality/` |
 | Design freeze report | `docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md` |
+| Final implementation handoff | `docs/08_implementation/PEOPLE_INTAKE_FINAL_IMPLEMENTATION_HANDOFF.md` |
 
 Full planned inventory lives in:
 

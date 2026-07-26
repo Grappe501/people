@@ -1,7 +1,7 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0",
+  "buildId": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
   "phase": "0",
   "phaseName": "Complete Design",
   "status": "active",
@@ -36,8 +36,8 @@
     "No production secrets",
     "No production deployment",
     "No edits outside H:\\people",
-    "No assumed live schema without audit"
+    "No live auth/storage configuration"
   ],
-  "previousBuild": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
-  "nextRecommendedBuild": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0"
+  "previousBuild": "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0",
+  "nextRecommendedBuild": "PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0"
 }

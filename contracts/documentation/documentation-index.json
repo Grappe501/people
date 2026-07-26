@@ -328,22 +328,22 @@
       "title": "PEOPLE_INTAKE_AUTH_ARCHITECTURE",
       "path": "docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-031",
       "title": "PEOPLE_INTAKE_AUTHORIZATION_MATRIX",
       "path": "docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-032",
@@ -372,110 +372,110 @@
       "title": "PEOPLE_INTAKE_THREAT_MODEL",
       "path": "docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-035",
       "title": "PEOPLE_INTAKE_LOGGING_AND_AUDIT",
       "path": "docs/05_security/PEOPLE_INTAKE_LOGGING_AND_AUDIT.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-036",
       "title": "PEOPLE_INTAKE_SECRET_MANAGEMENT",
       "path": "docs/05_security/PEOPLE_INTAKE_SECRET_MANAGEMENT.md",
       "volume": "5",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-037",
       "title": "PEOPLE_INTAKE_APPLICATION_ARCHITECTURE",
       "path": "docs/06_engineering/PEOPLE_INTAKE_APPLICATION_ARCHITECTURE.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-038",
       "title": "PEOPLE_INTAKE_API_CONTRACTS",
       "path": "docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-039",
       "title": "PEOPLE_INTAKE_SERVICE_CONTRACTS",
       "path": "docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-040",
       "title": "PEOPLE_INTAKE_ERROR_CONTRACT",
       "path": "docs/06_engineering/PEOPLE_INTAKE_ERROR_CONTRACT.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-041",
       "title": "PEOPLE_INTAKE_IDEMPOTENCY_AND_CONCURRENCY",
       "path": "docs/06_engineering/PEOPLE_INTAKE_IDEMPOTENCY_AND_CONCURRENCY.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-042",
       "title": "PEOPLE_INTAKE_VALIDATION_RULES",
       "path": "docs/06_engineering/PEOPLE_INTAKE_VALIDATION_RULES.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-043",
       "title": "PEOPLE_INTAKE_CONFIGURATION_CONTRACT",
       "path": "docs/06_engineering/PEOPLE_INTAKE_CONFIGURATION_CONTRACT.md",
       "volume": "6",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-044",

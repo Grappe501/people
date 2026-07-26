@@ -1,0 +1,77 @@
+{
+  "basePath": "/api/v1",
+  "note": "Full inventory in PEOPLE_INTAKE_API_CONTRACTS.md. No endpoint without completed contract.",
+  "build": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "endpoints": [
+    {
+      "id": "getSession",
+      "path": "/api/v1/session",
+      "method": "GET"
+    },
+    {
+      "id": "getMe",
+      "path": "/api/v1/me",
+      "method": "GET"
+    },
+    {
+      "id": "signOut",
+      "path": "/api/v1/sign-out",
+      "method": "POST"
+    },
+    {
+      "id": "listUsers",
+      "path": "/api/v1/users",
+      "method": "GET"
+    },
+    {
+      "id": "inviteUser",
+      "path": "/api/v1/users/invite",
+      "method": "POST"
+    },
+    {
+      "roles": [
+        "DATA_ENTRY",
+        "ADMIN",
+        "OWNER"
+      ],
+      "id": "claimNextEntryPage",
+      "path": "/api/v1/queues/entry/claim-next",
+      "idempotent": true,
+      "method": "POST"
+    },
+    {
+      "roles": [
+        "DATA_ENTRY",
+        "ADMIN",
+        "OWNER"
+      ],
+      "id": "submitIntakePage",
+      "path": "/api/v1/pages/{pageId}/submit",
+      "idempotent": true,
+      "method": "POST"
+    },
+    {
+      "roles": [
+        "REVIEWER",
+        "ADMIN",
+        "OWNER"
+      ],
+      "id": "resolveEntryMatch",
+      "path": "/api/v1/entries/{entryId}/resolve-match",
+      "idempotent": true,
+      "method": "POST"
+    },
+    {
+      "id": "pageImageAccess",
+      "path": "/api/v1/pages/{pageId}/image-access",
+      "method": "GET"
+    },
+    {
+      "idempotent": true,
+      "id": "retryPromotion",
+      "path": "/api/v1/promotion/{promotionId}/retry",
+      "method": "POST"
+    }
+  ],
+  "title": "ApiEndpointRegistry"
+}

@@ -1,6 +1,6 @@
 # People Intake — Governance Validation Report
 
-Generated: 2026-07-26T03:20:50.563Z
+Generated: 2026-07-26T03:24:54.496Z
 
 ## Results
 
@@ -53,6 +53,20 @@ Generated: 2026-07-26T03:20:50.563Z
 - PASS: Document exists: docs/04_data/PEOPLE_INTAKE_MIGRATION_AND_ROLLBACK.md
 - PASS: Document exists: docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md
 - PASS: Document exists: docs/05_security/PEOPLE_INTAKE_PRIVACY_AND_RETENTION.md
+- PASS: Document exists: docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md
+- PASS: Document exists: docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md
+- PASS: Document exists: docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md
+- PASS: Document exists: docs/05_security/PEOPLE_INTAKE_LOGGING_AND_AUDIT.md
+- PASS: Document exists: docs/05_security/PEOPLE_INTAKE_SECRET_MANAGEMENT.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_APPLICATION_ARCHITECTURE.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_ERROR_CONTRACT.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_IDEMPOTENCY_AND_CONCURRENCY.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_VALIDATION_RULES.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_CONFIGURATION_CONTRACT.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_CANONICAL_PERSON_INTEGRATION_CONTRACT.md
+- PASS: Document exists: docs/06_engineering/PEOPLE_INTAKE_BACKGROUND_PROCESSING_CONTRACT.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
@@ -74,7 +88,7 @@ Generated: 2026-07-26T03:20:50.563Z
 - PASS: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md contains heading/marker: Gate G-10
 - PASS: active-build prohibits application code
 - PASS: active-build prohibits database changes
-- PASS: nextRecommendedBuild is PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0
+- PASS: nextRecommendedBuild is PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0
 - PASS: active-build projectRoot is H:\people
 - PASS: build-phase-registry has 10 phases
 - PASS: Schema parses: contracts/schemas/governance-document.schema.json
@@ -110,12 +124,24 @@ Generated: 2026-07-26T03:20:50.563Z
 - PASS: Indexed complete doc exists: docs/04_data/PEOPLE_INTAKE_MATCHING_ENGINE_SPEC.md
 - PASS: Indexed complete doc exists: docs/04_data/PEOPLE_INTAKE_DATA_PROVENANCE.md
 - PASS: Indexed complete doc exists: docs/04_data/PEOPLE_INTAKE_MIGRATION_AND_ROLLBACK.md
+- PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md
+- PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md
 - PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md
 - PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_PRIVACY_AND_RETENTION.md
+- PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md
+- PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_LOGGING_AND_AUDIT.md
+- PASS: Indexed complete doc exists: docs/05_security/PEOPLE_INTAKE_SECRET_MANAGEMENT.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_APPLICATION_ARCHITECTURE.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_ERROR_CONTRACT.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_IDEMPOTENCY_AND_CONCURRENCY.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_VALIDATION_RULES.md
+- PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_CONFIGURATION_CONTRACT.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
-- PASS: Seeded decisions found: 33
+- PASS: Seeded decisions found: 37
 - PASS: Decision IDs are unique
 - PASS: Prohibited path absent: src
 - PASS: Prohibited path absent: app

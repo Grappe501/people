@@ -396,20 +396,74 @@ Statuses: `accepted` | `provisional` | `superseded` | `open`
 
 ## Open Non-Blocking Questions
 
-Deferred primarily to security/engineering design and pre-migration audit:
+Deferred to quality/deployment/operations freeze and environment audit:
 
-1. Exact existing canonical people tables (requires shared DB inspection).
-2. Exact database schema names and Postgres roles.
-3. Exact storage provider and bucket structure.
-4. Exact automatic-link rules and new-person auto-creation rules.
-5. Exact match-score formula.
-6. Exact retention periods.
-7. Exact encryption configuration.
-8. Exact API routes and promotion-service implementation.
-9. Exact Prisma model structure and migration sequence.
-10. Exact indexes after query-plan review.
-11. Exact person-attribute primary-value and consent supersession rules.
-12. Exact canonical-person merge workflow.
+1. Exact Supabase project configuration and OAuth redirect URLs.
+2. Exact session timeout, claim timeout, signed URL lifetime.
+3. Exact upload-size limit and rate-limit numbers.
+4. Exact storage provider and background job mechanism.
+5. Exact API framework / queue worker hosting.
+6. Exact runtime database role names.
+7. Exact canonical-person service transport.
+8. Exact audit and technical log retention durations.
+9. Exact Content Security Policy and offline-draft technology.
+10. Exact production environment-variable names, monitoring, and alert routing.
+
+---
+
+## Decisions Locked in PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0
+
+### D-034
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Auth required (approved users only, no public signup, individual accounts); authorization is server-side deny-by-default with role + record + state checks. |
+| Reason | Browser is untrusted; prevent escalation and over-access. |
+| Alternatives | Client role trusts; open signup. |
+| Consequences | Approved-user registry; server session verification. |
+| Related files | Auth architecture; authorization matrix |
+| Revisit trigger | Provider compatibility audit |
+
+### D-035
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Private images via temporary authorized access; sensitive writes only through server services; dedicated least-privilege DB credential separate from migration credential. |
+| Reason | Prevent leakage and over-privileged runtime. |
+| Alternatives | Public URLs; shared RedDirt admin DB role. |
+| Consequences | Image access service; credential separation. |
+| Related files | Authorization; secret management |
+| Revisit trigger | None expected |
+
+### D-036
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Versioned APIs with written contracts before implementation; explicit state transitions; claim/match concurrency protection; idempotency for duplicate-sensitive actions. |
+| Reason | Safe multi-user operations and no silent duplicates. |
+| Alternatives | Ad-hoc routes; last-write-wins. |
+| Consequences | `/api/v1` inventory; registries for errors/transitions. |
+| Related files | API contracts; idempotency and concurrency |
+| Revisit trigger | Framework choice at freeze |
+
+### D-037
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Canonical changes via controlled contract; no RedDirt imports or operational table writes; audit separate from logs; logs contain no raw PII/secrets; upload validation + quarantine; high-risk actions require audit success; durable idempotent jobs; promotion failure preserves resolution; no V1 unrestricted export; no silent production fallbacks. |
+| Reason | Integrity, privacy, and cross-app isolation. |
+| Alternatives | Direct canonical table writes; PII in logs; mock fallbacks in prod. |
+| Consequences | Integration + background + error contracts; security tests. |
+| Related files | Canonical integration; logging; configuration; threat model |
+| Revisit trigger | Pre-migration audit findings |
 
 ---
 

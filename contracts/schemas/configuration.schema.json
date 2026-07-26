@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "type": "object",
+  "title": "ConfigurationContract",
+  "note": "Exact names/values deferred. Production must not silent-fallback to development.",
+  "properties": {
+    "canonicalContractVersion": {
+      "type": "string"
+    },
+    "matchingRuleVersion": {
+      "type": "string"
+    },
+    "environmentName": {
+      "type": "string",
+      "enum": [
+        "local",
+        "development",
+        "preview",
+        "production"
+      ]
+    },
+    "applicationUrl": {
+      "type": "string"
+    },
+    "claimTimeoutMinutes": {
+      "type": "number"
+    },
+    "signedUrlLifetimeSeconds": {
+      "type": "number"
+    },
+    "featureFlags": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "controls": [
+    "Auth required except sign-in handling",
+    "No public signup",
+    "Approved users only",
+    "Individual accounts",
+    "Server-side deny-by-default authz",
+    "Record-level checks",
+    "Private images + short-lived access",
+    "Browser untrusted",
+    "Dedicated least-privilege DB credential",
+    "Separate migration credential",
+    "Controlled canonical contract",
+    "No RedDirt imports/operational writes",
+    "Versioned APIs with written contracts",
+    "Explicit state transitions",
+    "Claims/match concurrency protection",
+    "Idempotency for duplicate-sensitive actions",
+    "Audit separate from technical logs",
+    "No PII/secrets in logs",
+    "Upload content validation + quarantine",
+    "High-risk actions require audit success",
+    "Durable idempotent background jobs",
+    "Promotion failure preserves resolution",
+    "No unrestricted V1 bulk export",
+    "No silent production fallbacks"
+  ],
+  "build": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "title": "SecurityControlChecklist"
+}

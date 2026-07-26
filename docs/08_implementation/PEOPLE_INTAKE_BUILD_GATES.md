@@ -95,7 +95,7 @@ Requires:
 
 ## Gate G-6: Security and Engineering Design
 
-Future gate requiring:
+Requires:
 
 - Authentication
 - Authorization
@@ -107,6 +107,8 @@ Future gate requiring:
 - Idempotency
 - Secret management
 - Logging and audit
+
+**Status after PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0:** draft package complete (not frozen)
 
 ---
 

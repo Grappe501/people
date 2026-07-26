@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "required": [
+    "id",
+    "job_type",
+    "status"
+  ],
+  "properties": {
+    "attempt_count": {
+      "type": "integer"
+    },
+    "id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "RUNNING",
+        "RETRY_WAIT",
+        "SUCCEEDED",
+        "FAILED",
+        "CANCELLED"
+      ]
+    },
+    "job_type": {
+      "type": "string"
+    },
+    "max_attempts": {
+      "type": "integer"
+    }
+  },
+  "title": "BackgroundJob"
+}

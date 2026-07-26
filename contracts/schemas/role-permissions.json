@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "roles": [
+    "UPLOADER",
+    "DATA_ENTRY",
+    "REVIEWER",
+    "ADMIN",
+    "OWNER"
+  ],
+  "build": "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0",
+  "capabilities": {
+    "UPLOADER": [
+      "batch.create",
+      "batch.edit_own_draft",
+      "page.upload_own",
+      "image.view_own",
+      "image.replace_own_unresolved"
+    ],
+    "DATA_ENTRY": [
+      "page.claim",
+      "page.transcribe_claimed",
+      "page.submit_claimed",
+      "page.release_own_claim",
+      "page.view_claimed_image",
+      "correction.receive"
+    ],
+    "REVIEWER": [
+      "match.view_candidates",
+      "match.link",
+      "match.create_request",
+      "match.reject",
+      "match.return_correction",
+      "match.defer"
+    ],
+    "OWNER": [
+      "user.assign_admin",
+      "retention.approve",
+      "integration.approve",
+      "high_risk.override"
+    ],
+    "ADMIN": [
+      "queue.manage",
+      "user.invite",
+      "user.assign_non_admin",
+      "user.disable_non_owner",
+      "page.force_release",
+      "page.reassign",
+      "batch.priority",
+      "batch.archive",
+      "audit.view"
+    ]
+  },
+  "title": "RolePermissions",
+  "note": "Deny-by-default. Server-side enforcement required. See PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md"
+}

@@ -118,6 +118,20 @@ const requiredDocs = [
   "docs/04_data/PEOPLE_INTAKE_MIGRATION_AND_ROLLBACK.md",
   "docs/05_security/PEOPLE_INTAKE_IMAGE_STORAGE_ARCHITECTURE.md",
   "docs/05_security/PEOPLE_INTAKE_PRIVACY_AND_RETENTION.md",
+  "docs/05_security/PEOPLE_INTAKE_AUTH_ARCHITECTURE.md",
+  "docs/05_security/PEOPLE_INTAKE_AUTHORIZATION_MATRIX.md",
+  "docs/05_security/PEOPLE_INTAKE_THREAT_MODEL.md",
+  "docs/05_security/PEOPLE_INTAKE_LOGGING_AND_AUDIT.md",
+  "docs/05_security/PEOPLE_INTAKE_SECRET_MANAGEMENT.md",
+  "docs/06_engineering/PEOPLE_INTAKE_APPLICATION_ARCHITECTURE.md",
+  "docs/06_engineering/PEOPLE_INTAKE_API_CONTRACTS.md",
+  "docs/06_engineering/PEOPLE_INTAKE_SERVICE_CONTRACTS.md",
+  "docs/06_engineering/PEOPLE_INTAKE_ERROR_CONTRACT.md",
+  "docs/06_engineering/PEOPLE_INTAKE_IDEMPOTENCY_AND_CONCURRENCY.md",
+  "docs/06_engineering/PEOPLE_INTAKE_VALIDATION_RULES.md",
+  "docs/06_engineering/PEOPLE_INTAKE_CONFIGURATION_CONTRACT.md",
+  "docs/06_engineering/PEOPLE_INTAKE_CANONICAL_PERSON_INTEGRATION_CONTRACT.md",
+  "docs/06_engineering/PEOPLE_INTAKE_BACKGROUND_PROCESSING_CONTRACT.md",
   "docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md",
   "docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md",
   "docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md",
@@ -154,8 +168,8 @@ if (active) {
   else fail("active-build must set applicationCodeAuthorized=false");
   if (active.databaseChangesAuthorized === false) pass("active-build prohibits database changes");
   else fail("active-build must set databaseChangesAuthorized=false");
-  if (active.nextRecommendedBuild === "PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0") {
-    pass("nextRecommendedBuild is PEOPLE-SECURITY-API-ENGINEERING-DESIGN-1.0");
+  if (active.nextRecommendedBuild === "PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0") {
+    pass("nextRecommendedBuild is PEOPLE-QUALITY-DEPLOYMENT-OPERATIONS-FREEZE-DESIGN-1.0");
   } else {
     fail(`Unexpected nextRecommendedBuild: ${active.nextRecommendedBuild}`);
   }
