@@ -3,10 +3,10 @@
 ## Primary sequence
 
 ```text
-PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0
+PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0
 ```
 
-Map IS-201 entities + IS-202 fields to physical schema architecture — **docs only; no migrations**.
+Logical table/constraint catalog mapped from IS-201/202 — **docs only; no migrations/SQL/Prisma**.
 
 ## Independent governance lane
 
@@ -14,14 +14,14 @@ Map IS-201 entities + IS-202 fields to physical schema architecture — **docs o
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-Slices 001–002 complete. Continue Critical ADR/issue freeze readiness.
+Slices 001–003 complete. Critical ADRs/issues remain visible.
 
 ## Standing locks
 
-* Catalog 01 = sole state authority  
-* Match Resolution ≠ Promotion  
-* Entity admission questionnaire (IS-201)  
-* Field/VO reuse doctrine (IS-202)
+* DB projects domain (IS-300)  
+* Catalog 01 = state columns  
+* Match ≠ Promotion in persistence  
+* Persistence extension doctrine (Cursor §9.0.3)
 
 ## Mode
 
@@ -29,4 +29,4 @@ Slices 001–002 complete. Continue Critical ADR/issue freeze readiness.
 DOCUMENTATION_AND_SPECIFICATION_ONLY
 ```
 
-Gate G-10: **CLOSED**
+Gate G-10: **CLOSED** · `migrationsAuthorized`: **false**

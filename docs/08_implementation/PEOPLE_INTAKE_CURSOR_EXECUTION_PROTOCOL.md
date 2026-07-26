@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.5  
+**Version:** 1.6  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -82,6 +82,23 @@ New feature?
 ```
 
 Lifecycle/state fields MUST use Catalog 01 via `VO-CAT01-STATE` — never field-dictionary draft status labels.
+
+### 9.0.3 Persistence extension doctrine (mandatory)
+
+Authority: PEOPLE-IS-300 §9.2; Decision Log D-072.
+
+```text
+New persistence requirement?
+  → Existing Entity? (IS-201)
+      → Existing Field? (IS-202)
+          → Existing Value Object?
+              → Existing Persistence Rule? (IS-300 / IS-301+)
+                  YES → Reuse
+                  NO  → Update IS-300/IS-301+ or create ADR
+                        → Only then may future packages create tables/schemas/migrations
+```
+
+IS-300 and later database IS documents are **documentation only** until `migrationsAuthorized` / Gate G-10. Never create migrations, SQL, Prisma schemas, seeds, or live schema objects to “complete” a database specification package.
 
 ---
 
@@ -203,12 +220,12 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0
+PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0
 ```
 
 Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-Slices 001–002 complete.
+Slices 001–003 complete.
 
-No application code until freeze APPROVED and Gate G-10 opens.
+No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 
 Orchestration reference: `docs/08_implementation/PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md`

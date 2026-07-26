@@ -1,12 +1,10 @@
 # Implementation Specifications
 
-**Latest IS:** PEOPLE-IS-202 APPROVED (D-071)  
-**Phase 1:** COMPLETE  
-**Phase 2 domain core:** IS-200…202 APPROVED  
-**Audit lane:** ACTIVE (Slices 001–002 complete)  
-**Status:** DOCUMENTATION ONLY — APPLICATION IMPLEMENTATION NOT AUTHORIZED  
+**Latest IS:** PEOPLE-IS-300 APPROVED (D-072)  
+**Phase 3:** STARTED — documentation only  
+**Status:** NO MIGRATIONS / SQL / PRISMA — APPLICATION IMPLEMENTATION NOT AUTHORIZED  
 
 ## Next
 
-1. `PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0`  
-2. Independent audit lane (continue freeze readiness)
+1. `PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0`  
+2. Independent audit / freeze lane

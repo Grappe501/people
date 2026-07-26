@@ -22,6 +22,7 @@
 | D-069 | PEOPLE-IS-200-DOMAIN-MODEL-1.0 APPROVED; audit/freeze independent lane chartered; Phase 2 started |
 | D-070 | PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0 APPROVED; entity admission questionnaire locked; AUDIT-SLICE-001 recorded |
 | D-071 | PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0 APPROVED; field doctrine locked; AUDIT-SLICE-002 banners |
+| D-072 | PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0 APPROVED; Phase 3 started; no migrations; AUDIT-SLICE-003 |
 
 ## Phase 0 approved decisions
 

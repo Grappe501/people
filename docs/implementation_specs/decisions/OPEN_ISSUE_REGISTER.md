@@ -24,7 +24,8 @@
 | ISSUE-GHN-002 | Optional migrate default branch `master` → `main` | LOW | No | Ops / Decision Log | OPEN |
 | ISSUE-FREEZE-001 | Design freeze blocked pending Critical ADR/issue remediation via independent audit lane | CRITICAL | Yes before Gate G-10 | PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 | OPEN |
 | ISSUE-AUDIT-001 | Field dictionary / pre-catalog workflow status labels drift vs Catalog 01 (FIND-AUDIT-001/005) | MEDIUM | Yes before claiming enum finality | IS-202 / AUDIT-SLICE-002 | MITIGATED — banners + IS-202; retain until freeze review |
+| ISSUE-DBA-001 | Shared DB compatibility audit not yet executed; conceptual tables must not be assumed to exist | HIGH | Yes before migrationsAuthorized | IS-300 / shared-DB audit | OPEN |
 
 Related ADRs: ADR-001…ADR-020 in `DECISION_REGISTER.md`.  
 Audit lane charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`.  
-Latest findings: `reports/PEOPLE_AUDIT_SLICE_002_FINDINGS.md`.
+Latest findings: `reports/PEOPLE_AUDIT_SLICE_003_FINDINGS.md`.

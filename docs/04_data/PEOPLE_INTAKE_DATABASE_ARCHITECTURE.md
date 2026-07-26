@@ -1,9 +1,14 @@
 # People Intake — Database Architecture
 
-**Status:** draft_complete  
+> **SUPERSEDED AS CANONICAL PERSISTENCE ARCHITECTURE — D-072 / AUDIT-SLICE-003**  
+> **Canonical persistence architecture:** `docs/implementation_specs/300_database/PEOPLE-IS-300-DATABASE-ARCHITECTURE.md`.  
+> **Domain/entity/field authority:** IS-200 / IS-201 / IS-202.  
+> This file remains a **historical conceptual companion**. Table lists here are seeds only — not proof of existence in any shared database. No migrations authorized.
+
+**Status:** draft_complete — **SUPERSEDED (canonical → IS-300)**  
 **Version:** 1.0  
 **Build:** PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0  
-**Schema authorized:** No — conceptual only until shared DB audit
+**Schema authorized:** No — conceptual only until shared DB audit + Gate G-10 / migrationsAuthorized
 
 ---
 

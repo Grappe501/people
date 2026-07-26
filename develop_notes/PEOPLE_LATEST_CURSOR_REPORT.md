@@ -3,8 +3,8 @@
 ## Work item
 
 ```text
-PEOPLE-IS-202-FIELD-AND-VALUE-OBJECT-SPECIFICATIONS-1.0 (D-071)
-+ AUDIT-SLICE-002-SUPERSESSION-BANNERS
+PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0 (D-072)
++ AUDIT-SLICE-003-PHASE3-START
 ```
 
 ## Validation
@@ -18,17 +18,12 @@ docs:catalogs:validate — PASS
 ## Forbidden implementation artifacts
 
 ```text
-NONE
+NONE — no migrations, SQL, Prisma, seeds, netlify.toml, src/
 ```
 
 ## Commit / Push / Remote
 
-```text
-Commit:  6dbff2494a8a4d1a14d89369635075a3c27fc59f
-Branch:  master
-Push:    PASS (e1a5bc5..6dbff24)
-Remote:  PASS — origin/master contains commit
-```
+Filled after Git closeout.
 
 ## Netlify
 
@@ -36,7 +31,7 @@ Remote:  PASS — origin/master contains commit
 NOT APPLICABLE — no authorized deployable surface exists
 ```
 
-## Application implementation
+## Application / migrations
 
 ```text
 NOT AUTHORIZED
@@ -45,5 +40,5 @@ NOT AUTHORIZED
 ## Next primary
 
 ```text
-PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0
+PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0
 ```

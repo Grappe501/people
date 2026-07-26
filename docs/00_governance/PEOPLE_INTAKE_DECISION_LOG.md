@@ -968,3 +968,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0. Audit lane continues. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-202; AUDIT-SLICE-002 banners; `reports/PEOPLE_IS_202_COMPLETION_REPORT.md` |
 | Revisit trigger | IS-300 physical mapping; ISSUE-MOD-001; remaining unbannered draft peers |
+
+### D-072
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0 is the canonical Database Architecture specification for Phase 3. Path: `docs/implementation_specs/300_database/PEOPLE-IS-300-DATABASE-ARCHITECTURE.md`. It locks the principle that the database is an implementation/projection of the governed domain (IS-200…202), not a source of domain invention. It defines persistence philosophy, aggregate-to-table mapping, identity/PK/FK, ownership, normalization, write vs read models, soft-delete/archival, audit persistence, concurrency, sensitive-data segregation, naming, schema organization, migration governance (docs only), scaling notes, and the persistence extension doctrine. Creating migrations, SQL, Prisma schemas, seeds, indexes, triggers, or live schema objects remains FORBIDDEN. (2) AUDIT-SLICE-003 records Phase 3 start readiness without silently clearing Critical ADRs/issues (`reports/PEOPLE_AUDIT_SLICE_003_FINDINGS.md`). Historical `docs/04_data/PEOPLE_INTAKE_DATABASE_ARCHITECTURE.md` is bannered subordinate. Application implementation remains NOT AUTHORIZED. |
+| Reason | Begin physical persistence design while preserving one-directional authority from domain → entities → fields → persistence → future schema. |
+| Alternatives | Author Prisma/SQL now; invent tables without IS-201/202; treat Volume 9 bootstrap as already deployed. |
+| Consequences | Next primary IS is PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0. ADR-002/003 remain OPEN. Gate G-10 and migrationsAuthorized remain closed/false. |
+| Related files | PEOPLE-IS-300; AUDIT-SLICE-003; `reports/PEOPLE_IS_300_COMPLETION_REPORT.md` |
+| Revisit trigger | Shared DB audit; ADR-002/003 acceptance; first authorized migration package |
