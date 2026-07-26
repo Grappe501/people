@@ -167,11 +167,12 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-200-DOMAIN-MODEL-1.0
+PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0
 ```
 
-Parallel: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`
+Independent lane (does not block primary): `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
+Charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`
 
-Design remediation + quality/ops remain required for freeze. No application code until freeze APPROVED and Gate G-10 opens.
+No application code until freeze APPROVED and Gate G-10 opens.
 
 Orchestration reference: `docs/08_implementation/PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md`

@@ -2,43 +2,32 @@
 
 **Program ID:** PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0  
 **Phase 0:** COMPLETE (D-060)  
-**Phase 1 Platform:** COMPLETE (IS-100…105; D-061…D-068 as applicable)
+**Phase 1 Platform:** COMPLETE (IS-100…105)  
+**Phase 2 Domain:** STARTED (IS-200 APPROVED)
 
 | Document ID | Title | Phase | Status | Owner | Dependencies | Blocking Issues | Readiness |
-| --- | --- | --- | --- | ---: | --- | --- | ---: |
-| PEOPLE-IS-000 | Program Governance | 0 | APPROVED | Program | Program Design | — | 100% |
-| PEOPLE-IS-001 | Specification Template | 0 | APPROVED | Program | IS-000 | — | 100% |
-| PEOPLE-IS-002 | Naming and Identification Standard | 0 | APPROVED | Program | IS-000 | — | 100% |
-| PEOPLE-IS-003 | Traceability Standard | 0 | APPROVED | Program | IS-000 | ISSUE-CATALOG-009 (inventory) | 100% |
-| PEOPLE-IS-004 | Decision and Open-Issue Register | 0 | APPROVED | Program | IS-000 | ADR queue open for coding | 100% |
-| PEOPLE-IS-005 | Specification Readiness Gate | 0 | APPROVED | Program | IS-000…004 | — | 100% |
-| PEOPLE-IS-100 | Repository Architecture | 1 | CLOSED / APPROVED | Program | Phase 0 | ADRs block impl readiness | 100% docs |
-| PEOPLE-IS-101 | Technology Decision Specification | 1 | APPROVED | Program | IS-100 + Catalog 09 | ADR-001…020 OPEN | 100% docs |
-| PEOPLE-IS-102 | Module Boundary Specification | 1 | APPROVED | Program | IS-100 + IS-101 | ISSUE-MOD-001/002 | 100% docs |
-| PEOPLE-IS-103 | Environment Architecture | 1 | APPROVED | Program | IS-102 | open ADRs for env brands | 100% docs |
-| PEOPLE-IS-104 | H-Drive Workspace Protocol | 1 | APPROVED | Program | IS-103 | ADR-020 / ISSUE-HDRIVE-001 (guard code) | 100% docs |
-| PEOPLE-IS-105 | GitHub and Netlify Architecture | 1 | APPROVED | Program | IS-104 | ISSUE-GHN-001/002 (non-blocking); ADR-009 OPEN | 100% docs |
-| PEOPLE-IS-200 | Domain Model | 2 | Next Ready | — | Phase 1 platform | ADRs / freeze | 0% |
+| --- | --- | --- | ---: | --- | --- | --- | ---: |
+| PEOPLE-IS-000…005 | Program governance set | 0 | APPROVED | Program | — | — | 100% |
+| PEOPLE-IS-100…105 | Platform governance set | 1 | APPROVED | Program | Phase 0 | ADRs for impl | 100% docs |
+| PEOPLE-IS-200 | Domain Model | 2 | APPROVED | Program | Phase 1 + Catalogs | ISSUE-MOD-001; ISSUE-CANONICAL-001 (impl pkgs) | 100% docs |
+| PEOPLE-IS-201 | Entity Specifications | 2 | Next Ready | — | IS-200 | — | 0% |
 
-## Queued Phase 2
+## Independent governance lane
 
 | Document ID | Title | Status |
 | --- | --- | --- |
-| PEOPLE-IS-200 | Domain Model | Next Ready |
+| PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 | Audit / remediation / freeze readiness | ACTIVE (independent; does not block IS sequence) |
+
+Charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`
 
 ## Shared artifacts
 
 | Artifact | Path |
 | --- | --- |
 | Requirement matrix | `matrices/REQUIREMENT_TRACEABILITY_MATRIX.md` |
-| Module dependency matrix | `matrices/MODULE_DEPENDENCY_MATRIX.md` |
 | Module ownership matrix | `matrices/MODULE_OWNERSHIP_MATRIX.md` |
-| Boundary validation rules | `matrices/MODULE_BOUNDARY_VALIDATION_RULES.md` |
-| Interface contract index | `matrices/MODULE_INTERFACE_CONTRACT_INDEX.md` |
 | Decision register | `decisions/DECISION_REGISTER.md` |
 | Open-issue register | `decisions/OPEN_ISSUE_REGISTER.md` |
 | Progress report | `reports/IMPLEMENTATION_SPECIFICATION_PROGRESS.md` |
-| IS-105 completion | `reports/PEOPLE_IS_105_COMPLETION_REPORT.md` |
-| ADR index | `docs/adr/_index.md` |
-| Spec template | `templates/IMPLEMENTATION_SPECIFICATION_TEMPLATE.md` |
+| IS-200 completion | `reports/PEOPLE_IS_200_COMPLETION_REPORT.md` |
 | Orientation | `H:\people\START_HERE.md` |

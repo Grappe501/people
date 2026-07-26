@@ -3,13 +3,14 @@
 ## Work item
 
 ```text
-PEOPLE-IS-105-GITHUB-AND-NETLIFY-ARCHITECTURE-1.0 (D-068)
+PEOPLE-IS-200-DOMAIN-MODEL-1.0 (D-069)
++ PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 lane charter
 ```
 
 ## Validation
 
 ```text
-drive:validate — PASS_WITH_WARNINGS (honest OS/profile C:\ limitation)
+drive:validate — PASS_WITH_WARNINGS
 governance:validate — PASS
 docs:catalogs:validate — PASS
 ```
@@ -17,17 +18,12 @@ docs:catalogs:validate — PASS
 ## Forbidden implementation artifacts
 
 ```text
-NONE — no netlify.toml, no .github/workflows, no application source
+NONE
 ```
 
 ## Commit / Push / Remote
 
-```text
-Commit:  2ebb60b5268c10bdb0bf9f2902ef237372dfa3f5
-Branch:  master
-Push:    PASS (d89f91e..2ebb60b)
-Remote:  PASS — origin/master contains commit
-```
+Filled after Git closeout.
 
 ## Netlify
 
@@ -41,20 +37,21 @@ NOT APPLICABLE — no authorized deployable surface exists
 NOT AUTHORIZED
 ```
 
-## Deployment authorization
+## Phase status
 
 ```text
-CLOSED
+Phase 1 Platform — COMPLETE (permanent baseline)
+Phase 2 Domain — STARTED (IS-200 APPROVED)
 ```
 
-## Phase 1 platform
+## Next primary
 
 ```text
-COMPLETE (IS-100…105)
+PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0
 ```
 
-## Next
+## Independent lane
 
 ```text
-PEOPLE-IS-200-DOMAIN-MODEL-1.0
+PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 (ACTIVE)
 ```

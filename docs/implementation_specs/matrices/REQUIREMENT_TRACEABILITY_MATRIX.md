@@ -51,4 +51,12 @@
 | REQ-GHN-016 | Netlify N/A until authorized deployable surface | IS-105 / D-065 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Closeout review | Docs | FULLY_MAPPED |
 | REQ-GHN-017 | Burt executes closeout within governance | IS-105 / D-065 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Protocol review | Docs | FULLY_MAPPED |
 
+| REQ-DOM-001 | Distinguishable data layers preserved | IS-200 / D-030 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Domain review | Future PKG | FULLY_MAPPED |
+| REQ-DOM-002 | Batch/Page/Entry/Canonical Person separate | IS-200 / D-029 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Domain review | Future PKG | FULLY_MAPPED |
+| REQ-DOM-004 | Exactly one owning module per concept | IS-200 / IS-102 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | OWNERSHIP_CONFLICT | N/A | N/A | Ownership matrix | Future PKG | FULLY_MAPPED |
+| REQ-DOM-006 | Catalog 01 is state authority | IS-200 / Cat 01 | N/A | N/A | N/A | N/A | N/A | N/A | STATE-* | N/A | N/A | N/A | State review | Future PKG | FULLY_MAPPED |
+| REQ-DOM-011 | Match Resolution ≠ Promotion | IS-200 / Vol 8 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary review | Future PKG | FULLY_MAPPED |
+| REQ-DOM-014 | Canonical identity outside intake ownership | IS-200 / D-032 | Canonical Person | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Integration review | Future PKG | FULLY_MAPPED |
+| REQ-DOM-019 | Packages cite owning domain concept before code | IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Package gate | Future PKG | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

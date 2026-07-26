@@ -929,3 +929,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next IS document is PEOPLE-IS-200-DOMAIN-MODEL-1.0. Parallel freeze remediation remains required. ISSUE-GHN-001/002 open (non-blocking). ADR-009 remains OPEN/PROPOSED. Gate G-10 remains closed; `deploymentAuthorized` remains false. |
 | Related files | PEOPLE-IS-105; `reports/PEOPLE_IS_105_COMPLETION_REPORT.md`; Cursor Execution Protocol §9.0 |
 | Revisit trigger | Repo rename; default-branch migration; first authorized deploy package; ADR-009 acceptance |
+
+### D-069
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-200-DOMAIN-MODEL-1.0 is the canonical Domain Model specification for Phase 2 business architecture. Path: `docs/implementation_specs/200_domain/PEOPLE-IS-200-DOMAIN-MODEL.md`. It locks ubiquitous language (Constitution Art. XIV / Glossary), data-layer separation, aggregate/entity/value-object catalogs, identity and ownership rules, invariants, Catalog 01 as state authority, Match Resolution ≠ Promotion, canonical/RedDirt write boundaries, domain services/events/policies, and a placement algorithm requiring every future package to name owning domain concepts before coding. It elevates `docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md` as subordinate foundation. Physical schema and application code remain NOT AUTHORIZED. ISSUE-MOD-001 and ISSUE-CANONICAL-001 remain OPEN and block related implementation packages. (2) PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 is chartered as an independent governance lane (path: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`): continuous audit/remediation/freeze readiness that does not block the primary IS sequence, and is required before design freeze approval / Gate G-10 opening. Phase 1 platform (IS-100…105) remains COMPLETE as permanent baseline. |
+| Reason | Transition from platform governance to business architecture while keeping freeze quality work from stalling domain authorship. |
+| Alternatives | Fold freeze into IS sequence; invent full entity DDL in IS-200; treat Entry as Canonical Person; silently close ISSUE-MOD-001. |
+| Consequences | Next primary IS is PEOPLE-IS-201-ENTITY-SPECIFICATIONS-1.0. Audit lane may run remediation slices in parallel. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | PEOPLE-IS-200; audit lane charter; `reports/PEOPLE_IS_200_COMPLETION_REPORT.md` |
+| Revisit trigger | ISSUE-MOD-001/CANONICAL-001 resolution; IS-201 authorship; freeze campaign start |
