@@ -5,8 +5,10 @@
 | Item | Value |
 | --- | --- |
 | Assessment commit | `9c5631f` |
+| Evidence commit | `8c2b445` |
+| Remote `origin/master` | `8c2b44534bbfe78528e3f148cd851392e01f4ba7` |
 | Verdict | Gate G-10 **REMAIN CLOSED** |
-| Remote verify | pending |
+| Push / remote verify | PASS |
 
 ## Validation
 
