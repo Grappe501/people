@@ -1,6 +1,14 @@
 # Volume 12 — Component Library
 
-Reusable UI components. Each documents props, behavior, a11y, events, styling hooks, tests.
+Reusable UI **contracts** (documentation). Implementation is not authorized.
+
+| Item | Path |
+| --- | --- |
+| **Canonical master** | [`docs/volumes/volume-12-component-library/VOLUME_12_COMPONENT_LIBRARY_AND_DESIGN_SYSTEM.md`](../volumes/volume-12-component-library/VOLUME_12_COMPONENT_LIBRARY_AND_DESIGN_SYSTEM.md) |
+| Pointer (this folder) | [`VOLUME_12_COMPONENT_LIBRARY_AND_DESIGN_SYSTEM.md`](./VOLUME_12_COMPONENT_LIBRARY_AND_DESIGN_SYSTEM.md) |
+| Registry | [`data/documentation/volume_12_component_registry.json`](../../data/documentation/volume_12_component_registry.json) |
+
+Bootstrap drafts below remain **DRAFT_BOOTSTRAP** until reconciled with the Volume 12 master:
 
 | Component | File |
 | --- | --- |

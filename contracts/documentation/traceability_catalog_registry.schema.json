@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/traceability_catalog_registry.schema.json",
+  "title": "People Intake Catalog 9 Traceability Foundation Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "scope",
+    "canonicalPath",
+    "contentSha256",
+    "principleCount",
+    "principles",
+    "linkNodeCount",
+    "linkNodes",
+    "statusVocabulary",
+    "seededRowCount",
+    "seededRows",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "overallReadinessPercent",
+    "nextCatalogId",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": {
+      "type": "string",
+      "const": "PEOPLE-CATALOG-09-TRACEABILITY-1.0"
+    },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "scope": {
+      "type": "string",
+      "const": "FOUNDATION_CONTRACT_WITH_SEEDED_MATRIX_ROWS"
+    },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "principleCount": { "type": "integer", "const": 10 },
+    "principles": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^TRACE-PRINCIPLE-\\d{3}$" }
+    },
+    "linkNodeCount": { "type": "integer", "const": 16 },
+    "linkNodes": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": { "type": "string" }
+    },
+    "statusVocabulary": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": { "type": "string" }
+    },
+    "seededRowCount": { "type": "integer", "const": 10 },
+    "seededRows": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["traceRowId", "requirementId", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "traceRowId": { "type": "string" },
+          "requirementId": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 15 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "type": "string" }
+    },
+    "overallReadinessPercent": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "nextCatalogId": {
+      "type": "string",
+      "const": "PEOPLE-CATALOG-LIBRARY-COMPLETE"
+    },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 5,
+      "items": { "type": "string" }
+    }
+  }
+}

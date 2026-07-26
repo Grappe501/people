@@ -1,0 +1,287 @@
+{
+  "documentId": "PEOPLE-VOLUME-11-USER-INTERFACE-SPECIFICATIONS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "canonicalPath": "docs/volumes/volume-11-ui-specifications/VOLUME_11_USER_INTERFACE_SPECIFICATIONS.md",
+  "contentSha256": "5e1e8c457c4f6ec7bd9c8a0252e7a18c877b565b9b5b2d4f3da5d0c5a91188fa",
+  "workspaces": [
+    "Capture",
+    "Transcribe",
+    "Match",
+    "Manage"
+  ],
+  "lockedDecisionCount": 40,
+  "deferredDecisions": [
+    "UI-DEC-001",
+    "UI-DEC-002",
+    "UI-DEC-003",
+    "UI-DEC-004",
+    "UI-DEC-005",
+    "UI-DEC-006",
+    "UI-DEC-007",
+    "UI-DEC-008",
+    "UI-DEC-009",
+    "UI-DEC-010",
+    "UI-DEC-011",
+    "UI-DEC-012",
+    "UI-DEC-013",
+    "UI-DEC-014",
+    "UI-DEC-015",
+    "UI-DEC-016",
+    "UI-DEC-017",
+    "UI-DEC-018"
+  ],
+  "screenCount": 59,
+  "screens": [
+    {
+      "screenName": "Sign In",
+      "group": "Public or Pre-Access"
+    },
+    {
+      "screenName": "Access Pending",
+      "group": "Public or Pre-Access"
+    },
+    {
+      "screenName": "Access Suspended",
+      "group": "Public or Pre-Access"
+    },
+    {
+      "screenName": "Access Revoked",
+      "group": "Public or Pre-Access"
+    },
+    {
+      "screenName": "Session Expired",
+      "group": "Public or Pre-Access"
+    },
+    {
+      "screenName": "Role-Aware Home",
+      "group": "Home"
+    },
+    {
+      "screenName": "My Recent Work",
+      "group": "Home"
+    },
+    {
+      "screenName": "Notifications",
+      "group": "Home"
+    },
+    {
+      "screenName": "Capture Dashboard",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Batch List",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Create Batch",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Batch Detail",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Upload Pages",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Upload Progress",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Page Preparation",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Image Replacement",
+      "group": "Capture"
+    },
+    {
+      "screenName": "Transcribe Dashboard",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Shared Queue",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "My Active Work",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Transcription Workspace",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Draft Recovery",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Submission Review",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Submission Success",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Submitted Work",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Returned Corrections",
+      "group": "Transcribe"
+    },
+    {
+      "screenName": "Transcription Review Queue",
+      "group": "Review"
+    },
+    {
+      "screenName": "Transcription Review Screen",
+      "group": "Review"
+    },
+    {
+      "screenName": "Correction Request",
+      "group": "Review"
+    },
+    {
+      "screenName": "Match Dashboard",
+      "group": "Match"
+    },
+    {
+      "screenName": "Match Review Queue",
+      "group": "Match"
+    },
+    {
+      "screenName": "Match Review Screen",
+      "group": "Match"
+    },
+    {
+      "screenName": "Candidate Detail",
+      "group": "Match"
+    },
+    {
+      "screenName": "Resolution Confirmation",
+      "group": "Match"
+    },
+    {
+      "screenName": "Resolution Detail",
+      "group": "Match"
+    },
+    {
+      "screenName": "Promotion List",
+      "group": "Match"
+    },
+    {
+      "screenName": "Promotion Detail",
+      "group": "Match"
+    },
+    {
+      "screenName": "Promotion Retry",
+      "group": "Match"
+    },
+    {
+      "screenName": "Manage Dashboard",
+      "group": "Manage"
+    },
+    {
+      "screenName": "User List",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Invite User",
+      "group": "Manage"
+    },
+    {
+      "screenName": "User Detail",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Role Management",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Claims Management",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Batch Operations",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Error and Alert Center",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Error Detail",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Alert Detail",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Background Job Detail",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Audit Explorer",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Audit Event Detail",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Reports",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Export Confirmation",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Configuration View",
+      "group": "Manage"
+    },
+    {
+      "screenName": "Global Search",
+      "group": "Shared"
+    },
+    {
+      "screenName": "Record Not Found",
+      "group": "Shared"
+    },
+    {
+      "screenName": "Access Denied",
+      "group": "Shared"
+    },
+    {
+      "screenName": "System Error",
+      "group": "Shared"
+    },
+    {
+      "screenName": "Offline or Connection Lost",
+      "group": "Shared"
+    },
+    {
+      "screenName": "Maintenance Notice",
+      "group": "Shared"
+    }
+  ],
+  "accessibilityTarget": "WCAG 2.2 AA",
+  "prohibitions": [
+    "No React components",
+    "No route files",
+    "No CSS",
+    "No design-system code",
+    "No image-upload implementation",
+    "No API calls",
+    "No authentication integration",
+    "No database access",
+    "No production analytics",
+    "No deployment configuration",
+    "No framework selection"
+  ]
+}

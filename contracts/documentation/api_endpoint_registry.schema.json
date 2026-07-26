@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/api_endpoint_registry.schema.json",
+  "title": "People Intake Volume 10 Endpoint Registry",
+  "type": "object",
+  "required": [
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "apiPrefix",
+    "principles",
+    "lockedDecisionCount",
+    "endpointCount",
+    "endpoints",
+    "errorCodes",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentId": { "type": "string", "const": "PEOPLE-VOLUME-10-API-SPECIFICATIONS-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "apiPrefix": { "type": "string", "const": "/api/v1/" },
+    "principles": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": { "type": "string", "pattern": "^API-PRINCIPLE-\\d{3}$" }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 20 },
+    "endpointCount": { "type": "integer", "minimum": 40 },
+    "endpoints": {
+      "type": "array",
+      "minItems": 40,
+      "items": {
+        "type": "object",
+        "required": ["method", "path", "group", "requiresAuth"],
+        "additionalProperties": false,
+        "properties": {
+          "method": { "type": "string", "enum": ["GET", "POST", "PUT", "PATCH", "DELETE"] },
+          "path": { "type": "string", "pattern": "^/api/v1/" },
+          "group": { "type": "string" },
+          "requiresAuth": { "type": "boolean" },
+          "idempotent": { "type": ["boolean", "null"] },
+          "requiresConcurrency": { "type": "boolean" },
+          "auditRequired": { "type": "boolean" },
+          "roles": { "type": "array", "items": { "type": "string" } },
+          "paginated": { "type": "boolean" }
+        }
+      }
+    },
+    "errorCodes": {
+      "type": "array",
+      "minItems": 13,
+      "items": { "type": "string" }
+    },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 8,
+      "items": { "type": "string" }
+    }
+  }
+}

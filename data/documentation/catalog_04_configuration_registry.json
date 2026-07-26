@@ -1,0 +1,322 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-04-CONFIGURATION-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_KEYS",
+  "canonicalPath": "docs/catalogs/catalog-04-configuration/CATALOG_04_CONFIGURATION.md",
+  "contentSha256": "b37e926d35b2a04cf14294aba6563118f4fa1c545b00ea5fbf5838f614666c28",
+  "principleCount": 10,
+  "principles": [
+    "CONFIG-PRINCIPLE-001",
+    "CONFIG-PRINCIPLE-002",
+    "CONFIG-PRINCIPLE-003",
+    "CONFIG-PRINCIPLE-004",
+    "CONFIG-PRINCIPLE-005",
+    "CONFIG-PRINCIPLE-006",
+    "CONFIG-PRINCIPLE-007",
+    "CONFIG-PRINCIPLE-008",
+    "CONFIG-PRINCIPLE-009",
+    "CONFIG-PRINCIPLE-010"
+  ],
+  "categoryCount": 24,
+  "categories": [
+    "Application",
+    "Environment",
+    "Authentication",
+    "Authorization",
+    "Database",
+    "Storage",
+    "Uploads",
+    "Queue",
+    "Claims",
+    "Drafts",
+    "Transcription",
+    "Matching",
+    "Promotion",
+    "Background Jobs",
+    "Notifications",
+    "Security",
+    "Logging",
+    "Monitoring",
+    "Reporting",
+    "Exports",
+    "Feature Flags",
+    "Performance",
+    "Retention",
+    "Developer Options"
+  ],
+  "seededConfigCount": 59,
+  "seededConfigs": [
+    {
+      "configId": "CONFIG-APP-001",
+      "configurationKey": "APPLICATION_NAME"
+    },
+    {
+      "configId": "CONFIG-APP-002",
+      "configurationKey": "APPLICATION_VERSION"
+    },
+    {
+      "configId": "CONFIG-APP-003",
+      "configurationKey": "APPLICATION_ENVIRONMENT"
+    },
+    {
+      "configId": "CONFIG-AUTH-001",
+      "configurationKey": "AUTH_PROVIDER"
+    },
+    {
+      "configId": "CONFIG-AUTH-002",
+      "configurationKey": "AUTH_SESSION_TIMEOUT"
+    },
+    {
+      "configId": "CONFIG-AUTH-003",
+      "configurationKey": "AUTH_REFRESH_WINDOW"
+    },
+    {
+      "configId": "CONFIG-AUTH-004",
+      "configurationKey": "AUTH_MAX_LOGIN_ATTEMPTS"
+    },
+    {
+      "configId": "CONFIG-PERM-001",
+      "configurationKey": "DEFAULT_USER_ROLE"
+    },
+    {
+      "configId": "CONFIG-PERM-002",
+      "configurationKey": "ALLOW_ADMIN_OVERRIDE"
+    },
+    {
+      "configId": "CONFIG-DB-001",
+      "configurationKey": "DATABASE_URL"
+    },
+    {
+      "configId": "CONFIG-DB-002",
+      "configurationKey": "DATABASE_CONNECTION_POOL"
+    },
+    {
+      "configId": "CONFIG-DB-003",
+      "configurationKey": "DATABASE_QUERY_TIMEOUT"
+    },
+    {
+      "configId": "CONFIG-DB-004",
+      "configurationKey": "DATABASE_STATEMENT_TIMEOUT"
+    },
+    {
+      "configId": "CONFIG-DB-005",
+      "configurationKey": "DATABASE_MAX_RETRIES"
+    },
+    {
+      "configId": "CONFIG-STORAGE-001",
+      "configurationKey": "STORAGE_PROVIDER"
+    },
+    {
+      "configId": "CONFIG-STORAGE-002",
+      "configurationKey": "STORAGE_BUCKET_SOURCE_IMAGES"
+    },
+    {
+      "configId": "CONFIG-STORAGE-003",
+      "configurationKey": "STORAGE_SIGNED_URL_DURATION"
+    },
+    {
+      "configId": "CONFIG-STORAGE-004",
+      "configurationKey": "STORAGE_MAX_FILE_SIZE"
+    },
+    {
+      "configId": "CONFIG-STORAGE-005",
+      "configurationKey": "STORAGE_ALLOWED_IMAGE_TYPES"
+    },
+    {
+      "configId": "CONFIG-UPLOAD-001",
+      "configurationKey": "UPLOAD_MAX_CONCURRENT_UPLOADS"
+    },
+    {
+      "configId": "CONFIG-UPLOAD-002",
+      "configurationKey": "UPLOAD_SESSION_DURATION"
+    },
+    {
+      "configId": "CONFIG-UPLOAD-003",
+      "configurationKey": "UPLOAD_ENABLE_DUPLICATE_DETECTION"
+    },
+    {
+      "configId": "CONFIG-UPLOAD-004",
+      "configurationKey": "UPLOAD_HASH_ALGORITHM"
+    },
+    {
+      "configId": "CONFIG-CLAIM-001",
+      "configurationKey": "CLAIM_DURATION"
+    },
+    {
+      "configId": "CONFIG-CLAIM-002",
+      "configurationKey": "CLAIM_WARNING_THRESHOLD"
+    },
+    {
+      "configId": "CONFIG-CLAIM-003",
+      "configurationKey": "CLAIM_ALLOW_RENEWAL"
+    },
+    {
+      "configId": "CONFIG-CLAIM-004",
+      "configurationKey": "CLAIM_MAX_RENEWALS"
+    },
+    {
+      "configId": "CONFIG-DRAFT-001",
+      "configurationKey": "DRAFT_AUTOSAVE_INTERVAL"
+    },
+    {
+      "configId": "CONFIG-DRAFT-002",
+      "configurationKey": "DRAFT_RETENTION_PERIOD"
+    },
+    {
+      "configId": "CONFIG-DRAFT-003",
+      "configurationKey": "DRAFT_LOCAL_RECOVERY_ENABLED"
+    },
+    {
+      "configId": "CONFIG-MATCH-001",
+      "configurationKey": "MATCH_CONFIDENCE_THRESHOLD"
+    },
+    {
+      "configId": "CONFIG-MATCH-002",
+      "configurationKey": "MATCH_MAX_CANDIDATES"
+    },
+    {
+      "configId": "CONFIG-MATCH-003",
+      "configurationKey": "MATCH_REQUIRE_REVIEW_BELOW_THRESHOLD"
+    },
+    {
+      "configId": "CONFIG-PROMOTION-001",
+      "configurationKey": "PROMOTION_MAX_RETRIES"
+    },
+    {
+      "configId": "CONFIG-PROMOTION-002",
+      "configurationKey": "PROMOTION_RETRY_DELAY"
+    },
+    {
+      "configId": "CONFIG-PROMOTION-003",
+      "configurationKey": "PROMOTION_REQUIRE_IDEMPOTENCY"
+    },
+    {
+      "configId": "CONFIG-JOB-001",
+      "configurationKey": "JOB_MAX_ATTEMPTS"
+    },
+    {
+      "configId": "CONFIG-JOB-002",
+      "configurationKey": "JOB_TIMEOUT"
+    },
+    {
+      "configId": "CONFIG-JOB-003",
+      "configurationKey": "JOB_CONCURRENCY"
+    },
+    {
+      "configId": "CONFIG-JOB-004",
+      "configurationKey": "JOB_BACKOFF_STRATEGY"
+    },
+    {
+      "configId": "CONFIG-NOTIFY-001",
+      "configurationKey": "NOTIFICATION_EXPIRATION"
+    },
+    {
+      "configId": "CONFIG-NOTIFY-002",
+      "configurationKey": "ENABLE_IN_APP_NOTIFICATIONS"
+    },
+    {
+      "configId": "CONFIG-NOTIFY-003",
+      "configurationKey": "ENABLE_EMAIL_NOTIFICATIONS"
+    },
+    {
+      "configId": "CONFIG-SECURITY-001",
+      "configurationKey": "ENABLE_CSRF_PROTECTION"
+    },
+    {
+      "configId": "CONFIG-SECURITY-002",
+      "configurationKey": "ENABLE_RATE_LIMITING"
+    },
+    {
+      "configId": "CONFIG-SECURITY-003",
+      "configurationKey": "MAX_REQUEST_SIZE"
+    },
+    {
+      "configId": "CONFIG-SECURITY-004",
+      "configurationKey": "ENABLE_CONTENT_SECURITY_POLICY"
+    },
+    {
+      "configId": "CONFIG-SECURITY-005",
+      "configurationKey": "ENABLE_SECURITY_HEADERS"
+    },
+    {
+      "configId": "CONFIG-LOG-001",
+      "configurationKey": "LOG_LEVEL"
+    },
+    {
+      "configId": "CONFIG-LOG-002",
+      "configurationKey": "LOG_RETENTION_DAYS"
+    },
+    {
+      "configId": "CONFIG-LOG-003",
+      "configurationKey": "LOG_PII_REDACTION"
+    },
+    {
+      "configId": "CONFIG-MONITOR-001",
+      "configurationKey": "ENABLE_HEALTH_ENDPOINT"
+    },
+    {
+      "configId": "CONFIG-MONITOR-002",
+      "configurationKey": "HEALTH_CHECK_INTERVAL"
+    },
+    {
+      "configId": "CONFIG-MONITOR-003",
+      "configurationKey": "ALERT_THRESHOLD_ERROR_RATE"
+    },
+    {
+      "configId": "CONFIG-REPORT-001",
+      "configurationKey": "REPORT_MAX_ROWS"
+    },
+    {
+      "configId": "CONFIG-REPORT-002",
+      "configurationKey": "REPORT_DEFAULT_PAGE_SIZE"
+    },
+    {
+      "configId": "CONFIG-EXPORT-001",
+      "configurationKey": "EXPORT_MAX_ROWS"
+    },
+    {
+      "configId": "CONFIG-EXPORT-002",
+      "configurationKey": "EXPORT_LINK_EXPIRATION"
+    },
+    {
+      "configId": "CONFIG-EXPORT-003",
+      "configurationKey": "EXPORT_MAX_DOWNLOADS"
+    }
+  ],
+  "featureFlagExamples": [
+    "FEATURE_ADVANCED_MATCHING",
+    "FEATURE_BACKGROUND_PROMOTION",
+    "FEATURE_BULK_EXPORT",
+    "FEATURE_OPERATOR_DASHBOARD"
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "No production configuration key may exist outside this catalog or an approved amendment",
+    "Configuration is external to application code",
+    "Secrets never appear in logs, client bundles, or API responses",
+    "Required secrets missing at startup fail startup",
+    "Invalid enum values fail startup",
+    "Unsupported providers fail startup",
+    "Feature flags are temporary and must have removal targets",
+    "Performance tuning must not alter business rules",
+    "Retention durations are governed by the Data Retention Catalog",
+    "AUTH_PROVIDER additions require catalog updates",
+    "STORAGE_PROVIDER additions require catalog updates",
+    "High-risk configuration changes require audit events",
+    "Seeded configuration keys in this catalog are authoritative",
+    "Exact production values may be environment-specific but must use cataloged keys",
+    "Configuration must never require searching source code to understand"
+  ],
+  "overallReadinessPercent": 99,
+  "nextCatalogId": "PEOPLE-CATALOG-05-PERMISSIONS-1.0",
+  "prohibitions": [
+    "No application source code",
+    "No environment file creation for production secrets",
+    "No dependency installation",
+    "No deployment configuration implementation",
+    "No feature-flag runtime wiring",
+    "No inventing undocumented production configuration keys outside this catalog and its approved amendments"
+  ]
+}

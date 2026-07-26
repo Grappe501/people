@@ -7,3 +7,6 @@ Executable Cursor work units. **No package authorizes coding until Gate G-10.**
 | `PACKAGE_TEMPLATE.md` | Copy for every package |
 | `PACKAGE_INDEX.md` | Planned packages mapped to orchestration phases |
 | `PKG-0.0-SPEC-LIBRARY-BOOTSTRAP.md` | This documentation library build (docs only) |
+| [`IMPLEMENTATION_MASTER.md`](./IMPLEMENTATION_MASTER.md) | Pointer to `PEOPLE-IMPLEMENTATION-MASTER-1.0` (IS series map) |
+
+**IS series master (canonical):** [`docs/implementation-specifications/PEOPLE_IMPLEMENTATION_MASTER.md`](../implementation-specifications/PEOPLE_IMPLEMENTATION_MASTER.md)

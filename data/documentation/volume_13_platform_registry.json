@@ -1,0 +1,88 @@
+{
+  "documentId": "PEOPLE-VOLUME-13-CANONICAL-PLATFORM-STANDARDS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "canonicalPath": "docs/volumes/volume-13-platform-standards/VOLUME_13_CANONICAL_PLATFORM_STANDARDS.md",
+  "contentSha256": "57bc48340846e1c0fb9dc4168d3126d0c08d7e59484a6aaf6f12cbef3ee1d419",
+  "projectRoot": "H:\\people",
+  "lockedDecisionCount": 18,
+  "lockedDecisions": [
+    "Documentation-first development",
+    "Business rules belong in the domain layer",
+    "Authentication and authorization remain separate concerns",
+    "Original source images are immutable",
+    "Audit history is append-only",
+    "Canonical identity ownership remains outside People Intake",
+    "APIs are contract-driven",
+    "Database changes require migrations",
+    "Components are reused rather than duplicated",
+    "Accessibility is mandatory",
+    "Responsive design is mandatory",
+    "Server-side authorization is required",
+    "Secrets never enter source control",
+    "Idempotent operations remain idempotent",
+    "High-risk actions remain auditable",
+    "Documentation stays synchronized with implementation",
+    "All project-controlled artifacts remain under the approved project workspace",
+    "Every implementation package must end with validation and documentation updates"
+  ],
+  "standardAreaCount": 14,
+  "standardAreas": [
+    "Repository Standards",
+    "Configuration",
+    "Architecture",
+    "Authentication",
+    "Authorization",
+    "Data Protection",
+    "Database Governance",
+    "API Governance",
+    "UI Governance",
+    "Security",
+    "Testing",
+    "Deployment",
+    "Documentation",
+    "Implementation Governance"
+  ],
+  "nextGoverningDocuments": [
+    {
+      "documentId": "PEOPLE-STATE-MACHINE-CATALOG-1.0",
+      "title": "State Machine Catalog",
+      "sequence": 1
+    },
+    {
+      "documentId": "PEOPLE-ERROR-CATALOG-1.0",
+      "title": "Error Catalog",
+      "sequence": 2
+    },
+    {
+      "documentId": "PEOPLE-AUDIT-EVENT-CATALOG-1.0",
+      "title": "Audit Event Catalog",
+      "sequence": 3
+    },
+    {
+      "documentId": "PEOPLE-CONFIGURATION-CATALOG-1.0",
+      "title": "Configuration Catalog",
+      "sequence": 4
+    },
+    {
+      "documentId": "PEOPLE-CROSS-VOLUME-TRACEABILITY-MATRIX-1.0",
+      "title": "Cross-Volume Traceability Matrix",
+      "sequence": 5
+    },
+    {
+      "documentId": "PEOPLE-IMPLEMENTATION-PACKAGE-LIBRARY-1.0",
+      "title": "Implementation Package Library",
+      "sequence": 6
+    }
+  ],
+  "overallReadinessPercent": 100,
+  "prohibitions": [
+    "No application source code under src/",
+    "No API handlers or route implementations",
+    "No database migrations or ORM models",
+    "No React, JSX, TSX, or CSS implementation",
+    "No dependency installation for runtime application stacks",
+    "No production deployment",
+    "No secrets committed to the repository"
+  ]
+}

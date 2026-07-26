@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/state_machine_catalog_registry.schema.json",
+  "title": "People Intake Catalog 1 State Machine Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "machineCount",
+    "machines",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "deferredDecisions",
+    "overallReadinessPercent",
+    "nextCatalogId"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": { "type": "string", "const": "PEOPLE-CATALOG-01-STATE-MACHINES-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "machineCount": { "type": "integer", "const": 23 },
+    "machines": {
+      "type": "array",
+      "minItems": 23,
+      "maxItems": 23,
+      "items": {
+        "type": "object",
+        "required": ["machineId", "title"],
+        "additionalProperties": false,
+        "properties": {
+          "machineId": { "type": "string", "pattern": "^STATE-[A-Z0-9-]+$" },
+          "title": { "type": "string" }
+        }
+      }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 22 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 22,
+      "maxItems": 22,
+      "items": { "type": "string" }
+    },
+    "deferredDecisions": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^STATE-DEC-\\d{3}$" }
+    },
+    "overallReadinessPercent": { "type": "integer", "const": 99 },
+    "nextCatalogId": { "type": "string", "const": "PEOPLE-CATALOG-02-ERRORS-1.0" }
+  }
+}

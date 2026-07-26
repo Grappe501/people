@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/error_catalog_registry.schema.json",
+  "title": "People Intake Catalog 2 Error Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "principleCount",
+    "principles",
+    "errorEntryCount",
+    "errorEntryIds",
+    "canonicalCodeCount",
+    "canonicalCodes",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "deferredDecisions",
+    "overallReadinessPercent",
+    "nextCatalogId",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": { "type": "string", "const": "PEOPLE-CATALOG-02-ERRORS-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "principleCount": { "type": "integer", "const": 10 },
+    "principles": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^ERROR-PRINCIPLE-\\d{3}$" }
+    },
+    "errorEntryCount": { "type": "integer", "const": 154 },
+    "errorEntryIds": {
+      "type": "array",
+      "minItems": 154,
+      "maxItems": 154,
+      "items": { "type": "string", "pattern": "^ERROR-[A-Z]+-\\d{3}$" }
+    },
+    "canonicalCodeCount": { "type": "integer", "const": 154 },
+    "canonicalCodes": {
+      "type": "array",
+      "minItems": 154,
+      "maxItems": 154,
+      "items": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 30 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 30,
+      "maxItems": 30,
+      "items": { "type": "string" }
+    },
+    "deferredDecisions": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": { "type": "string", "pattern": "^ERROR-DEC-\\d{3}$" }
+    },
+    "overallReadinessPercent": { "type": "integer", "const": 99 },
+    "nextCatalogId": { "type": "string", "const": "PEOPLE-CATALOG-03-AUDIT-EVENTS-1.0" },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 11,
+      "items": { "type": "string" }
+    }
+  }
+}

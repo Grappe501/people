@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/permissions_catalog_registry.schema.json",
+  "title": "People Intake Catalog 5 Permissions Foundation Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "scope",
+    "canonicalPath",
+    "contentSha256",
+    "principleCount",
+    "principles",
+    "roleCount",
+    "roles",
+    "resourceTypeCount",
+    "resourceTypes",
+    "actionCount",
+    "actions",
+    "scopeCount",
+    "scopes",
+    "seededPermissionCount",
+    "seededPermissions",
+    "sodRuleCount",
+    "sodRules",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "overallReadinessPercent",
+    "nextCatalogId",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": { "type": "string", "const": "PEOPLE-CATALOG-05-PERMISSIONS-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "scope": {
+      "type": "string",
+      "const": "FOUNDATION_CONTRACT_WITH_SEEDED_PERMISSIONS"
+    },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "principleCount": { "type": "integer", "const": 10 },
+    "principles": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^AUTHZ-PRINCIPLE-\\d{3}$" }
+    },
+    "roleCount": { "type": "integer", "const": 7 },
+    "roles": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["roleId", "roleKey"],
+        "additionalProperties": false,
+        "properties": {
+          "roleId": { "type": "string", "pattern": "^ROLE-\\d{3}$" },
+          "roleKey": { "type": "string" }
+        }
+      }
+    },
+    "resourceTypeCount": { "type": "integer", "const": 18 },
+    "resourceTypes": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": { "type": "string" }
+    },
+    "actionCount": { "type": "integer", "const": 16 },
+    "actions": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": { "type": "string" }
+    },
+    "scopeCount": { "type": "integer", "const": 5 },
+    "scopes": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": { "type": "string" }
+    },
+    "seededPermissionCount": { "type": "integer", "const": 18 },
+    "seededPermissions": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "required": ["permissionId", "permissionKey"],
+        "additionalProperties": false,
+        "properties": {
+          "permissionId": { "type": "string", "pattern": "^PERM-[A-Z]+-\\d{3}$" },
+          "permissionKey": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" }
+        }
+      }
+    },
+    "sodRuleCount": { "type": "integer", "const": 3 },
+    "sodRules": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["sodId", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "sodId": { "type": "string", "pattern": "^SOD-\\d{3}$" },
+          "label": { "type": "string" }
+        }
+      }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 15 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "type": "string" }
+    },
+    "overallReadinessPercent": { "type": "integer", "const": 99 },
+    "nextCatalogId": {
+      "type": "string",
+      "const": "PEOPLE-CATALOG-06-NOTIFICATIONS-1.0"
+    },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 6,
+      "items": { "type": "string" }
+    }
+  }
+}

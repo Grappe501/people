@@ -11,6 +11,20 @@
     "docs:inventory:build": "node scripts/documentation/build-doc-0-foundation.mjs",
     "docs:inventory:validate": "node scripts/documentation/validate-documentation-inventory.mjs",
     "docs:foundation:validate": "npm run docs:inventory:validate",
-    "docs:validate": "npm run docs:foundation:validate"
+    "docs:volume08:registries": "python scripts/documentation/build-volume-08-registries.py",
+    "docs:volume08:validate": "node scripts/documentation/validate-volume-08.mjs",
+    "docs:volume09:registries": "python scripts/documentation/build-volume-09-registries.py",
+    "docs:volume09:validate": "node scripts/documentation/validate-volume-09.mjs",
+    "docs:volume10:registries": "python scripts/documentation/build-volume-10-registries.py",
+    "docs:volume10:validate": "node scripts/documentation/validate-volume-10.mjs",
+    "docs:volume11:registries": "python scripts/documentation/build-volume-11-registries.py",
+    "docs:volume11:validate": "node scripts/documentation/validate-volume-11.mjs",
+    "docs:volume12:registries": "python scripts/documentation/build-volume-12-registries.py",
+    "docs:volume12:validate": "node scripts/documentation/validate-volume-12.mjs",
+    "docs:volume13:registries": "python scripts/documentation/build-volume-13-registries.py",
+    "docs:volume13:validate": "node scripts/documentation/validate-volume-13.mjs",
+    "docs:catalogs:registries": "python scripts/documentation/build-catalog-01-registries.py && python scripts/documentation/build-catalog-02-registries.py && python scripts/documentation/build-catalog-03-registries.py && python scripts/documentation/build-catalog-04-registries.py && python scripts/documentation/build-catalog-05-registries.py && python scripts/documentation/build-catalog-06-registries.py && python scripts/documentation/build-catalog-07-registries.py && python scripts/documentation/build-catalog-08-registries.py && python scripts/documentation/build-catalog-09-registries.py",
+    "docs:catalogs:validate": "node scripts/documentation/validate-catalog-library.mjs",
+    "docs:validate": "npm run docs:foundation:validate && npm run docs:volume08:validate && npm run docs:volume09:validate && npm run docs:volume10:validate && npm run docs:volume11:validate && npm run docs:volume12:validate && npm run docs:volume13:validate && npm run docs:catalogs:validate"
   }
 }

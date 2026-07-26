@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/catalog_master_registry.schema.json",
+  "title": "People Intake Catalog 0 Master Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "catalogCount",
+    "catalogs",
+    "nextCatalogId",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": { "type": "string", "const": "PEOPLE-CATALOG-00-MASTER-REGISTRY-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "catalogCount": { "type": "integer", "const": 10 },
+    "catalogs": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": ["catalogId", "sequence", "title", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "catalogId": { "type": "string" },
+          "sequence": { "type": "integer", "minimum": 0 },
+          "title": { "type": "string" },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "nextCatalogId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-COMPLETE" },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 5,
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-00-MASTER-REGISTRY-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "canonicalPath": "docs/catalogs/catalog-00-master-registry/CATALOG_00_MASTER_REGISTRY.md",
+  "contentSha256": "1260aab8c1b72c023909430c15629a7675bb0779a5a2d6dd5211002633c661e6",
+  "catalogCount": 10,
+  "catalogs": [
+    {
+      "catalogId": "PEOPLE-CATALOG-00-MASTER-REGISTRY-1.0",
+      "sequence": 0,
+      "title": "Master Catalog Registry",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-01-STATE-MACHINES-1.0",
+      "sequence": 1,
+      "title": "State Machine Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-02-ERRORS-1.0",
+      "sequence": 2,
+      "title": "Error Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-03-AUDIT-EVENTS-1.0",
+      "sequence": 3,
+      "title": "Audit Event Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-04-CONFIGURATION-1.0",
+      "sequence": 4,
+      "title": "Configuration Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-05-PERMISSIONS-1.0",
+      "sequence": 5,
+      "title": "Permission and Authorization Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-06-NOTIFICATIONS-1.0",
+      "sequence": 6,
+      "title": "Notification Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0",
+      "sequence": 7,
+      "title": "Background Job Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-08-DATA-RETENTION-1.0",
+      "sequence": 8,
+      "title": "Data Classification and Retention Catalog",
+      "status": "DESIGN_COMPLETE"
+    },
+    {
+      "catalogId": "PEOPLE-CATALOG-09-TRACEABILITY-1.0",
+      "sequence": 9,
+      "title": "Cross-Volume Traceability Matrix",
+      "status": "DESIGN_COMPLETE"
+    }
+  ],
+  "nextCatalogId": "PEOPLE-CATALOG-LIBRARY-COMPLETE",
+  "prohibitions": [
+    "No application source code",
+    "No API handlers or route implementations",
+    "No database migrations or ORM models",
+    "No React, JSX, TSX, or CSS implementation",
+    "No undocumented enum, status, error, permission, audit, config, or job values in production code"
+  ]
+}

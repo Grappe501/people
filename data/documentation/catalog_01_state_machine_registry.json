@@ -1,0 +1,142 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-01-STATE-MACHINES-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "canonicalPath": "docs/catalogs/catalog-01-state-machines/CATALOG_01_STATE_MACHINES.md",
+  "contentSha256": "dff66a08bc976a455618dd51468fc616e40ee9dadb2402f56a7e51797394f2c0",
+  "machineCount": 23,
+  "machines": [
+    {
+      "machineId": "STATE-USER-001",
+      "title": "Application User Lifecycle"
+    },
+    {
+      "machineId": "STATE-ROLE-001",
+      "title": "Role Grant Lifecycle"
+    },
+    {
+      "machineId": "STATE-BATCH-001",
+      "title": "Intake Batch Lifecycle"
+    },
+    {
+      "machineId": "STATE-PAGE-001",
+      "title": "Intake Page Lifecycle"
+    },
+    {
+      "machineId": "STATE-IMAGE-QUALITY-001",
+      "title": "Image Quality Lifecycle"
+    },
+    {
+      "machineId": "STATE-STORAGE-001",
+      "title": "Storage Object Lifecycle"
+    },
+    {
+      "machineId": "STATE-UPLOAD-001",
+      "title": "Upload Lifecycle"
+    },
+    {
+      "machineId": "STATE-QUEUE-001",
+      "title": "Queue Item Lifecycle"
+    },
+    {
+      "machineId": "STATE-CLAIM-001",
+      "title": "Work Claim Lifecycle"
+    },
+    {
+      "machineId": "STATE-DRAFT-001",
+      "title": "Draft Lifecycle"
+    },
+    {
+      "machineId": "STATE-ENTRY-001",
+      "title": "Intake Entry Lifecycle"
+    },
+    {
+      "machineId": "STATE-NORMALIZATION-001",
+      "title": "Normalization Run Lifecycle"
+    },
+    {
+      "machineId": "STATE-MATCH-EVAL-001",
+      "title": "Match Evaluation Lifecycle"
+    },
+    {
+      "machineId": "STATE-MATCH-RESOLUTION-001",
+      "title": "Match Resolution Workflow"
+    },
+    {
+      "machineId": "STATE-PROMOTION-001",
+      "title": "Promotion Request Lifecycle"
+    },
+    {
+      "machineId": "STATE-CANONICAL-LINK-001",
+      "title": "Canonical Person Link Lifecycle"
+    },
+    {
+      "machineId": "STATE-JOB-001",
+      "title": "Background Job Lifecycle"
+    },
+    {
+      "machineId": "STATE-ERROR-001",
+      "title": "Processing Error Lifecycle"
+    },
+    {
+      "machineId": "STATE-ALERT-001",
+      "title": "Alert Lifecycle"
+    },
+    {
+      "machineId": "STATE-IDEMPOTENCY-001",
+      "title": "Idempotency Record Lifecycle"
+    },
+    {
+      "machineId": "STATE-NOTIFICATION-001",
+      "title": "In-App Notification Lifecycle"
+    },
+    {
+      "machineId": "STATE-EXPORT-001",
+      "title": "Data Export Lifecycle"
+    },
+    {
+      "machineId": "STATE-ARCHIVE-001",
+      "title": "Archival Lifecycle"
+    }
+  ],
+  "lockedDecisionCount": 22,
+  "lockedDecisions": [
+    "State transitions are server-enforced",
+    "Every state uses a cataloged canonical key",
+    "State history is preserved",
+    "State transitions are concurrency-protected",
+    "UI labels may differ from machine keys but not from their meaning",
+    "Claim expiration does not erase drafts",
+    "Source-image replacement does not erase original images",
+    "Submission creates an immutable revision",
+    "Corrections create new revisions",
+    "Match evaluations are immutable after completion",
+    "Match resolutions are versioned",
+    "Candidate selection is not finalization",
+    "Promotions are independently stateful from resolutions",
+    "Promotion retries reuse idempotency identity",
+    "Canonical links retain history",
+    "Acknowledgment is not resolution",
+    "Read notification is not acknowledgment",
+    "Archive is not deletion",
+    "Legal hold blocks destruction",
+    "Terminal failure cannot be displayed as success",
+    "No state transition may silently skip audit when audit is required",
+    "No undocumented state may appear in production"
+  ],
+  "deferredDecisions": [
+    "STATE-DEC-001",
+    "STATE-DEC-002",
+    "STATE-DEC-003",
+    "STATE-DEC-004",
+    "STATE-DEC-005",
+    "STATE-DEC-006",
+    "STATE-DEC-007",
+    "STATE-DEC-008",
+    "STATE-DEC-009",
+    "STATE-DEC-010"
+  ],
+  "overallReadinessPercent": 99,
+  "nextCatalogId": "PEOPLE-CATALOG-02-ERRORS-1.0"
+}

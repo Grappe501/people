@@ -1,0 +1,120 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-06-NOTIFICATIONS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_NOTIFICATIONS",
+  "canonicalPath": "docs/catalogs/catalog-06-notifications/CATALOG_06_NOTIFICATIONS.md",
+  "contentSha256": "6ec001b381c57bb18893850d74b601857ba92844155273f6b31d360599b8ce7f",
+  "principleCount": 10,
+  "principles": [
+    "NOTIFY-PRINCIPLE-001",
+    "NOTIFY-PRINCIPLE-002",
+    "NOTIFY-PRINCIPLE-003",
+    "NOTIFY-PRINCIPLE-004",
+    "NOTIFY-PRINCIPLE-005",
+    "NOTIFY-PRINCIPLE-006",
+    "NOTIFY-PRINCIPLE-007",
+    "NOTIFY-PRINCIPLE-008",
+    "NOTIFY-PRINCIPLE-009",
+    "NOTIFY-PRINCIPLE-010"
+  ],
+  "channelCount": 5,
+  "channels": [
+    "IN_APP",
+    "EMAIL",
+    "SMS (future)",
+    "PUSH (future)",
+    "WEBHOOK (future)"
+  ],
+  "priorityCount": 4,
+  "priorities": [
+    "LOW",
+    "NORMAL",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "recipientTypeCount": 6,
+  "recipientTypes": [
+    "Individual User",
+    "Assigned Worker",
+    "Reviewer",
+    "Administrator",
+    "Owner",
+    "System Account"
+  ],
+  "expirationPolicyCount": 4,
+  "expirationPolicies": [
+    "Never Expires",
+    "Expires After Duration",
+    "Expires On State Change",
+    "Expires On Acknowledgment"
+  ],
+  "seededNotificationCount": 9,
+  "seededNotifications": [
+    {
+      "notificationId": "NOTIFY-QUEUE-001",
+      "canonicalName": "WORK_AVAILABLE"
+    },
+    {
+      "notificationId": "NOTIFY-CLAIM-001",
+      "canonicalName": "CLAIM_EXPIRING"
+    },
+    {
+      "notificationId": "NOTIFY-CLAIM-002",
+      "canonicalName": "CLAIM_EXPIRED"
+    },
+    {
+      "notificationId": "NOTIFY-DRAFT-001",
+      "canonicalName": "DRAFT_RECOVERABLE"
+    },
+    {
+      "notificationId": "NOTIFY-PAGE-001",
+      "canonicalName": "TRANSCRIPTION_RETURNED"
+    },
+    {
+      "notificationId": "NOTIFY-MATCH-001",
+      "canonicalName": "MATCH_REQUIRES_REVIEW"
+    },
+    {
+      "notificationId": "NOTIFY-PROMOTION-001",
+      "canonicalName": "PROMOTION_FAILED"
+    },
+    {
+      "notificationId": "NOTIFY-CONFIG-001",
+      "canonicalName": "SYSTEM_CONFIGURATION_CHANGED"
+    },
+    {
+      "notificationId": "NOTIFY-SECURITY-001",
+      "canonicalName": "SECURITY_EVENT"
+    }
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "No production notification type may exist outside this catalog or an approved amendment.",
+    "Recipients are determined by business rules, not client input.",
+    "Priority never replaces authorization.",
+    "Notifications must never expose confidential information to unauthorized recipients.",
+    "Security notifications are generally not deduplicated.",
+    "Reading a notification does not necessarily acknowledge it.",
+    "Future channels (SMS, PUSH, WEBHOOK) require formal catalog amendment before production use.",
+    "Acknowledgment-required notifications must be auditable where required.",
+    "Seeded notification names in this catalog are authoritative permanent identifiers.",
+    "Notifications must remain accessible without relying solely on color for priority.",
+    "Deduplication must not suppress SECURITY_EVENT by default.",
+    "Configuration-change and security notifications require acknowledgment.",
+    "Notification delivery failures must not silently alter business state.",
+    "Exact channel enablement may be environment-specific but must use cataloged notification types.",
+    "Additional notification types require catalog amendment under this contract."
+  ],
+  "overallReadinessPercent": 98,
+  "nextCatalogId": "PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0",
+  "prohibitions": [
+    "No application source code",
+    "No email, SMS, push, or webhook delivery implementation",
+    "No notification persistence or queue workers",
+    "No UI notification components",
+    "No dependency installation",
+    "No inventing undocumented production notification names outside this catalog and its approved amendments"
+  ]
+}

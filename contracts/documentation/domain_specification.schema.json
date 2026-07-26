@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/domain_specification.schema.json",
+  "title": "People Intake Volume 8 Domain Registry",
+  "type": "object",
+  "required": [
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "globalInvariants",
+    "domains",
+    "ruleCount",
+    "invariantCount",
+    "lockedDecisionCount"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentId": { "type": "string", "const": "PEOPLE-VOLUME-08-TECHNICAL-DOMAIN-SPECIFICATIONS-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "globalInvariants": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "type": "string", "pattern": "^PEOPLE-INV-\\d{3}$" }
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 28,
+      "maxItems": 28,
+      "items": {
+        "type": "object",
+        "required": ["domainId", "name", "rulePrefix", "rules", "invariants"],
+        "additionalProperties": false,
+        "properties": {
+          "domainId": { "type": "string" },
+          "name": { "type": "string" },
+          "rulePrefix": { "type": "string" },
+          "rules": { "type": "array", "items": { "type": "string" } },
+          "invariants": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "ruleCount": { "type": "integer", "minimum": 1 },
+    "invariantCount": { "type": "integer", "minimum": 15 },
+    "lockedDecisionCount": { "type": "integer", "const": 40 }
+  }
+}

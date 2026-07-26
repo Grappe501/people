@@ -1,0 +1,158 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_JOBS",
+  "canonicalPath": "docs/catalogs/catalog-07-background-jobs/CATALOG_07_BACKGROUND_JOBS.md",
+  "contentSha256": "c0de33747d34dc5aea1d371035066b1c721549e623ab3aee5b52decb7ed028c2",
+  "principleCount": 10,
+  "principles": [
+    "JOB-PRINCIPLE-001",
+    "JOB-PRINCIPLE-002",
+    "JOB-PRINCIPLE-003",
+    "JOB-PRINCIPLE-004",
+    "JOB-PRINCIPLE-005",
+    "JOB-PRINCIPLE-006",
+    "JOB-PRINCIPLE-007",
+    "JOB-PRINCIPLE-008",
+    "JOB-PRINCIPLE-009",
+    "JOB-PRINCIPLE-010"
+  ],
+  "categoryCount": 17,
+  "categories": [
+    "Upload",
+    "Storage",
+    "Image Processing",
+    "Claims",
+    "Draft Recovery",
+    "Transcription",
+    "Normalization",
+    "Matching",
+    "Promotion",
+    "Notification",
+    "Reporting",
+    "Export",
+    "Retention",
+    "Audit",
+    "Maintenance",
+    "Security",
+    "System"
+  ],
+  "priorityCount": 4,
+  "priorities": [
+    "LOW",
+    "NORMAL",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "concurrencyPolicyCount": 5,
+  "concurrencyPolicies": [
+    "Single Instance",
+    "Per Resource",
+    "Per Batch",
+    "Per User",
+    "Unlimited"
+  ],
+  "retryPolicyCount": 5,
+  "retryPolicies": [
+    "No Retry",
+    "Immediate Retry",
+    "Exponential Backoff",
+    "Manual Retry",
+    "Operator Review Required"
+  ],
+  "triggerCount": 7,
+  "triggers": [
+    "API Request",
+    "State Transition",
+    "Scheduled Execution",
+    "Queue Availability",
+    "Prior Job Completion",
+    "Administrator Request",
+    "Startup Recovery"
+  ],
+  "seededJobCount": 13,
+  "seededJobs": [
+    {
+      "jobId": "JOB-UPLOAD-001",
+      "canonicalName": "UPLOAD_VERIFICATION"
+    },
+    {
+      "jobId": "JOB-IMAGE-001",
+      "canonicalName": "IMAGE_PREVIEW_GENERATION"
+    },
+    {
+      "jobId": "JOB-CLAIM-001",
+      "canonicalName": "CLAIM_EXPIRATION_CHECK"
+    },
+    {
+      "jobId": "JOB-DRAFT-001",
+      "canonicalName": "DRAFT_RECOVERY_SCAN"
+    },
+    {
+      "jobId": "JOB-NORMALIZATION-001",
+      "canonicalName": "ENTRY_NORMALIZATION"
+    },
+    {
+      "jobId": "JOB-MATCH-001",
+      "canonicalName": "MATCH_EVALUATION"
+    },
+    {
+      "jobId": "JOB-PROMOTION-001",
+      "canonicalName": "PROMOTION_EXECUTION"
+    },
+    {
+      "jobId": "JOB-NOTIFY-001",
+      "canonicalName": "NOTIFICATION_DISPATCH"
+    },
+    {
+      "jobId": "JOB-REPORT-001",
+      "canonicalName": "REPORT_GENERATION"
+    },
+    {
+      "jobId": "JOB-EXPORT-001",
+      "canonicalName": "EXPORT_GENERATION"
+    },
+    {
+      "jobId": "JOB-RETENTION-001",
+      "canonicalName": "RETENTION_EXPIRATION"
+    },
+    {
+      "jobId": "JOB-AUDIT-001",
+      "canonicalName": "AUDIT_INTEGRITY_CHECK"
+    },
+    {
+      "jobId": "JOB-MAINT-001",
+      "canonicalName": "SYSTEM_HEALTH_CHECK"
+    }
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "No production background job may exist outside this catalog or an approved amendment.",
+    "Jobs must never depend on UI state or browser sessions.",
+    "Retries must never create duplicate business results.",
+    "Jobs that modify canonical data always require idempotency.",
+    "Failed jobs never silently disappear.",
+    "Priority affects scheduling only and does not bypass authorization.",
+    "Jobs execute under service identities, not interactive user sessions.",
+    "Dependency failures must be explicit.",
+    "Seeded job names in this catalog are authoritative permanent identifiers.",
+    "Promotion execution must be idempotent, transactional, and audited.",
+    "Configurable timeouts and concurrency use Catalog 4 keys; they do not invent new job types.",
+    "Notification dispatch jobs must honor Catalog 6 recipient and privacy rules.",
+    "Retention jobs defer classification durations to Catalog 8.",
+    "Material job lifecycle events require Catalog 3 audit linkage where required.",
+    "Additional job types require catalog amendment under this contract."
+  ],
+  "overallReadinessPercent": 99,
+  "nextCatalogId": "PEOPLE-CATALOG-08-DATA-RETENTION-1.0",
+  "prohibitions": [
+    "No application source code",
+    "No worker, queue, or scheduler implementation",
+    "No database migrations for job tables",
+    "No cron or Netlify scheduled-function wiring",
+    "No dependency installation",
+    "No inventing undocumented production job names outside this catalog and its approved amendments"
+  ]
+}

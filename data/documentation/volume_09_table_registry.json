@@ -1,0 +1,412 @@
+{
+  "documentId": "PEOPLE-VOLUME-09-DATABASE-SPECIFICATIONS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_PENDING_CROSS_VOLUME_VALIDATION",
+  "canonicalPath": "docs/volumes/volume-09-database-specifications/VOLUME_09_DATABASE_SPECIFICATIONS.md",
+  "contentSha256": "cd06ecde5365aefd24887b3cdff310a4aded37da287efd85774585cd50fc2fbd",
+  "principles": [
+    "DB-PRINCIPLE-001",
+    "DB-PRINCIPLE-002",
+    "DB-PRINCIPLE-003",
+    "DB-PRINCIPLE-004",
+    "DB-PRINCIPLE-005",
+    "DB-PRINCIPLE-006",
+    "DB-PRINCIPLE-007",
+    "DB-PRINCIPLE-008",
+    "DB-PRINCIPLE-009",
+    "DB-PRINCIPLE-010"
+  ],
+  "deferredDecisions": [
+    "DB-DEC-001",
+    "DB-DEC-002",
+    "DB-DEC-003",
+    "DB-DEC-004",
+    "DB-DEC-005",
+    "DB-DEC-006",
+    "DB-DEC-007",
+    "DB-DEC-008",
+    "DB-DEC-009",
+    "DB-DEC-010",
+    "DB-DEC-011",
+    "DB-DEC-012",
+    "DB-DEC-013",
+    "DB-DEC-014",
+    "DB-DEC-015"
+  ],
+  "lockedDecisionCount": 40,
+  "tableCount": 44,
+  "appendOnlyCount": 15,
+  "tables": [
+    {
+      "tableName": "application_users",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "user_roles",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "user_role_history",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "user_access_events",
+      "optional": true,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "intake_batches",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "intake_batch_status_history",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "intake_pages",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "intake_page_status_history",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "intake_entries",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "entry_submission_revisions",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "intake_entry_fields",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "entry_field_revision_history",
+      "optional": true,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "storage_objects",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "source_images",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "image_access_events",
+      "optional": true,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "upload_sessions",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "upload_attempts",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "work_queue_items",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "work_claims",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "claim_history",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "page_drafts",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "page_draft_revisions",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "normalization_runs",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "normalized_entry_fields",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "match_evaluations",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "match_candidates",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "match_signals",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "match_evaluation_warnings",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "match_resolutions",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "duplicate_entry_links",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "resolution_status_history",
+      "optional": true,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "promotion_requests",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "promotion_attempts",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "canonical_person_links",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "canonical_attribute_contributions",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "provenance_records",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "provenance_links",
+      "optional": true,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "audit_events",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "background_jobs",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "background_job_attempts",
+      "optional": false,
+      "appendOnly": true,
+      "mentioned": true
+    },
+    {
+      "tableName": "processing_errors",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "operator_alerts",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "idempotency_records",
+      "optional": false,
+      "appendOnly": false,
+      "mentioned": true
+    },
+    {
+      "tableName": "application_configuration",
+      "optional": true,
+      "appendOnly": false,
+      "mentioned": true
+    }
+  ],
+  "families": [
+    {
+      "family": "Identity and Access",
+      "tables": [
+        "application_users",
+        "user_roles",
+        "user_role_history",
+        "user_access_events"
+      ]
+    },
+    {
+      "family": "Intake",
+      "tables": [
+        "intake_batches",
+        "intake_batch_status_history",
+        "intake_pages",
+        "intake_page_status_history",
+        "intake_entries",
+        "entry_submission_revisions",
+        "intake_entry_fields",
+        "entry_field_revision_history"
+      ]
+    },
+    {
+      "family": "Images and Uploads",
+      "tables": [
+        "storage_objects",
+        "source_images",
+        "image_access_events",
+        "upload_sessions",
+        "upload_attempts"
+      ]
+    },
+    {
+      "family": "Queue and Claims",
+      "tables": [
+        "work_queue_items",
+        "work_claims",
+        "claim_history"
+      ]
+    },
+    {
+      "family": "Drafts",
+      "tables": [
+        "page_drafts",
+        "page_draft_revisions"
+      ]
+    },
+    {
+      "family": "Normalization",
+      "tables": [
+        "normalization_runs",
+        "normalized_entry_fields"
+      ]
+    },
+    {
+      "family": "Matching",
+      "tables": [
+        "match_evaluations",
+        "match_candidates",
+        "match_signals",
+        "match_evaluation_warnings",
+        "match_resolutions",
+        "duplicate_entry_links",
+        "resolution_status_history"
+      ]
+    },
+    {
+      "family": "Canonical Integration",
+      "tables": [
+        "promotion_requests",
+        "promotion_attempts",
+        "canonical_person_links",
+        "canonical_attribute_contributions"
+      ]
+    },
+    {
+      "family": "Provenance and Audit",
+      "tables": [
+        "provenance_records",
+        "provenance_links",
+        "audit_events"
+      ]
+    },
+    {
+      "family": "Operations",
+      "tables": [
+        "background_jobs",
+        "background_job_attempts",
+        "processing_errors",
+        "operator_alerts",
+        "idempotency_records",
+        "application_configuration"
+      ]
+    }
+  ],
+  "prohibitions": [
+    "No SQL migrations",
+    "No Prisma schema",
+    "No ORM models",
+    "No database provisioning",
+    "No live database connection",
+    "No production credentials",
+    "No schema deployment",
+    "No seed execution",
+    "No destructive data operations"
+  ]
+}

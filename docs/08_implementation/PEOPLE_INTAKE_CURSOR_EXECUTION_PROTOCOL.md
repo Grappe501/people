@@ -71,6 +71,29 @@ Cursor must report:
 11. Commit status
 12. Deployment status
 
+### 9.3.1 Standing Commit / Push / Deploy Protocol (mandatory)
+
+Authority: `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` (D-065).
+
+After every completed, validated slice:
+
+1. Validate (`governance:validate`, and `docs:catalogs:validate` when catalogs touched).  
+2. Confirm no forbidden implementation artifacts while application code is not authorized.  
+3. Update indexes, registers, RTM, completion report.  
+4. **Commit** with work-item ID in the message.  
+5. **Push** to the canonical GitHub branch.  
+6. **Verify** the remote contains the commit.  
+7. **Deploy/verify Netlify** only when an authorized deployable surface exists.  
+8. Never treat local-only changes as complete.  
+9. Never invent application code to force a Netlify deploy.  
+
+If no authorized deployable surface exists, completion evidence MUST state:
+
+```text
+Netlify deployment: NOT APPLICABLE — no authorized deployable surface exists
+Application implementation: NOT AUTHORIZED
+```
+
 ---
 
 ## 9.4 Hard Stops

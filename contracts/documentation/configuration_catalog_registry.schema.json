@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/configuration_catalog_registry.schema.json",
+  "title": "People Intake Catalog 4 Configuration Foundation Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "scope",
+    "canonicalPath",
+    "contentSha256",
+    "principleCount",
+    "principles",
+    "categoryCount",
+    "categories",
+    "seededConfigCount",
+    "seededConfigs",
+    "featureFlagExamples",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "overallReadinessPercent",
+    "nextCatalogId",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": { "type": "string", "const": "PEOPLE-CATALOG-04-CONFIGURATION-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "scope": { "type": "string", "const": "FOUNDATION_CONTRACT_WITH_SEEDED_KEYS" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "principleCount": { "type": "integer", "const": 10 },
+    "principles": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^CONFIG-PRINCIPLE-\\d{3}$" }
+    },
+    "categoryCount": { "type": "integer", "const": 24 },
+    "categories": {
+      "type": "array",
+      "minItems": 24,
+      "maxItems": 24,
+      "items": { "type": "string" }
+    },
+    "seededConfigCount": { "type": "integer", "const": 59 },
+    "seededConfigs": {
+      "type": "array",
+      "minItems": 59,
+      "maxItems": 59,
+      "items": {
+        "type": "object",
+        "required": ["configId", "configurationKey"],
+        "additionalProperties": false,
+        "properties": {
+          "configId": { "type": "string", "pattern": "^CONFIG-[A-Z]+-\\d{3}$" },
+          "configurationKey": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" }
+        }
+      }
+    },
+    "featureFlagExamples": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "string" }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 15 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "type": "string" }
+    },
+    "overallReadinessPercent": { "type": "integer", "const": 99 },
+    "nextCatalogId": { "type": "string", "const": "PEOPLE-CATALOG-05-PERMISSIONS-1.0" },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 6,
+      "items": { "type": "string" }
+    }
+  }
+}

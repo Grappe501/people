@@ -604,3 +604,302 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next script is DOC-1 (Volume 8 formal); production code remains prohibited; weighted docs progress starts at 5%. |
 | Related files | DOC-0 artifacts under data/documentation, docs/volumes, develop_notes |
 | Revisit trigger | DOC-12 specification freeze |
+
+### D-044
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 8 — PEOPLE-VOLUME-08-TECHNICAL-DOMAIN-SPECIFICATIONS-1.0 — is the implementation-governing technical domain specification. Canonical path is `docs/volumes/volume-08-technical-specifications/VOLUME_08_TECHNICAL_DOMAIN_SPECIFICATIONS.md`. Global invariants `PEOPLE-INV-001`…`015`, domain `*-RULE-*` / `*-INV-*` identifiers, forty locked domain decisions, and E2E scenarios A–H in that document are authoritative for domain behavior. Volume 8 does not authorize production code, tables, or API routes. |
+| Reason | Convert approved architecture into precise domain operating rules before Volume 9 database design. |
+| Alternatives | Keep only bootstrap TECH_SPEC drafts; invent rules during coding. |
+| Consequences | Next build is Volume 9 Database Specifications (documented model only — no migrations). OD-B* items aligned with Volume 8 locks remain subject to Owner Decision Log acceptance where still marked provisional in audit registers. Gate G-10 remains closed. |
+| Related files | Volume 8 master; `data/documentation/volume_08_domain_registry.json`; `data/documentation/volume_08_rule_registry.json`; `scripts/documentation/validate-volume-08.mjs` |
+| Revisit trigger | Formal amendment to Volume 8 locked decisions |
+
+### D-045
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 9 — PEOPLE-VOLUME-09-DATABASE-SPECIFICATIONS-1.0 — is the implementation-governing database blueprint. Canonical path is `docs/volumes/volume-09-database-specifications/VOLUME_09_DATABASE_SPECIFICATIONS.md`. Table registry, `DB-PRINCIPLE-001`…`010`, locked database decisions 1–40, and deferred `DB-DEC-001`…`015` in that document are authoritative for data design. Volume 9 prohibits SQL migrations, Prisma/ORM schemas, provisioning, live DB connections, and schema deployment during this documentation build. |
+| Reason | Freeze what data must exist, how records relate, what remains append-only, and how concurrency/provenance/canonical boundaries are protected before API and implementation work. |
+| Alternatives | Keep only bootstrap TABLE_*.md drafts; invent schema during coding. |
+| Consequences | Next build is Volume 10 API Specifications (contracts only — no handlers). Bootstrap `docs/10_database_specifications/TABLE_*.md` remain DRAFT until reconciled. Gate G-10 remains closed; `migrationsAuthorized` remains false. |
+| Related files | Volume 9 master; `data/documentation/volume_09_table_registry.json`; `scripts/documentation/validate-volume-09.mjs` |
+| Revisit trigger | Formal amendment to Volume 9 locked database decisions |
+
+### D-046
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 10 — PEOPLE-VOLUME-10-API-SPECIFICATIONS-1.0 — is the canonical API contract. Canonical path is `docs/volumes/volume-10-api-specifications/VOLUME_10_API_SPECIFICATIONS.md`. Prefix `/api/v1/`, endpoint inventory, envelopes, error codes, idempotency/concurrency rules, and locked API decisions in that document are authoritative. Volume 10 prohibits route handlers, framework/controller code, ORM/SQL, SDKs, and production deployment during this documentation build. |
+| Reason | Freeze UI↔backend↔integration contracts before any production handlers are written, enforcing Volumes 8–9 without inventing endpoints during coding. |
+| Alternatives | Keep only bootstrap API_*.md drafts; invent endpoints during implementation. |
+| Consequences | Next build is Volume 11 UI Specifications (docs only — no React). Bootstrap `docs/11_api_specifications/API_*.md` remain DRAFT until reconciled. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Volume 10 master; `data/documentation/volume_10_endpoint_registry.json`; `scripts/documentation/validate-volume-10.mjs` |
+| Revisit trigger | Formal amendment to Volume 10 locked API decisions |
+
+### D-047
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 11 — PEOPLE-VOLUME-11-USER-INTERFACE-SPECIFICATIONS-1.0 — is the canonical UX and screen specification. Canonical path is `docs/volumes/volume-11-ui-specifications/VOLUME_11_USER_INTERFACE_SPECIFICATIONS.md`. Four workspaces (Capture, Transcribe, Match, Manage), screen inventory, locked UX decisions 1–40, and deferred `UI-DEC-001`…`018` in that document are authoritative. Volume 11 prohibits React, route files, CSS, design-system code, API/auth/DB integration, and framework selection during this documentation build. |
+| Reason | Freeze what users must see and do before inventing layouts during coding; enforce Unknown-not-No, autosave, claim visibility, and accuracy-first UX. |
+| Alternatives | Keep only bootstrap UI_*.md drafts; invent screens during implementation. |
+| Consequences | Next build is Volume 12 Component Library and Design System (docs only — no component code). Bootstrap `docs/12_ui_specifications/UI_*.md` remain DRAFT until reconciled. Gate G-10 remains closed. |
+| Related files | Volume 11 master; `data/documentation/volume_11_screen_registry.json`; `scripts/documentation/validate-volume-11.mjs` |
+| Revisit trigger | Formal amendment to Volume 11 locked UX decisions |
+
+### D-048
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 12 — PEOPLE-VOLUME-12-COMPONENT-LIBRARY-AND-DESIGN-SYSTEM-1.0 — is the canonical component library and visual design system specification. Canonical path is `docs/volumes/volume-12-component-library/VOLUME_12_COMPONENT_LIBRARY_AND_DESIGN_SYSTEM.md`. Design principles, token architecture, color/typography/spacing/motion roles, component inventory, accessibility/privacy contracts, locked decisions 1–50, and deferred `COMP-DEC-001`…`025` in that document are authoritative. Volume 12 prohibits React/JSX/TSX, CSS files, design-token packages, Storybook, font/icon installation, framework selection, routes, API calls, and dependency installation during this documentation build. |
+| Reason | Freeze reusable interface building blocks and visual contracts before inventing one-off UI during coding; enforce semantic tokens, WCAG 2.2 AA, PreferenceControl Yes/No/Unknown, and calm claim/save recovery patterns. |
+| Alternatives | Keep only bootstrap CMP_*.md drafts; invent components during implementation. |
+| Consequences | Next build is Volume 13 Canonical Platform Standards (docs only — no application code). Bootstrap `docs/13_component_library/CMP_*.md` remain DRAFT until reconciled. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Volume 12 master; `data/documentation/volume_12_component_registry.json`; `scripts/documentation/validate-volume-12.mjs` |
+| Revisit trigger | Formal amendment to Volume 12 locked component decisions |
+
+### D-049
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Volume 13 — PEOPLE-VOLUME-13-CANONICAL-PLATFORM-STANDARDS-1.0 — is the canonical engineering standard for People Intake. Canonical path is `docs/volumes/volume-13-platform-standards/VOLUME_13_CANONICAL_PLATFORM_STANDARDS.md`. Repository, configuration, architecture layering, authn/authz, data protection, database/API/UI discipline, testing, deployment, observability, documentation synchronization, implementation-package governance, and the eighteen locked engineering decisions in that document are authoritative. Volume 13 prohibits application source, handlers, migrations, React/CSS implementation, runtime dependency installation for the app, production deployment, and secrets in source control during this documentation build. |
+| Reason | Unify Volumes 0–12 into one engineering doctrine so Cursor and contributors cannot improvise project structure, security boundaries, or integration patterns during later implementation. |
+| Alternatives | Keep only bootstrap PLATFORM_STANDARDS.md; invent engineering conventions during coding. |
+| Consequences | Next build is PEOPLE-STATE-MACHINE-CATALOG-1.0, followed by Error, Audit Event, Configuration catalogs, Cross-Volume Traceability Matrix, and Implementation Package Library — all documentation only. Bootstrap `docs/15_platform_standards/PLATFORM_STANDARDS.md` remains DRAFT until reconciled. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Volume 13 master; `data/documentation/volume_13_platform_registry.json`; `scripts/documentation/validate-volume-13.mjs` |
+| Revisit trigger | Formal amendment to Volume 13 locked engineering decisions |
+
+### D-050
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Document set PEOPLE-CATALOG-LIBRARY-1.0 is authoritative for the catalog sequence. PEOPLE-CATALOG-00-MASTER-REGISTRY-1.0 (`docs/catalogs/catalog-00-master-registry/CATALOG_00_MASTER_REGISTRY.md`) defines the required catalog inventory (0–9), identifier/versioning/amendment rules, and the canonical-value rule. PEOPLE-CATALOG-01-STATE-MACHINES-1.0 (`docs/catalogs/catalog-01-state-machines/CATALOG_01_STATE_MACHINES.md`) defines twenty-three controlled lifecycles, transitions/guards/side effects, twenty-two locked state decisions, and deferred `STATE-DEC-001`…`010`. Catalog builds prohibit application code and undocumented production state/error/permission/audit/config/job values. Prior informal ID PEOPLE-STATE-MACHINE-CATALOG-1.0 is superseded by PEOPLE-CATALOG-01-STATE-MACHINES-1.0. |
+| Reason | Convert Volumes 0–13 into exact operational values so implementation cannot invent states, transitions, or related controlled vocabularies. |
+| Alternatives | Keep only bootstrap STATE_MACHINE_CATALOG.md; invent enums during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-02-ERRORS-1.0, then Audit Events, Configuration, Permissions, Notifications, Background Jobs, Data Retention, and Traceability — all documentation only. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 0/1 masters; `data/documentation/catalog_00_master_registry.json`; `data/documentation/catalog_01_state_machine_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment to Catalog 0 inventory or Catalog 1 locked state decisions |
+
+### D-051
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-02-ERRORS-1.0 is the canonical Error Catalog. Path: `docs/catalogs/catalog-02-errors/CATALOG_02_ERRORS.md`. It defines ten error principles, the standard API error envelope, severity/HTTP mapping, 154 cataloged error entries and canonical codes, preservation/retry/alert/audit/logging rules, thirty locked error decisions, and deferred `ERROR-DEC-001`…`012`. Production implementations may not invent error codes outside this catalog. Catalog 2 prohibits error classes, handlers, logging/alerting implementation, migrations, middleware, UI, retry workers, and dependency installation during this documentation build. |
+| Reason | Freeze stable failure language so APIs, UI, workers, and operators communicate failures safely and consistently without inventing codes or leaking internals. |
+| Alternatives | Keep only bootstrap ERROR_CATALOG.md; invent error codes during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-03-AUDIT-EVENTS-1.0. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 2 master; `data/documentation/catalog_02_error_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment to Catalog 2 locked error decisions |
+
+### D-052
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-03-AUDIT-EVENTS-1.0 is the canonical Audit Event Catalog foundation. Path: `docs/catalogs/catalog-03-audit-events/CATALOG_03_AUDIT_EVENTS.md`. It defines ten audit principles, the standard event contract, naming, 22 domains, the event template, privacy/correlation/retention hooks, testing and traceability rules, fifteen locked decisions, and six seeded example events (`AUDIT-USER-001`, `AUDIT-CLAIM-001`, `AUDIT-PAGE-001`, `AUDIT-MATCH-001`, `AUDIT-PROMOTION-001`, `AUDIT-SECURITY-001`). Scope is foundation-with-seeded-events; additional event entries require formal catalog amendment under this contract and must not invent undocumented production event names. Catalog 3 prohibits audit persistence, migrations, handlers, logging/alerting implementation, UI, and dependency installation during this documentation build. |
+| Reason | Freeze the immutable audit language and contract so implementation cannot invent event shapes, leak secrets into audit payloads, or treat audit as business logic—without falsely claiming a fully enumerated hundreds-of-events inventory. |
+| Alternatives | Invent a complete event list without owner review; keep only bootstrap EVENT_CATALOG.md. |
+| Consequences | Next build is PEOPLE-CATALOG-04-CONFIGURATION-1.0. Full audit event inventory may expand via amendment. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 3 master; `data/documentation/catalog_03_audit_event_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment expanding seeded events or changing Catalog 3 locked decisions |
+
+### D-053
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-04-CONFIGURATION-1.0 is the canonical Configuration Catalog foundation. Path: `docs/catalogs/catalog-04-configuration/CATALOG_04_CONFIGURATION.md`. It defines ten configuration principles, the entry standard, 24 categories, environment scopes, data types, secret classification, startup validation and change-management rules, fifteen locked decisions, fifty-nine seeded configuration keys (`CONFIG-APP-*` through `CONFIG-EXPORT-*`), and four feature-flag examples. Scope is foundation-with-seeded-keys; exact production values and additional keys require formal catalog amendment under this contract and must not invent undocumented production configuration keys. Catalog 4 prohibits application source code, production secret env files, dependency installation, deployment configuration implementation, and feature-flag runtime wiring during this documentation build. |
+| Reason | Freeze the authoritative configuration language so deployments remain predictable and no configurable value is hidden in code—without inventing exact production secrets or a complete env inventory ahead of environment design. |
+| Alternatives | Keep only bootstrap CONFIGURATION_CATALOG.md; invent env keys during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-05-PERMISSIONS-1.0. Exact values and additional keys may expand via amendment. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 4 master; `data/documentation/catalog_04_configuration_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment expanding seeded keys or changing Catalog 4 locked decisions |
+
+### D-054
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-05-PERMISSIONS-1.0 is the canonical Permissions and Authorization Catalog foundation. Path: `docs/catalogs/catalog-05-permissions/CATALOG_05_PERMISSIONS.md`. It defines ten authorization principles, seven Version 1 roles (`Owner`, `Administrator`, `Reviewer`, `Data Entry`, `Uploader`, `Viewer`, `System`), eighteen resource types, sixteen actions, five resource scopes, eighteen seeded permission keys, three separation-of-duties rules, evaluation order, override/emergency/delegation constraints, audit and test requirements, and fifteen locked decisions. Scope is foundation-with-seeded-permissions; additional permission keys and matrix grants require formal catalog amendment under this contract and must not invent undocumented production roles or permission keys. Catalog 5 prohibits application source code, authz middleware, RLS/migrations, role-assignment UI/handlers, and dependency installation during this documentation build. |
+| Reason | Freeze the server-enforced authorization model so UI cannot grant authority, SoD and Owner protections are explicit, and implementation cannot invent roles or permission keys outside the catalog. |
+| Alternatives | Keep only draft authorization matrix prose; invent roles/permissions during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-06-NOTIFICATIONS-1.0. Full permission inventory may expand via amendment. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 5 master; `data/documentation/catalog_05_permissions_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment expanding seeded permissions or changing Catalog 5 locked decisions |
+
+### D-055
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-06-NOTIFICATIONS-1.0 is the canonical Notification Catalog foundation. Path: `docs/catalogs/catalog-06-notifications/CATALOG_06_NOTIFICATIONS.md`. It defines ten notification principles, delivery channels (IN_APP/EMAIL enabled; SMS/PUSH/WEBHOOK future), four priorities, six recipient types, four expiration behaviors, the entry template, deduplication/acknowledgment/privacy/accessibility/escalation rules, fifteen locked decisions, and nine seeded notifications (`WORK_AVAILABLE`, `CLAIM_EXPIRING`, `CLAIM_EXPIRED`, `DRAFT_RECOVERABLE`, `TRANSCRIPTION_RETURNED`, `MATCH_REQUIRES_REVIEW`, `PROMOTION_FAILED`, `SYSTEM_CONFIGURATION_CHANGED`, `SECURITY_EVENT`). Scope is foundation-with-seeded-notifications; additional notification types require formal catalog amendment under this contract and must not invent undocumented production notification names. Catalog 6 prohibits application source code, delivery implementation, notification workers/UI, and dependency installation during this documentation build. |
+| Reason | Freeze the notification language and privacy/recipient rules so implementation cannot spam users, leak unauthorized detail, or invent notification types—without falsely claiming a complete operational notification inventory. |
+| Alternatives | Invent a complete notification list without owner review; implement ad hoc toasts during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0. Full notification inventory may expand via amendment. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 6 master; `data/documentation/catalog_06_notifications_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment expanding seeded notifications or changing Catalog 6 locked decisions |
+
+### D-056
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0 is the canonical Background Job Catalog foundation. Path: `docs/catalogs/catalog-07-background-jobs/CATALOG_07_BACKGROUND_JOBS.md`. It defines ten job principles, seventeen Version 1 categories, job template, seven trigger types, four priorities, five concurrency policies, five retry classes, idempotency rules, failure/monitoring/audit/security/test requirements, fifteen locked decisions, and thirteen seeded jobs (`UPLOAD_VERIFICATION` through `SYSTEM_HEALTH_CHECK`, including `PROMOTION_EXECUTION`). Scope is foundation-with-seeded-jobs; additional job types require formal catalog amendment under this contract and must not invent undocumented production job names. Catalog 7 prohibits application source code, workers/schedulers, job-table migrations, cron/Netlify schedule wiring, and dependency installation during this documentation build. |
+| Reason | Freeze the asynchronous execution architecture so implementation cannot invent hidden workers, skip idempotency for canonical mutations, or silently drop failures—without falsely claiming a complete hundreds-of-jobs inventory. |
+| Alternatives | Invent a complete job list without owner review; implement ad hoc workers during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-08-DATA-RETENTION-1.0. Full job inventory may expand via amendment. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 7 master; `data/documentation/catalog_07_background_jobs_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment expanding seeded jobs or changing Catalog 7 locked decisions |
+
+### D-057
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-08-DATA-RETENTION-1.0 is the canonical Data Classification and Retention Catalog foundation. Path: `docs/catalogs/catalog-08-data-retention/CATALOG_08_DATA_RETENTION.md`. It defines ten retention principles, five classification levels (`PUBLIC`, `INTERNAL`, `CONFIDENTIAL`, `RESTRICTED`, `SYSTEM_SECRET`), twenty-two domains, five lifecycle states (`ACTIVE`, `ARCHIVED`, `LEGAL_HOLD`, `PENDING_DESTRUCTION`, `DESTROYED`), archival/legal-hold/destruction/recovery/privacy/audit/monitoring/governance rules, fifteen locked decisions, and four seeded retention examples (`RETAIN-AUDIT-001`, `RETAIN-DRAFT-001`, `RETAIN-IMAGE-001`, `RETAIN-SECRET-001`). Scope is foundation-with-seeded-retention-rules; additional rules and exact durations require formal catalog amendment under this contract and must not invent undocumented production classification levels or retention rules. Catalog 8 prohibits application source code, archival/destruction workers, retention-table migrations, production data deletion, and dependency installation during this documentation build. |
+| Reason | Freeze the data-lifecycle language so no persistent data exists without classification and retention governance—without inventing complete regulatory mappings or every per-field duration in one pass. |
+| Alternatives | Invent a complete retention schedule without owner review; implement ad hoc deletion during coding. |
+| Consequences | Next build is PEOPLE-CATALOG-09-TRACEABILITY-1.0 (locked Catalog 0 sequence; not an API contract catalog). Full retention inventory and exact durations may expand via amendment. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | Catalog 8 master; `data/documentation/catalog_08_data_retention_registry.json`; `scripts/documentation/validate-catalog-library.mjs` |
+| Revisit trigger | Formal amendment expanding seeded retention rules or changing Catalog 8 locked decisions |
+
+### D-058
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IMPLEMENTATION-MASTER-1.0 is the canonical Implementation Specification series master (foundation). Path: `docs/implementation-specifications/PEOPLE_IMPLEMENTATION_MASTER.md`. It defines a separate IS-* documentation series (not Catalog 10+), ten principles, fifty-five inventoried IS document IDs across Phases 0–10, traceability rules, recommended build order, small-package preference, and fifteen locked decisions. Volumes 8–13 remain canonical for already-authored domain specs; Catalogs remain sole authority for cataloged operational language; PKG-* units remain the executable packaging surface and stay BLOCKED until Gate G-10. Individual IS documents are not fully authored in this master. |
+| Reason | Convert governance into a buildable specification series without inventing Catalog IDs beyond the locked 0–9 library, and without treating design authorship as coding authorization. |
+| Alternatives | Extend Catalogs to 10–13; begin coding from volumes without an IS master; write monolithic implementation docs. |
+| Consequences | Next Catalog Library build remains PEOPLE-CATALOG-09-TRACEABILITY-1.0. IS authorship may proceed as documentation-only drafts under this master. `applicationCodeAuthorized` remains false; Gate G-10 remains closed. |
+| Related files | `docs/implementation-specifications/PEOPLE_IMPLEMENTATION_MASTER.md`; `docs/16_implementation_packages/PACKAGE_INDEX.md` |
+| Revisit trigger | Formal amendment expanding IS inventory or changing Implementation Master locked decisions |
+
+### D-059
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0 is the canonical Implementation Specification Program Design. Path: `docs/implementation_specs/PEOPLE_IMPLEMENTATION_SPECIFICATION_PROGRAM.md`. It authorizes a documentation-only translation program with PEOPLE-IS-* document family, fourteen phases, mandatory template/traceability/readiness rules, H-drive boundary, and explicit Gate G-10 separation. Phase 0 documents PEOPLE-IS-000 through PEOPLE-IS-005 are STRUCTURALLY COMPLETE under `docs/implementation_specs/000_program/`. Catalog Library remains locked at 0–9; draft Catalogs 10–13 are not created—their concerns map into IS phases and existing Volumes. PEOPLE-IMPLEMENTATION-MASTER-1.0 is superseded as program authority but retained historically. Application implementation remains NOT AUTHORIZED. |
+| Reason | Convert governance into build-ready engineering specifications without inventing Catalog IDs beyond 0–9 and without authorizing code. |
+| Alternatives | Extend Catalogs to 13; begin coding from volumes; keep only the thinner IS Master inventory. |
+| Consequences | Next catalog remains PEOPLE-CATALOG-09-TRACEABILITY-1.0. Next IS package is PEOPLE-IS-100-REPOSITORY-ARCHITECTURE-1.0. ADR-001…020 remain open and block coding. Gate G-10 remains closed. |
+| Related files | `docs/implementation_specs/`; Phase 0 IS-000…005; `decisions/DECISION_REGISTER.md` |
+| Revisit trigger | Formal amendment to Program Design locked decisions or Phase 0 gates |
+
+### D-060
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-PHASE-0-GOVERNANCE-1.0 is complete. PEOPLE-IS-000 through PEOPLE-IS-005 are APPROVED as the Implementation Specification Program documentation governance foundation under `docs/implementation_specs/000_program/`. Support artifacts are canonical: README, `_index.md`, `templates/IMPLEMENTATION_SPECIFICATION_TEMPLATE.md`, `matrices/REQUIREMENT_TRACEABILITY_MATRIX.md` (REQ-GOV-001…010 VERIFIED), `decisions/DECISION_REGISTER.md` (DECISION-GOV-001…009 + ADR-001…020 queue), `decisions/OPEN_ISSUE_REGISTER.md` (nine Phase 0 issues), `reports/IMPLEMENTATION_SPECIFICATION_PROGRESS.md`, and `reports/PHASE_0_COMPLETION_REPORT.md`. Documentation approval does not authorize application implementation. |
+| Reason | Close Phase 0 at the documentation level with objective readiness evidence, stable IDs, visible blocking issues, and separate implementation authorization. |
+| Alternatives | Leave Phase 0 as STRUCTURALLY COMPLETE only; authorize coding; invent Catalogs 10–13. |
+| Consequences | Next catalog remains PEOPLE-CATALOG-09-TRACEABILITY-1.0. Next IS document is PEOPLE-IS-100-REPOSITORY-ARCHITECTURE-1.0. ADR-001…020 and ISSUE-* entries remain open and continue to block coding/implementation readiness. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | `docs/implementation_specs/000_program/`; `docs/implementation_specs/reports/PHASE_0_COMPLETION_REPORT.md`; open-issue and decision registers |
+| Revisit trigger | Formal amendment to Phase 0 locked decisions or readiness gates |
+
+### D-061
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-100-REPOSITORY-ARCHITECTURE-1.0 is the canonical Repository Architecture specification. Path: `docs/implementation_specs/100_platform/PEOPLE-IS-100-REPOSITORY-ARCHITECTURE.md`. It defines the exclusive root `H:\people`, top-level directory ownership, documentation vs implementation separation, logical source layers and dependency direction, homes for contracts/database/tests/scripts/deployment/generated/local/tmp/logs, GitHub and Netlify boundaries, H-drive enforcement requirements, REQ-REPO-001…016, and acceptance criteria AC-REPO-001…010. `START_HERE.md` is established as the orientation entry. Documentation approval does not authorize creating `src`, `app`, migrations, workflows, Netlify config, repository guard code, package installs, or deployments. Catalog references remain locked at Catalogs 0–9; former “Catalog 10–13” concerns map to Volumes / IS phases. |
+| Reason | Make correct repository placement and dependency direction easier than incorrect behavior before technology ADRs and coding begin. |
+| Alternatives | Scaffold application directories now; select framework inside IS-100; invent Catalogs 10–13 as governing catalogs. |
+| Consequences | Next IS document is PEOPLE-IS-101-TECHNOLOGY-DECISION-SPECIFICATION-1.0. Next catalog remains PEOPLE-CATALOG-09-TRACEABILITY-1.0. ADR-001…003,006,009,011,020 and ISSUE-HDRIVE-001 remain open and block implementation readiness. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. |
+| Related files | `docs/implementation_specs/100_platform/PEOPLE-IS-100-REPOSITORY-ARCHITECTURE.md`; `START_HERE.md`; RTM REQ-REPO-* rows |
+| Revisit trigger | Formal amendment to repository ownership, dependency rules, or H-drive boundary |
+
+### D-062
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-CATALOG-09-TRACEABILITY-1.0 is the canonical Cross-Volume Traceability Matrix foundation. Path: `docs/catalogs/catalog-09-traceability/CATALOG_09_TRACEABILITY.md`. It defines ten principles, the Catalog 0 and IS-003-aligned linkage chains, required matrix fields, status vocabulary, orphan rules, ten seeded TRACE-SEED rows, and fifteen locked decisions. Scope is foundation-with-seeded-matrix-rows; full cross-volume inventory expands via formal amendment under this contract and PEOPLE-IS authorship. Catalog Library 0–9 is marked `PEOPLE-CATALOG-LIBRARY-COMPLETE`. Application implementation remains NOT AUTHORIZED. |
+| Reason | Close the locked Catalog Library with an honest, bidirectional linkage contract so IS-101 technology decisions can map to requirements, ADRs, risks, tests, and packages without inventing undocumented catalog keys. |
+| Alternatives | Invent a complete production matrix now; leave Catalog 09 PLANNED indefinitely; invent Catalogs 10–13. |
+| Consequences | Next recommended build is PEOPLE-IS-101-TECHNOLOGY-DECISION-SPECIFICATION-1.0. Parallel freeze remediation remains required. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. Full matrix inventory remains amendment-driven. |
+| Related files | Catalog 9 master; `data/documentation/catalog_09_traceability_registry.json`; `scripts/documentation/validate-catalog-library.mjs`; Catalog 0 inventory update |
+| Revisit trigger | Formal amendment expanding seeded TRACE-SEED rows or changing Catalog 9 locked decisions |
+
+### D-063
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-101-TECHNOLOGY-DECISION-SPECIFICATION-1.0 is the canonical Technology Decision Specification. Path: `docs/implementation_specs/100_platform/PEOPLE-IS-101-TECHNOLOGY-DECISION-SPECIFICATION.md`. It records decision criteria, alternatives, recommendations, trade-offs, risks, H-drive notes, and ADR mappings for ADR-001 through ADR-020. Recommendations are PROPOSED design alignment (Next.js/React/TypeScript, hosted PostgreSQL, Prisma-behind-adapters, Supabase Auth provider with unresolved auth method, private object storage adapter, dedicated Netlify hosting per D-018, etc.) and do **not** constitute Decision Log acceptance of individual ADRs. Auth-method and storage-provider contradictions remain explicit open issues. ADR index: `docs/adr/_index.md`. Application implementation remains NOT AUTHORIZED. |
+| Reason | Enable later implementation packages to cite evaluated technology choices without treating Constitution “as designed” language or Catalog 4 seeds as closed ADRs, and without authorizing coding. |
+| Alternatives | Silently accept all ADRs now; pick vendors without recording contradictions; defer IS-101 until freeze. |
+| Consequences | Next IS document is PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION-1.0. ADR-001…020 remain OPEN until individually accepted. Gate G-10 remains closed; `applicationCodeAuthorized` remains false. Priority ADR acceptances may proceed as documentation-only Decision Log work. |
+| Related files | PEOPLE-IS-101; `docs/adr/_index.md`; `docs/implementation_specs/reports/PEOPLE_IS_101_COMPLETION_REPORT.md` |
+| Revisit trigger | Decision Log acceptance or rejection of any ADR-001…020; amendment of recommended stack |
+
+### D-064
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION-1.0 is the canonical Module Boundary Specification and architectural rulebook for future implementation packages. Path: `docs/implementation_specs/100_platform/PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION.md`. Companion matrices: module dependency, ownership, boundary validation rules, and interface contract index under `docs/implementation_specs/matrices/`. It defines layer and capability module inventory, public vs internal surfaces, allowed/forbidden dependencies, ownership of entities/APIs/jobs/permissions/validation/audit/notifications/errors/tests, event rules, versioning, extensibility, anti-patterns, and a feature placement algorithm for implementation. Application implementation remains NOT AUTHORIZED. |
+| Reason | Make module ownership and dependency legality determinable before coding so Burt never guesses where functionality belongs. |
+| Alternatives | Defer boundaries until first code package; allow ad hoc module creation; encode boundaries only in framework folders. |
+| Consequences | Next IS document is PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0. Implementation packages must cite IS-102 matrices. ISSUE-MOD-001/002 remain open for entries split and reports read models. Gate G-10 remains closed; ADR-001…020 remain OPEN. |
+| Related files | PEOPLE-IS-102; module matrices; `reports/PEOPLE_IS_102_COMPLETION_REPORT.md` |
+| Revisit trigger | New capability module; new ALLOW dependency edge; ownership conflict resolution |
+
+### D-065
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-PROTOCOL-COMMIT-PUSH-DEPLOY-1.0 is the standing closeout protocol for every completed, validated Burt interaction. Path: `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md`. It requires validate → indexes/registers/RTM → completion report → commit → push → remote verification → Netlify deploy only when an authorized deployable surface exists. Documentation-first does not waive repository discipline. Application code remains unauthorized and must not be invented to force Netlify deploys. Cursor Execution Protocol §9.3.1 incorporates this standing order. |
+| Reason | Correct operating drift that treated documentation slices as complete without GitHub remote evidence. |
+| Alternatives | Local-only documentation; defer Git until implementation; force Netlify via unauthorized app scaffolding. |
+| Consequences | Every future slice must report commit hash, branch, push, remote verification, and Netlify applicability. Current repo without authorized deployable surface reports Netlify NOT APPLICABLE. |
+| Related files | `PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md`; `PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md` |
+| Revisit trigger | Authorization of a deployable Netlify docs/app surface (IS-105 or package) |
+
+### D-066
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0 is the canonical Environment Architecture specification. Path: `docs/implementation_specs/100_platform/PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE.md`. It defines Local/Preview/Staging/Production separation, secret vs config-name rules, forbidden silent production defaults, H-drive local env rules, Netlify env boundaries, and REQ-ENV-001…012. No secret values are recorded. Application implementation and live environment provisioning remain NOT AUTHORIZED. |
+| Reason | Establish environment isolation before hosting wiring (IS-105) and before any runtime config loaders. |
+| Alternatives | Defer environments until Netlify wiring; embed secrets in docs; collapse Preview into Production. |
+| Consequences | Next IS document is PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0. Provider-specific env var brands finalize with ADR acceptance. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-103; `reports/PEOPLE_IS_103_COMPLETION_REPORT.md` |
+| Revisit trigger | ADR acceptance changing env var brands; IS-105 staging topology decision |

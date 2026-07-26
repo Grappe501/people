@@ -1,0 +1,110 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-03-AUDIT-EVENTS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_EVENTS",
+  "canonicalPath": "docs/catalogs/catalog-03-audit-events/CATALOG_03_AUDIT_EVENTS.md",
+  "contentSha256": "184ba5ba0eb21ee7e07a871fe98adf9840178d7e145f281f78eb8d29e8c8ea39",
+  "principleCount": 10,
+  "principles": [
+    "AUDIT-PRINCIPLE-001",
+    "AUDIT-PRINCIPLE-002",
+    "AUDIT-PRINCIPLE-003",
+    "AUDIT-PRINCIPLE-004",
+    "AUDIT-PRINCIPLE-005",
+    "AUDIT-PRINCIPLE-006",
+    "AUDIT-PRINCIPLE-007",
+    "AUDIT-PRINCIPLE-008",
+    "AUDIT-PRINCIPLE-009",
+    "AUDIT-PRINCIPLE-010"
+  ],
+  "domainCount": 22,
+  "domains": [
+    "AUTHENTICATION",
+    "USER_MANAGEMENT",
+    "ROLE_MANAGEMENT",
+    "BATCH",
+    "PAGE",
+    "UPLOAD",
+    "IMAGE",
+    "QUEUE",
+    "CLAIM",
+    "DRAFT",
+    "TRANSCRIPTION",
+    "MATCHING",
+    "RESOLUTION",
+    "PROMOTION",
+    "CANONICAL_INTEGRATION",
+    "BACKGROUND_JOBS",
+    "REPORTING",
+    "EXPORT",
+    "CONFIGURATION",
+    "SECURITY",
+    "AUDIT",
+    "SYSTEM"
+  ],
+  "seededEventCount": 6,
+  "seededEvents": [
+    {
+      "eventId": "AUDIT-USER-001",
+      "canonicalName": "USER_INVITED",
+      "domain": "USER_MANAGEMENT"
+    },
+    {
+      "eventId": "AUDIT-CLAIM-001",
+      "canonicalName": "CLAIM_ACQUIRED",
+      "domain": "CLAIM"
+    },
+    {
+      "eventId": "AUDIT-PAGE-001",
+      "canonicalName": "PAGE_SUBMITTED",
+      "domain": "PAGE"
+    },
+    {
+      "eventId": "AUDIT-MATCH-001",
+      "canonicalName": "MATCH_RESOLUTION_FINALIZED",
+      "domain": "RESOLUTION"
+    },
+    {
+      "eventId": "AUDIT-PROMOTION-001",
+      "canonicalName": "PROMOTION_SUCCEEDED",
+      "domain": "PROMOTION"
+    },
+    {
+      "eventId": "AUDIT-SECURITY-001",
+      "canonicalName": "SECURITY_ACCESS_DENIED",
+      "domain": "SECURITY"
+    }
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "Audit records are append-only",
+    "Released canonical event names are permanent",
+    "Every significant auditable action requires a cataloged event",
+    "Audit is for accountability and investigation, not primary business logic",
+    "Every event carries a correlation identifier",
+    "Every event is attributed to a human or system actor",
+    "Secrets and tokens never appear in audit payloads",
+    "Full source images never appear in audit payloads",
+    "Metadata prefers references over copies of personal data",
+    "Event types are versioned",
+    "Privacy classification is required on each event definition",
+    "Retention class is assigned via the Retention Catalog",
+    "Seeded example events in this catalog are authoritative",
+    "Additional events require formal catalog amendment under this contract",
+    "No audit implementation may invent undocumented production event names"
+  ],
+  "overallReadinessPercent": 98,
+  "nextCatalogId": "PEOPLE-CATALOG-04-CONFIGURATION-1.0",
+  "prohibitions": [
+    "No audit persistence implementation",
+    "No database migrations",
+    "No API handlers or middleware",
+    "No logging or alerting implementation",
+    "No UI components",
+    "No dependency installation",
+    "No production audit payloads",
+    "No inventing undocumented production event names outside this catalog and its approved amendments"
+  ]
+}

@@ -173,6 +173,33 @@ if (active) {
   if (
     active.nextRecommendedBuild === "PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-VOLUME-08-TECHNICAL-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-08-TECHNICAL-DOMAIN-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-09-DATABASE-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-10-API-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-11-USER-INTERFACE-SPECIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-12-COMPONENT-LIBRARY-AND-DESIGN-SYSTEM-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-VOLUME-13-CANONICAL-PLATFORM-STANDARDS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-LIBRARY-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-00-MASTER-REGISTRY-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-01-STATE-MACHINES-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-02-ERRORS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-03-AUDIT-EVENTS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-04-CONFIGURATION-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-05-PERMISSIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-06-NOTIFICATIONS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-08-DATA-RETENTION-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CATALOG-09-TRACEABILITY-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-101-TECHNOLOGY-DECISION-SPECIFICATION-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-102-MODULE-BOUNDARY-SPECIFICATION-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-103-ENVIRONMENT-ARCHITECTURE-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-STATE-MACHINE-CATALOG-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-ERROR-CATALOG-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-AUDIT-EVENT-CATALOG-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CONFIGURATION-CATALOG-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-CROSS-VOLUME-TRACEABILITY-MATRIX-1.0" ||
+    active.nextRecommendedBuild === "PEOPLE-IMPLEMENTATION-PACKAGE-LIBRARY-1.0" ||
     active.nextRecommendedBuild === "PEOPLE-DOC-FOUNDATION-AND-INVENTORY-1.0"
   ) {
     pass(`nextRecommendedBuild is ${active.nextRecommendedBuild}`);

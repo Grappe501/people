@@ -1,0 +1,540 @@
+{
+  "documentId": "PEOPLE-VOLUME-10-API-SPECIFICATIONS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "canonicalPath": "docs/volumes/volume-10-api-specifications/VOLUME_10_API_SPECIFICATIONS.md",
+  "contentSha256": "5a3954916e9208f7b647fd91fbe618652bc01ea64d4b6df63814a7ee1b595cf5",
+  "apiPrefix": "/api/v1/",
+  "principles": [
+    "API-PRINCIPLE-001",
+    "API-PRINCIPLE-002",
+    "API-PRINCIPLE-003",
+    "API-PRINCIPLE-004",
+    "API-PRINCIPLE-005"
+  ],
+  "lockedDecisionCount": 20,
+  "endpointCount": 44,
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/v1/session",
+      "group": "authentication",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/session/logout",
+      "group": "authentication",
+      "requiresAuth": true,
+      "idempotent": true,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/me",
+      "group": "users",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users",
+      "group": "users",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [
+        "ADMIN",
+        "OWNER"
+      ],
+      "paginated": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/users",
+      "group": "users",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [
+        "ADMIN",
+        "OWNER"
+      ],
+      "paginated": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/users/{id}",
+      "group": "users",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": true,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/users/{id}/roles",
+      "group": "roles",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/users/{id}/roles",
+      "group": "roles",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/users/{id}/roles/{role}",
+      "group": "roles",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/batches",
+      "group": "batches",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/batches",
+      "group": "batches",
+      "requiresAuth": true,
+      "idempotent": false,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/batches/{id}",
+      "group": "batches",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/batches/{id}",
+      "group": "batches",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": true,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/pages/{id}",
+      "group": "pages",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/pages",
+      "group": "pages",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/pages/{id}",
+      "group": "pages",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads",
+      "group": "images",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/uploads/{id}/complete",
+      "group": "images",
+      "requiresAuth": true,
+      "idempotent": true,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/images/{id}",
+      "group": "images",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/images/{id}/replace",
+      "group": "images",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/queue",
+      "group": "queue",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/queue/{id}/claim",
+      "group": "queue",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/claims/{id}/renew",
+      "group": "queue",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/claims/{id}/release",
+      "group": "queue",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/drafts/{pageId}",
+      "group": "drafts",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/drafts/{pageId}",
+      "group": "drafts",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": true,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/drafts/{pageId}/recover",
+      "group": "drafts",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/pages/{id}/submit",
+      "group": "transcription",
+      "requiresAuth": true,
+      "idempotent": true,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/entries/{id}",
+      "group": "transcription",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/entries/{id}/history",
+      "group": "transcription",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/entries/{id}/evaluate",
+      "group": "matching",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/match-evaluations/{id}",
+      "group": "matching",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/match-candidates/{id}",
+      "group": "matching",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/match-resolutions",
+      "group": "resolution",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [
+        "REVIEWER"
+      ],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/match-resolutions/{id}",
+      "group": "resolution",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/promotions",
+      "group": "promotion",
+      "requiresAuth": true,
+      "idempotent": true,
+      "requiresConcurrency": false,
+      "auditRequired": true,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/promotions/{id}",
+      "group": "promotion",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/promotions/{id}/retry",
+      "group": "promotion",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/batches",
+      "group": "reporting",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/queue",
+      "group": "reporting",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/errors",
+      "group": "reporting",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/reports/operators",
+      "group": "reporting",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/audit",
+      "group": "audit",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [
+        "ADMIN"
+      ],
+      "paginated": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/audit/{id}",
+      "group": "audit",
+      "requiresAuth": true,
+      "idempotent": null,
+      "requiresConcurrency": false,
+      "auditRequired": false,
+      "roles": [
+        "ADMIN"
+      ],
+      "paginated": false
+    }
+  ],
+  "errorCodes": [
+    "AUTH_REQUIRED",
+    "ACCESS_DENIED",
+    "VALIDATION_FAILED",
+    "CLAIM_ALREADY_HELD",
+    "CLAIM_EXPIRED",
+    "STALE_VERSION",
+    "NOT_FOUND",
+    "UPLOAD_FAILED",
+    "MATCH_CONFLICT",
+    "PROMOTION_FAILED",
+    "IDEMPOTENCY_CONFLICT",
+    "RATE_LIMITED",
+    "SYSTEM_ERROR"
+  ],
+  "prohibitions": [
+    "No route handlers",
+    "No framework code",
+    "No controller logic",
+    "No ORM code",
+    "No SQL",
+    "No SDK implementation",
+    "No HTTP library choice",
+    "No production deployment"
+  ]
+}

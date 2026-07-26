@@ -1,6 +1,6 @@
 # People Intake — Governance Validation Report
 
-Generated: 2026-07-26T03:31:31.693Z
+Generated: 2026-07-26T05:53:19.027Z
 
 ## Results
 
@@ -90,14 +90,14 @@ Generated: 2026-07-26T03:31:31.693Z
 - PASS: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md contains heading/marker: Gate G-10
 - PASS: active-build prohibits application code
 - PASS: active-build prohibits database changes
-- PASS: nextRecommendedBuild is PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
+- PASS: nextRecommendedBuild is PEOPLE-IS-104-H-DRIVE-WORKSPACE-PROTOCOL-1.0
 - PASS: designFreezeStatus is blocked
 - PASS: active-build projectRoot is H:\people
 - PASS: build-phase-registry has 10 phases
 - PASS: Schema parses: contracts/schemas/governance-document.schema.json
 - PASS: Schema parses: contracts/schemas/decision-record.schema.json
 - PASS: Schema parses: contracts/schemas/build-phase.schema.json
-- PASS: documentation-index lists 60 documents
+- PASS: documentation-index lists 128 documents
 - PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_MASTER_BUILD_PLAN.md
 - PASS: Indexed complete doc exists: docs/01_product/PEOPLE_INTAKE_PRODUCT_CHARTER.md
 - PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_SCOPE_AND_BOUNDARIES.md
@@ -141,11 +141,80 @@ Generated: 2026-07-26T03:31:31.693Z
 - PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_IDEMPOTENCY_AND_CONCURRENCY.md
 - PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_VALIDATION_RULES.md
 - PASS: Indexed complete doc exists: docs/06_engineering/PEOPLE_INTAKE_CONFIGURATION_CONTRACT.md
+- PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_IMPLEMENTATION_PHASE_MAP.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_DESIGN_FREEZE_REPORT.md
-- PASS: Seeded decisions found: 38
+- PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_PROJECT_CONSTITUTION.md
+- PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_BUILD_ORCHESTRATION.md
+- PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_IMPLEMENTATION_LEDGER.md
+- PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_DOCUMENTATION_LIBRARY.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/README.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_AUDIT.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_AUTHENTICATION.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_AUTHORIZATION.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_BACKGROUND_JOBS.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_BATCH.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_CLAIM.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_ENTRY.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_IMAGE_STORAGE.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_MATCHING.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_PAGE.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_PROMOTION.md
+- PASS: Indexed complete doc exists: docs/09_technical_specifications/TECH_SPEC_QUEUE.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/DATABASE_SPEC_OVERVIEW.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/README.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_app_users.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_audit_events.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_batches.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_entries.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_match_candidates.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_match_resolutions.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_page_claims.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_pages.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_promotion_requests.md
+- PASS: Indexed complete doc exists: docs/10_database_specifications/TABLE_intake_source_images.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_ADMIN.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_BATCHES.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_CONVENTIONS.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_MATCHING.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_PAGES_AND_UPLOADS.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_PROMOTION.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_QUEUE_AND_CLAIMS.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_SESSION_AND_USERS.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/API_TRANSCRIPTION.md
+- PASS: Indexed complete doc exists: docs/11_api_specifications/README.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/README.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/UI_ADMIN.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/UI_AUTH.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/UI_CAPTURE.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/UI_MATCHING.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/UI_SHARED.md
+- PASS: Indexed complete doc exists: docs/12_ui_specifications/UI_TRANSCRIPTION.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_AuditTimeline.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_BatchCard.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_ClaimCard.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_ConfirmationDialog.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_EntryEditor.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_ImageViewer.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_MatchCandidateCard.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_ProgressHeader.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_QueueCard.md
+- PASS: Indexed complete doc exists: docs/13_component_library/CMP_StatusBadge.md
+- PASS: Indexed complete doc exists: docs/13_component_library/README.md
+- PASS: Indexed complete doc exists: docs/14_engineering_catalogs/CONFIGURATION_CATALOG.md
+- PASS: Indexed complete doc exists: docs/14_engineering_catalogs/ERROR_CATALOG.md
+- PASS: Indexed complete doc exists: docs/14_engineering_catalogs/EVENT_CATALOG.md
+- PASS: Indexed complete doc exists: docs/14_engineering_catalogs/README.md
+- PASS: Indexed complete doc exists: docs/14_engineering_catalogs/STATE_MACHINE_CATALOG.md
+- PASS: Indexed complete doc exists: docs/15_platform_standards/PLATFORM_STANDARDS.md
+- PASS: Indexed complete doc exists: docs/15_platform_standards/README.md
+- PASS: Indexed complete doc exists: docs/16_implementation_packages/PACKAGE_INDEX.md
+- PASS: Indexed complete doc exists: docs/16_implementation_packages/PACKAGE_TEMPLATE.md
+- PASS: Indexed complete doc exists: docs/16_implementation_packages/PKG-0.0-SPEC-LIBRARY-BOOTSTRAP.md
+- PASS: Indexed complete doc exists: docs/16_implementation_packages/README.md
+- PASS: Seeded decisions found: 66
 - PASS: Decision IDs are unique
 - PASS: Prohibited path absent: src
 - PASS: Prohibited path absent: app

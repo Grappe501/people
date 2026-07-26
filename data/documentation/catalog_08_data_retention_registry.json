@@ -1,0 +1,110 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-08-DATA-RETENTION-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_RETENTION_RULES",
+  "canonicalPath": "docs/catalogs/catalog-08-data-retention/CATALOG_08_DATA_RETENTION.md",
+  "contentSha256": "cbaa4edab1fcd5b7e5d6eb3ce7a5e919b625838ec952a4fbdde2f2b78e9a9b8f",
+  "principleCount": 10,
+  "principles": [
+    "RETAIN-PRINCIPLE-001",
+    "RETAIN-PRINCIPLE-002",
+    "RETAIN-PRINCIPLE-003",
+    "RETAIN-PRINCIPLE-004",
+    "RETAIN-PRINCIPLE-005",
+    "RETAIN-PRINCIPLE-006",
+    "RETAIN-PRINCIPLE-007",
+    "RETAIN-PRINCIPLE-008",
+    "RETAIN-PRINCIPLE-009",
+    "RETAIN-PRINCIPLE-010"
+  ],
+  "classificationCount": 5,
+  "classifications": [
+    "PUBLIC",
+    "INTERNAL",
+    "CONFIDENTIAL",
+    "RESTRICTED",
+    "SYSTEM_SECRET"
+  ],
+  "domainCount": 22,
+  "domains": [
+    "Users",
+    "Roles",
+    "Authentication",
+    "Audit",
+    "Configuration",
+    "Uploads",
+    "Images",
+    "Batches",
+    "Pages",
+    "Claims",
+    "Drafts",
+    "Transcription",
+    "Normalization",
+    "Matching",
+    "Resolution",
+    "Promotion",
+    "Reports",
+    "Exports",
+    "Notifications",
+    "Jobs",
+    "Logs",
+    "System Metadata"
+  ],
+  "retentionStateCount": 5,
+  "retentionStates": [
+    "ACTIVE",
+    "ARCHIVED",
+    "LEGAL_HOLD",
+    "PENDING_DESTRUCTION",
+    "DESTROYED"
+  ],
+  "seededRetentionCount": 4,
+  "seededRetentionRules": [
+    {
+      "retentionId": "RETAIN-AUDIT-001",
+      "label": "Audit Records"
+    },
+    {
+      "retentionId": "RETAIN-DRAFT-001",
+      "label": "Drafts"
+    },
+    {
+      "retentionId": "RETAIN-IMAGE-001",
+      "label": "Uploaded Images"
+    },
+    {
+      "retentionId": "RETAIN-SECRET-001",
+      "label": "Authentication Secrets"
+    }
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "No persistent data may exist without a documented lifecycle.",
+    "Information is classified before durable storage.",
+    "Retention policies are deterministic and consistently enforced.",
+    "Legal hold prohibits destruction and suspends retention timers.",
+    "Destruction must be irreversible when required by policy.",
+    "Not all destroyed data is recoverable.",
+    "Archived data remains protected according to its classification.",
+    "Existing data must not silently change lifecycle rules.",
+    "SYSTEM_SECRET data is not archived into ordinary archival stores.",
+    "Seeded retention examples in this catalog are authoritative starting points for amendment.",
+    "Exact durations may use Catalog 4 keys but must map to cataloged retention entries.",
+    "Classification does not grant access; Catalog 5 remains authoritative for authorization.",
+    "Completed retention destruction cannot be overridden administratively.",
+    "Material lifecycle events require Catalog 3 audit linkage where required.",
+    "Additional classification levels and retention rules require catalog amendment under this contract."
+  ],
+  "overallReadinessPercent": 99,
+  "nextCatalogId": "PEOPLE-CATALOG-09-TRACEABILITY-1.0",
+  "prohibitions": [
+    "No application source code",
+    "No archival or destruction workers",
+    "No database migrations for retention tables",
+    "No production data deletion",
+    "No dependency installation",
+    "No inventing undocumented production retention rules or classification levels outside this catalog and its approved amendments"
+  ]
+}

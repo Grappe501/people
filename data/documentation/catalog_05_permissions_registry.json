@@ -1,0 +1,219 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-05-PERMISSIONS-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_PERMISSIONS",
+  "canonicalPath": "docs/catalogs/catalog-05-permissions/CATALOG_05_PERMISSIONS.md",
+  "contentSha256": "2f40d4286748dea1b87210443b1497b1cbc59e867180980e9f506a4ed3afb11f",
+  "principleCount": 10,
+  "principles": [
+    "AUTHZ-PRINCIPLE-001",
+    "AUTHZ-PRINCIPLE-002",
+    "AUTHZ-PRINCIPLE-003",
+    "AUTHZ-PRINCIPLE-004",
+    "AUTHZ-PRINCIPLE-005",
+    "AUTHZ-PRINCIPLE-006",
+    "AUTHZ-PRINCIPLE-007",
+    "AUTHZ-PRINCIPLE-008",
+    "AUTHZ-PRINCIPLE-009",
+    "AUTHZ-PRINCIPLE-010"
+  ],
+  "roleCount": 7,
+  "roles": [
+    {
+      "roleId": "ROLE-001",
+      "roleKey": "Owner"
+    },
+    {
+      "roleId": "ROLE-002",
+      "roleKey": "Administrator"
+    },
+    {
+      "roleId": "ROLE-003",
+      "roleKey": "Reviewer"
+    },
+    {
+      "roleId": "ROLE-004",
+      "roleKey": "Data Entry"
+    },
+    {
+      "roleId": "ROLE-005",
+      "roleKey": "Uploader"
+    },
+    {
+      "roleId": "ROLE-006",
+      "roleKey": "Viewer"
+    },
+    {
+      "roleId": "ROLE-007",
+      "roleKey": "System"
+    }
+  ],
+  "resourceTypeCount": 18,
+  "resourceTypes": [
+    "Users",
+    "Roles",
+    "Batches",
+    "Pages",
+    "Entries",
+    "Claims",
+    "Drafts",
+    "Uploads",
+    "Images",
+    "Queues",
+    "Matches",
+    "Resolutions",
+    "Promotions",
+    "Exports",
+    "Reports",
+    "Configuration",
+    "Audit",
+    "Background Jobs"
+  ],
+  "actionCount": 16,
+  "actions": [
+    "READ",
+    "CREATE",
+    "UPDATE",
+    "DELETE",
+    "CLAIM",
+    "RELEASE",
+    "SUBMIT",
+    "APPROVE",
+    "RETURN",
+    "MATCH",
+    "RESOLVE",
+    "PROMOTE",
+    "EXPORT",
+    "ARCHIVE",
+    "RESTORE",
+    "CONFIGURE"
+  ],
+  "scopeCount": 5,
+  "scopes": [
+    "Own Resource",
+    "Assigned Work",
+    "Department",
+    "Organization",
+    "Entire System"
+  ],
+  "seededPermissionCount": 18,
+  "seededPermissions": [
+    {
+      "permissionId": "PERM-USER-001",
+      "permissionKey": "USER_READ"
+    },
+    {
+      "permissionId": "PERM-USER-002",
+      "permissionKey": "USER_CREATE"
+    },
+    {
+      "permissionId": "PERM-USER-003",
+      "permissionKey": "USER_UPDATE"
+    },
+    {
+      "permissionId": "PERM-USER-004",
+      "permissionKey": "USER_DISABLE"
+    },
+    {
+      "permissionId": "PERM-ROLE-001",
+      "permissionKey": "ROLE_ASSIGN"
+    },
+    {
+      "permissionId": "PERM-BATCH-001",
+      "permissionKey": "BATCH_CREATE"
+    },
+    {
+      "permissionId": "PERM-BATCH-002",
+      "permissionKey": "BATCH_COMPLETE"
+    },
+    {
+      "permissionId": "PERM-PAGE-001",
+      "permissionKey": "PAGE_UPLOAD"
+    },
+    {
+      "permissionId": "PERM-PAGE-002",
+      "permissionKey": "PAGE_REPLACE_IMAGE"
+    },
+    {
+      "permissionId": "PERM-PAGE-003",
+      "permissionKey": "PAGE_CLAIM"
+    },
+    {
+      "permissionId": "PERM-PAGE-004",
+      "permissionKey": "PAGE_SUBMIT"
+    },
+    {
+      "permissionId": "PERM-MATCH-001",
+      "permissionKey": "MATCH_REVIEW"
+    },
+    {
+      "permissionId": "PERM-MATCH-002",
+      "permissionKey": "MATCH_FINALIZE"
+    },
+    {
+      "permissionId": "PERM-PROMOTION-001",
+      "permissionKey": "PROMOTION_APPROVE"
+    },
+    {
+      "permissionId": "PERM-EXPORT-001",
+      "permissionKey": "EXPORT_RUN"
+    },
+    {
+      "permissionId": "PERM-CONFIG-001",
+      "permissionKey": "CONFIGURATION_EDIT"
+    },
+    {
+      "permissionId": "PERM-AUDIT-001",
+      "permissionKey": "AUDIT_VIEW"
+    },
+    {
+      "permissionId": "PERM-SYSTEM-001",
+      "permissionKey": "SYSTEM_JOB_EXECUTE"
+    }
+  ],
+  "sodRuleCount": 3,
+  "sodRules": [
+    {
+      "sodId": "SOD-001",
+      "label": "Submit and Approve"
+    },
+    {
+      "sodId": "SOD-002",
+      "label": "Match Resolve and Dual Review"
+    },
+    {
+      "sodId": "SOD-003",
+      "label": "Self Elevation"
+    }
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "Authorization is server enforced.",
+    "Roles grant permissions.",
+    "Permissions apply to resources.",
+    "Resources have scopes.",
+    "States may block otherwise valid permissions.",
+    "Hidden UI never grants authorization.",
+    "Owners cannot be accidentally removed.",
+    "Audit history is always protected.",
+    "Administrative overrides are auditable.",
+    "Separation of duties is enforced for protected workflows.",
+    "Version 1 roles are a closed set unless formally amended.",
+    "Permission keys are permanent identifiers.",
+    "System never authenticates through interactive login.",
+    "Delegation never exceeds the delegator's authority.",
+    "Additional roles, permission keys, and matrix grants require catalog amendment."
+  ],
+  "overallReadinessPercent": 99,
+  "nextCatalogId": "PEOPLE-CATALOG-06-NOTIFICATIONS-1.0",
+  "prohibitions": [
+    "No application source code",
+    "No authentication or authorization middleware implementation",
+    "No RLS policy SQL or migrations",
+    "No role-assignment UI or handlers",
+    "No dependency installation",
+    "No inventing undocumented production roles, permission keys, or matrix grants outside this catalog and its approved amendments"
+  ]
+}

@@ -34,8 +34,8 @@ Lower layers may not silently override higher layers.
 | 9 | Database Specifications | `docs/10_database_specifications/` | DRAFT bootstrap | 5 | Table specs | OD-B05 | DOC-2 pending |
 | 10 | API Specifications | `docs/11_api_specifications/` | DRAFT bootstrap | 5 | Endpoint contracts | X-09 | DOC-3 pending |
 | 11 | UI Specifications | `docs/12_ui_specifications/` | DRAFT bootstrap | 5 | Screens | X-01 | DOC-4 pending |
-| 12 | Component Library | `docs/13_component_library/` | DRAFT bootstrap | 5 | Components | — | DOC-5 pending |
-| 13 | Platform Standards | `docs/15_platform_standards/` | DRAFT bootstrap | 5 | Cross-app standards | — | DOC-6 pending |
+| 12 | Component Library | `docs/volumes/volume-12-component-library/` (+ `docs/13_component_library/` pointer/bootstrap) | DESIGN COMPLETE (impl not authorized) | 5 | Components/tokens | — | `COMP-DEC-001`…`025`; DOC-5 formalization |
+| 13 | Platform Standards | `docs/volumes/volume-13-platform-standards/` (+ `docs/15_platform_standards/` pointer/bootstrap) | DESIGN COMPLETE (impl not authorized) | 5 | Engineering doctrine | — | Next: State Machine Catalog; DOC-6 formalization |
 
 `docs/volumes/volume-XX-*/README.md` pointers map to the content homes above. **No silent volume fabrication.**
 
@@ -45,10 +45,16 @@ Lower layers may not silently override higher layers.
 | --- | --- | --- |
 | Terminology | `docs/catalogs/terminology/` | Foundation complete (DOC-0) |
 | Identifiers | `docs/catalogs/identifiers/` | Foundation complete (DOC-0) |
-| State machines | `docs/catalogs/state-machines/` + bootstrap EC | Planned DOC-7 |
-| Errors | `docs/catalogs/errors/` + bootstrap | Planned DOC-8 |
-| Audit events | `docs/catalogs/audit-events/` + bootstrap | Planned DOC-8 |
-| Configuration | `docs/catalogs/configuration/` + bootstrap | Planned DOC-9 |
+| 0 Master Registry | `docs/catalogs/catalog-00-master-registry/` | DESIGN COMPLETE (impl not authorized) |
+| 1 State machines | `docs/catalogs/catalog-01-state-machines/` | DESIGN COMPLETE (impl not authorized) |
+| 2 Errors | `docs/catalogs/catalog-02-errors/` | DESIGN COMPLETE (impl not authorized) |
+| 3 Audit events | `docs/catalogs/catalog-03-audit-events/` | DESIGN COMPLETE foundation (impl not authorized) |
+| 4 Configuration | `docs/catalogs/catalog-04-configuration/` | DESIGN COMPLETE foundation (impl not authorized) |
+| 5 Permissions | `docs/catalogs/catalog-05-permissions/` | DESIGN COMPLETE foundation (impl not authorized) |
+| 6 Notifications | `docs/catalogs/catalog-06-notifications/` | DESIGN COMPLETE foundation (impl not authorized) |
+| 7 Background jobs | `docs/catalogs/catalog-07-background-jobs/` | DESIGN COMPLETE foundation (impl not authorized) |
+| 8 Data retention | `docs/catalogs/catalog-08-data-retention/` | DESIGN COMPLETE foundation (impl not authorized) |
+| 9 Traceability | Planned `PEOPLE-CATALOG-09-TRACEABILITY-1.0` | Next |
 
 ## 5. Registers
 
@@ -70,9 +76,11 @@ Lower layers may not silently override higher layers.
 
 | Path | Status |
 | --- | --- |
+| `docs/implementation_specs/` | PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0 + Phase 0 |
+| `docs/implementation-specifications/` | Historical IS Master (superseded as authority) |
 | `docs/implementation-packages/` | Placeholder |
-| `docs/16_implementation_packages/` | Bootstrap framework |
-| Formal DOC-11 | NOT_STARTED |
+| `docs/16_implementation_packages/` | Bootstrap PKG framework + master pointer |
+| Formal DOC-11 | Phase 0 started under D-059 |
 
 ## 8. Validation
 
@@ -86,11 +94,15 @@ npm run docs:foundation:validate
 **DOC-0 — Documentation Foundation and Inventory:** COMPLETE (pending git commit/push in this pass)  
 **Design freeze:** DENIED  
 **Application code:** PROHIBITED  
+**Catalogs 0–8:** DESIGN COMPLETE (foundation)  
+**IS Master:** DESIGN PHASE foundation (D-058)
 
 ## 10. Next Approved Slice
 
 ```text
-PEOPLE-VOLUME-08-TECHNICAL-SPECIFICATIONS-1.0
+PEOPLE-CATALOG-09-TRACEABILITY-1.0
 ```
+
+Then continue audit remediation / freeze path. IS-* authorship remains documentation-only and blocked from coding until Gate G-10.
 
 Volume 8 may proceed as documentation, marking OD-B*/PENDING_FREEZE items as proposed — not frozen. Critical ownership/evidence contradictions do not block starting DOC-1 if they remain explicitly open.

@@ -1,0 +1,430 @@
+{
+  "documentId": "PEOPLE-VOLUME-12-COMPONENT-LIBRARY-AND-DESIGN-SYSTEM-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "canonicalPath": "docs/volumes/volume-12-component-library/VOLUME_12_COMPONENT_LIBRARY_AND_DESIGN_SYSTEM.md",
+  "contentSha256": "3323f00f193f2fbfa8e1f472020df7e83f625ca657644efde43194d15a48c6ff",
+  "principles": [
+    "DESIGN-PRINCIPLE-001",
+    "DESIGN-PRINCIPLE-002",
+    "DESIGN-PRINCIPLE-003",
+    "DESIGN-PRINCIPLE-004",
+    "DESIGN-PRINCIPLE-005",
+    "DESIGN-PRINCIPLE-006",
+    "DESIGN-PRINCIPLE-007",
+    "DESIGN-PRINCIPLE-008",
+    "DESIGN-PRINCIPLE-009",
+    "DESIGN-PRINCIPLE-010"
+  ],
+  "lockedDecisionCount": 50,
+  "deferredDecisions": [
+    "COMP-DEC-001",
+    "COMP-DEC-002",
+    "COMP-DEC-003",
+    "COMP-DEC-004",
+    "COMP-DEC-005",
+    "COMP-DEC-006",
+    "COMP-DEC-007",
+    "COMP-DEC-008",
+    "COMP-DEC-009",
+    "COMP-DEC-010",
+    "COMP-DEC-011",
+    "COMP-DEC-012",
+    "COMP-DEC-013",
+    "COMP-DEC-014",
+    "COMP-DEC-015",
+    "COMP-DEC-016",
+    "COMP-DEC-017",
+    "COMP-DEC-018",
+    "COMP-DEC-019",
+    "COMP-DEC-020",
+    "COMP-DEC-021",
+    "COMP-DEC-022",
+    "COMP-DEC-023",
+    "COMP-DEC-024",
+    "COMP-DEC-025"
+  ],
+  "componentCount": 91,
+  "components": [
+    {
+      "componentName": "AppShell",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "NavigationRail",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "MobileNavigation",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "PageContainer",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "PageHeader",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "SectionHeader",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "Breadcrumbs",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "SplitPane",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "StickyActionBar",
+      "category": "Shell and Layout"
+    },
+    {
+      "componentName": "Button",
+      "category": "Actions"
+    },
+    {
+      "componentName": "ButtonGroup",
+      "category": "Actions"
+    },
+    {
+      "componentName": "OverflowMenu",
+      "category": "Actions"
+    },
+    {
+      "componentName": "Tabs",
+      "category": "Actions"
+    },
+    {
+      "componentName": "Pagination",
+      "category": "Actions"
+    },
+    {
+      "componentName": "FieldGroup",
+      "category": "Forms"
+    },
+    {
+      "componentName": "TextInput",
+      "category": "Forms"
+    },
+    {
+      "componentName": "TextArea",
+      "category": "Forms"
+    },
+    {
+      "componentName": "Select",
+      "category": "Forms"
+    },
+    {
+      "componentName": "RadioGroup",
+      "category": "Forms"
+    },
+    {
+      "componentName": "Checkbox",
+      "category": "Forms"
+    },
+    {
+      "componentName": "DateInput",
+      "category": "Forms"
+    },
+    {
+      "componentName": "NumberInput",
+      "category": "Forms"
+    },
+    {
+      "componentName": "SearchInput",
+      "category": "Forms"
+    },
+    {
+      "componentName": "FilePicker",
+      "category": "Forms"
+    },
+    {
+      "componentName": "PreferenceControl",
+      "category": "Intake"
+    },
+    {
+      "componentName": "FieldConditionControl",
+      "category": "Intake"
+    },
+    {
+      "componentName": "RowActivationControl",
+      "category": "Intake"
+    },
+    {
+      "componentName": "EntryRow",
+      "category": "Intake"
+    },
+    {
+      "componentName": "EntryGrid",
+      "category": "Intake"
+    },
+    {
+      "componentName": "TranscriptionProgress",
+      "category": "Intake"
+    },
+    {
+      "componentName": "SubmissionReviewSummary",
+      "category": "Intake"
+    },
+    {
+      "componentName": "SourceImageViewer",
+      "category": "Images"
+    },
+    {
+      "componentName": "ImageToolbar",
+      "category": "Images"
+    },
+    {
+      "componentName": "ImageThumbnail",
+      "category": "Images"
+    },
+    {
+      "componentName": "ImageQualityControl",
+      "category": "Images"
+    },
+    {
+      "componentName": "ImageVersionHistory",
+      "category": "Images"
+    },
+    {
+      "componentName": "QueueItem",
+      "category": "Queue and Claims"
+    },
+    {
+      "componentName": "QueueList",
+      "category": "Queue and Claims"
+    },
+    {
+      "componentName": "ClaimButton",
+      "category": "Queue and Claims"
+    },
+    {
+      "componentName": "ClaimStatus",
+      "category": "Queue and Claims"
+    },
+    {
+      "componentName": "ClaimTimer",
+      "category": "Queue and Claims"
+    },
+    {
+      "componentName": "ClaimConflictNotice",
+      "category": "Queue and Claims"
+    },
+    {
+      "componentName": "SaveStatus",
+      "category": "Save and Recovery"
+    },
+    {
+      "componentName": "RecoveryBanner",
+      "category": "Save and Recovery"
+    },
+    {
+      "componentName": "StaleVersionDialog",
+      "category": "Save and Recovery"
+    },
+    {
+      "componentName": "UnsavedChangesGuard",
+      "category": "Save and Recovery"
+    },
+    {
+      "componentName": "StatusBadge",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "InlineMessage",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "Banner",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "Toast",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "ProgressIndicator",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "Skeleton",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "EmptyState",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "ErrorState",
+      "category": "Feedback"
+    },
+    {
+      "componentName": "Card",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "SummaryCard",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "RecordSummary",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "DetailPanel",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "DataTable",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "ResponsiveRecordList",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "FilterBar",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "SortControl",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "Timeline",
+      "category": "Data Display"
+    },
+    {
+      "componentName": "EvidenceComparison",
+      "category": "Matching"
+    },
+    {
+      "componentName": "CandidateCard",
+      "category": "Matching"
+    },
+    {
+      "componentName": "ConfidenceIndicator",
+      "category": "Matching"
+    },
+    {
+      "componentName": "MatchSignal",
+      "category": "Matching"
+    },
+    {
+      "componentName": "SignalGroup",
+      "category": "Matching"
+    },
+    {
+      "componentName": "ConflictAlert",
+      "category": "Matching"
+    },
+    {
+      "componentName": "ResolutionPanel",
+      "category": "Matching"
+    },
+    {
+      "componentName": "ResolutionConfirmationDialog",
+      "category": "Matching"
+    },
+    {
+      "componentName": "PromotionStatus",
+      "category": "Promotion"
+    },
+    {
+      "componentName": "AttemptTimeline",
+      "category": "Promotion"
+    },
+    {
+      "componentName": "RetryAction",
+      "category": "Promotion"
+    },
+    {
+      "componentName": "UserStatus",
+      "category": "Users and Roles"
+    },
+    {
+      "componentName": "RoleBadge",
+      "category": "Users and Roles"
+    },
+    {
+      "componentName": "RoleEditor",
+      "category": "Users and Roles"
+    },
+    {
+      "componentName": "UserActionPanel",
+      "category": "Users and Roles"
+    },
+    {
+      "componentName": "OperationalHealthCard",
+      "category": "Administration"
+    },
+    {
+      "componentName": "AlertCard",
+      "category": "Administration"
+    },
+    {
+      "componentName": "ErrorDetailPanel",
+      "category": "Administration"
+    },
+    {
+      "componentName": "AuditEventRow",
+      "category": "Administration"
+    },
+    {
+      "componentName": "AuditEventDetail",
+      "category": "Administration"
+    },
+    {
+      "componentName": "Dialog",
+      "category": "Overlays"
+    },
+    {
+      "componentName": "ConfirmationDialog",
+      "category": "Overlays"
+    },
+    {
+      "componentName": "Drawer",
+      "category": "Overlays"
+    },
+    {
+      "componentName": "Popover",
+      "category": "Overlays"
+    },
+    {
+      "componentName": "HelpText",
+      "category": "Help"
+    },
+    {
+      "componentName": "Tooltip",
+      "category": "Help"
+    },
+    {
+      "componentName": "DefinitionPopover",
+      "category": "Help"
+    },
+    {
+      "componentName": "FirstUseGuide",
+      "category": "Help"
+    }
+  ],
+  "accessibilityTarget": "WCAG 2.2 AA",
+  "prohibitions": [
+    "No React components",
+    "No JSX or TSX",
+    "No CSS files",
+    "No design-token package",
+    "No Storybook implementation",
+    "No application routes",
+    "No API calls",
+    "No production assets",
+    "No icon package installation",
+    "No font-file installation",
+    "No frontend framework selection",
+    "No build-tool configuration",
+    "No dependency installation"
+  ]
+}

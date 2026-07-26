@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/platform_standards_registry.schema.json",
+  "title": "People Intake Volume 13 Platform Standards Registry",
+  "type": "object",
+  "required": [
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "projectRoot",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "standardAreaCount",
+    "standardAreas",
+    "nextGoverningDocuments",
+    "overallReadinessPercent",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentId": {
+      "type": "string",
+      "const": "PEOPLE-VOLUME-13-CANONICAL-PLATFORM-STANDARDS-1.0"
+    },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "projectRoot": { "type": "string", "const": "H:\\people" },
+    "lockedDecisionCount": { "type": "integer", "const": 18 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": { "type": "string" }
+    },
+    "standardAreaCount": { "type": "integer", "const": 14 },
+    "standardAreas": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": { "type": "string" }
+    },
+    "nextGoverningDocuments": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": ["documentId", "title", "sequence"],
+        "additionalProperties": false,
+        "properties": {
+          "documentId": { "type": "string" },
+          "title": { "type": "string" },
+          "sequence": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "overallReadinessPercent": { "type": "integer", "const": 100 },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 7,
+      "items": { "type": "string" }
+    }
+  }
+}

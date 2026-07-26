@@ -1,0 +1,130 @@
+{
+  "documentSetId": "PEOPLE-CATALOG-LIBRARY-1.0",
+  "documentId": "PEOPLE-CATALOG-09-TRACEABILITY-1.0",
+  "version": "1.0",
+  "status": "DESIGN_COMPLETE_IMPLEMENTATION_NOT_AUTHORIZED",
+  "scope": "FOUNDATION_CONTRACT_WITH_SEEDED_MATRIX_ROWS",
+  "canonicalPath": "docs/catalogs/catalog-09-traceability/CATALOG_09_TRACEABILITY.md",
+  "contentSha256": "820521a5a3bab1c68463bd0a78850c489772930f866533fa6e9d485f14e970df",
+  "principleCount": 10,
+  "principles": [
+    "TRACE-PRINCIPLE-001",
+    "TRACE-PRINCIPLE-002",
+    "TRACE-PRINCIPLE-003",
+    "TRACE-PRINCIPLE-004",
+    "TRACE-PRINCIPLE-005",
+    "TRACE-PRINCIPLE-006",
+    "TRACE-PRINCIPLE-007",
+    "TRACE-PRINCIPLE-008",
+    "TRACE-PRINCIPLE-009",
+    "TRACE-PRINCIPLE-010"
+  ],
+  "linkNodeCount": 16,
+  "linkNodes": [
+    "LINK-BUSINESS-RULE",
+    "LINK-STATE",
+    "LINK-DATABASE",
+    "LINK-API",
+    "LINK-SCREEN",
+    "LINK-COMPONENT",
+    "LINK-PERMISSION",
+    "LINK-AUDIT",
+    "LINK-ERROR",
+    "LINK-TEST",
+    "LINK-PACKAGE",
+    "LINK-JOB",
+    "LINK-NOTIFICATION",
+    "LINK-RETENTION",
+    "LINK-CONFIG",
+    "LINK-INTEGRATION"
+  ],
+  "statusVocabulary": [
+    "UNMAPPED",
+    "PARTIALLY_MAPPED",
+    "FULLY_MAPPED",
+    "VERIFIED",
+    "BLOCKED",
+    "NOT_APPLICABLE"
+  ],
+  "seededRowCount": 10,
+  "seededRows": [
+    {
+      "traceRowId": "TRACE-SEED-001",
+      "requirementId": "REQ-GOV-001",
+      "status": "VERIFIED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-002",
+      "requirementId": "REQ-GOV-007",
+      "status": "VERIFIED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-003",
+      "requirementId": "REQ-GOV-008",
+      "status": "VERIFIED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-004",
+      "requirementId": "REQ-GOV-009",
+      "status": "VERIFIED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-005",
+      "requirementId": "REQ-GOV-010",
+      "status": "VERIFIED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-006",
+      "requirementId": "REQ-REPO-001",
+      "status": "FULLY_MAPPED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-007",
+      "requirementId": "REQ-REPO-005",
+      "status": "FULLY_MAPPED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-008",
+      "requirementId": "REQ-REPO-015",
+      "status": "FULLY_MAPPED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-009",
+      "requirementId": "REQ-CLAIM-ACQUIRE",
+      "status": "PARTIALLY_MAPPED"
+    },
+    {
+      "traceRowId": "TRACE-SEED-010",
+      "requirementId": "REQ-GOV-CATALOG-LOCK",
+      "status": "VERIFIED"
+    }
+  ],
+  "lockedDecisionCount": 15,
+  "lockedDecisions": [
+    "Traceability is bidirectional.",
+    "Stable identifiers are mandatory.",
+    "Critical orphans are prohibited for implementation-ready work.",
+    "Catalogs 1\u20138 own operational language; Catalog 9 links them.",
+    "Honesty over invented completeness.",
+    "Every requirement row requires a source.",
+    "Implementation readiness requires mapped tests (or explicit BLOCKED test plan).",
+    "Privileged actions require Catalog 5 permissions.",
+    "State mutations require Catalog 3 audit decisions or documented exceptions.",
+    "Catalog Library remains locked at Catalogs 0\u20139.",
+    "Seeded TRACE-SEED-* rows are authoritative starting points for amendment.",
+    "DOC-0 Design Source Map and IS RTM are companions, not substitutes.",
+    "`NOT_APPLICABLE` requires a written reason.",
+    "Fabricating undocumented production keys to fill matrix cells is prohibited.",
+    "Additional matrix rows and full inventories expand only via formal amendment or governed IS updates under this contract."
+  ],
+  "overallReadinessPercent": 98,
+  "nextCatalogId": "PEOPLE-CATALOG-LIBRARY-COMPLETE",
+  "prohibitions": [
+    "No application source code",
+    "No inventing undocumented production catalog keys to fill matrix cells",
+    "No claiming system-wide FULLY_MAPPED or VERIFIED for unseeded domains",
+    "No database migrations or runtime enforcement engines",
+    "No dependency installation for application scaffolding",
+    "No silent contradiction of Volumes 0-13 or Catalogs 0-8"
+  ]
+}

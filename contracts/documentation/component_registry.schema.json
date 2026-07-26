@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/component_registry.schema.json",
+  "title": "People Intake Volume 12 Component Registry",
+  "type": "object",
+  "required": [
+    "documentId",
+    "version",
+    "status",
+    "canonicalPath",
+    "contentSha256",
+    "principles",
+    "lockedDecisionCount",
+    "deferredDecisions",
+    "componentCount",
+    "components",
+    "accessibilityTarget",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentId": { "type": "string", "const": "PEOPLE-VOLUME-12-COMPONENT-LIBRARY-AND-DESIGN-SYSTEM-1.0" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "principles": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^DESIGN-PRINCIPLE-\\d{3}$" }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 50 },
+    "deferredDecisions": {
+      "type": "array",
+      "minItems": 25,
+      "maxItems": 25,
+      "items": { "type": "string", "pattern": "^COMP-DEC-\\d{3}$" }
+    },
+    "componentCount": { "type": "integer", "minimum": 80 },
+    "components": {
+      "type": "array",
+      "minItems": 80,
+      "items": {
+        "type": "object",
+        "required": ["componentName", "category"],
+        "additionalProperties": false,
+        "properties": {
+          "componentName": { "type": "string" },
+          "category": { "type": "string" }
+        }
+      }
+    },
+    "accessibilityTarget": { "type": "string" },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 13,
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/contracts/documentation/background_jobs_catalog_registry.schema.json",
+  "title": "People Intake Catalog 7 Background Jobs Foundation Registry",
+  "type": "object",
+  "required": [
+    "documentSetId",
+    "documentId",
+    "version",
+    "status",
+    "scope",
+    "canonicalPath",
+    "contentSha256",
+    "principleCount",
+    "principles",
+    "categoryCount",
+    "categories",
+    "priorityCount",
+    "priorities",
+    "concurrencyPolicyCount",
+    "concurrencyPolicies",
+    "retryPolicyCount",
+    "retryPolicies",
+    "triggerCount",
+    "triggers",
+    "seededJobCount",
+    "seededJobs",
+    "lockedDecisionCount",
+    "lockedDecisions",
+    "overallReadinessPercent",
+    "nextCatalogId",
+    "prohibitions"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "documentSetId": { "type": "string", "const": "PEOPLE-CATALOG-LIBRARY-1.0" },
+    "documentId": {
+      "type": "string",
+      "const": "PEOPLE-CATALOG-07-BACKGROUND-JOBS-1.0"
+    },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "scope": {
+      "type": "string",
+      "const": "FOUNDATION_CONTRACT_WITH_SEEDED_JOBS"
+    },
+    "canonicalPath": { "type": "string" },
+    "contentSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "principleCount": { "type": "integer", "const": 10 },
+    "principles": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": { "type": "string", "pattern": "^JOB-PRINCIPLE-\\d{3}$" }
+    },
+    "categoryCount": { "type": "integer", "const": 17 },
+    "categories": {
+      "type": "array",
+      "minItems": 17,
+      "maxItems": 17,
+      "items": { "type": "string" }
+    },
+    "priorityCount": { "type": "integer", "const": 4 },
+    "priorities": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "string" }
+    },
+    "concurrencyPolicyCount": { "type": "integer", "const": 5 },
+    "concurrencyPolicies": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": { "type": "string" }
+    },
+    "retryPolicyCount": { "type": "integer", "const": 5 },
+    "retryPolicies": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": { "type": "string" }
+    },
+    "triggerCount": { "type": "integer", "const": 7 },
+    "triggers": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": { "type": "string" }
+    },
+    "seededJobCount": { "type": "integer", "const": 13 },
+    "seededJobs": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": {
+        "type": "object",
+        "required": ["jobId", "canonicalName"],
+        "additionalProperties": false,
+        "properties": {
+          "jobId": { "type": "string", "pattern": "^JOB-[A-Z]+-\\d{3}$" },
+          "canonicalName": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]+$" }
+        }
+      }
+    },
+    "lockedDecisionCount": { "type": "integer", "const": 15 },
+    "lockedDecisions": {
+      "type": "array",
+      "minItems": 15,
+      "maxItems": 15,
+      "items": { "type": "string" }
+    },
+    "overallReadinessPercent": { "type": "integer", "const": 99 },
+    "nextCatalogId": {
+      "type": "string",
+      "const": "PEOPLE-CATALOG-08-DATA-RETENTION-1.0"
+    },
+    "prohibitions": {
+      "type": "array",
+      "minItems": 6,
+      "items": { "type": "string" }
+    }
+  }
+}
