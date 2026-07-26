@@ -6,7 +6,9 @@
 | Item | Value |
 | --- | --- |
 | Spec commit | `e0aae59` |
-| Remote verify | pending this evidence commit |
+| Evidence commit | `b32feaa` (file updated after remote verify) |
+| Remote `origin/master` | `b32feaa327c309dbb03858dba529e855c06fe201` |
+| Local HEAD | matches remote |
 
 ## Validation
 
@@ -19,6 +21,7 @@
 | applicationCodeAuthorized | false |
 | migrationsAuthorized | false |
 | Netlify | N/A |
+| Push / remote verify | PASS |
 
 ## Standing doctrine locked (IS-304 §4 / Cursor §9.0.7)
 
