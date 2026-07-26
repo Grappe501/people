@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.6  
+**Version:** 1.7  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -99,6 +99,21 @@ New persistence requirement?
 ```
 
 IS-300 and later database IS documents are **documentation only** until `migrationsAuthorized` / Gate G-10. Never create migrations, SQL, Prisma schemas, seeds, or live schema objects to “complete” a database specification package.
+
+### 9.0.4 Logical table extension doctrine (mandatory)
+
+Authority: PEOPLE-IS-301 §4.1; Decision Log D-073.
+
+```text
+Need new persistence?
+  → Existing Aggregate / Entity / Field?
+      → Existing Logical Table? (IS-301)
+          YES → Reuse
+          NO  → Update IS-301 or create ADR
+                → Only then may future packages define physical schema
+```
+
+Logical tables ≠ physical tables. No SQL/DDL in IS-301/IS-302 documentation packages.
 
 ---
 
@@ -220,11 +235,11 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0
+PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0
 ```
 
 Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-Slices 001–003 complete.
+Slices 001–004 complete.
 
 No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 

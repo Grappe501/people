@@ -77,4 +77,9 @@
 | REQ-DBA-008 | Resolution must not write canonical persons | IS-300 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
 | REQ-DBA-017 | IS-300 creates no migrations/SQL/Prisma | IS-300 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
 
+| REQ-LTC-001 | Every logical table has complete questionnaire | IS-301 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Catalog review | Docs | FULLY_MAPPED |
+| REQ-LTC-002 | Logical tables trace to IS-201/202 | IS-301 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Trace review | Docs | FULLY_MAPPED |
+| REQ-LTC-003 | No SQL/Prisma/migrations in IS-301 | IS-301 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
+| REQ-LTC-004 | READ_MODEL must not accept claim writes | IS-301 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

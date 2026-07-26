@@ -3,8 +3,8 @@
 ## Work item
 
 ```text
-PEOPLE-IS-300-DATABASE-ARCHITECTURE-1.0 (D-072)
-+ AUDIT-SLICE-003-PHASE3-START
+PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0 (D-073)
++ AUDIT-SLICE-004-IS301-DOCS-ONLY
 ```
 
 ## Validation
@@ -18,22 +18,17 @@ docs:catalogs:validate — PASS
 ## Forbidden implementation artifacts
 
 ```text
-NONE — no migrations, SQL, Prisma, seeds, netlify.toml, src/
+NONE — no migrations, SQL, Prisma, netlify.toml, src/
 ```
 
 ## Commit / Push / Remote
 
-```text
-Commit:  bb89678d632a95a18b00e46072f40b906ef57ff7
-Branch:  master
-Push:    PASS (7c498cc..bb89678)
-Remote:  PASS — origin/master contains commit
-```
+Filled after Git closeout.
 
 ## Netlify
 
 ```text
-NOT APPLICABLE — no authorized deployable surface exists
+NOT APPLICABLE
 ```
 
 ## Application / migrations
@@ -45,5 +40,5 @@ NOT AUTHORIZED
 ## Next primary
 
 ```text
-PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0
+PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0
 ```

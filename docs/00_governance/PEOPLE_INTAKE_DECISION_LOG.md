@@ -981,3 +981,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0. ADR-002/003 remain OPEN. Gate G-10 and migrationsAuthorized remain closed/false. |
 | Related files | PEOPLE-IS-300; AUDIT-SLICE-003; `reports/PEOPLE_IS_300_COMPLETION_REPORT.md` |
 | Revisit trigger | Shared DB audit; ADR-002/003 acceptance; first authorized migration package |
+
+### D-073
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-301-LOGICAL-TABLE-CATALOG-1.0 is the canonical Logical Table Catalog. Path: `docs/implementation_specs/300_database/PEOPLE-IS-301-LOGICAL-TABLE-CATALOG.md`. It inventories logical persistence objects (LT-*) with a mandatory questionnaire (why, aggregate, entities, VOs, purpose, pattern, module, packages, migrations, read models, audit, sensitivity, retention, relationships). Logical tables are not physical/deployed tables. SQL, DDL, Prisma, migrations, indexes, and triggers remain FORBIDDEN. Domain owns meaning; database owns persistence architecture; implementation owns execution (not authorized). (2) AUDIT-SLICE-004 verifies docs-only posture (`reports/PEOPLE_AUDIT_SLICE_004_FINDINGS.md`). Application implementation and migrationsAuthorized remain false. |
+| Reason | Catalog logical persistence objects before relationship specs and any physical schema planning. |
+| Alternatives | Emit Prisma/SQL now; treat Volume 9 bootstrap tables as deployed; invent tables without IS-201/202. |
+| Consequences | Next primary IS is PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS-1.0. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-301; AUDIT-SLICE-004; `reports/PEOPLE_IS_301_COMPLETION_REPORT.md` |
+| Revisit trigger | IS-302; shared DB audit; first authorized migration package |
