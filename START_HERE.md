@@ -43,20 +43,21 @@ Gate **G-10** remains **CLOSED**. `applicationCodeAuthorized` remains **false**.
 | Database Architecture | `docs/implementation_specs/300_database/PEOPLE-IS-300-DATABASE-ARCHITECTURE.md` |
 | Logical Table Catalog | `docs/implementation_specs/300_database/PEOPLE-IS-301-LOGICAL-TABLE-CATALOG.md` |
 | Logical Relationships | `docs/implementation_specs/300_database/PEOPLE-IS-302-LOGICAL-RELATIONSHIP-SPECIFICATIONS.md` |
+| Logical Constraints & Integrity | `docs/implementation_specs/300_database/PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY.md` |
 | Commit/Push/Deploy Protocol | `docs/00_governance/PEOPLE_PROTOCOL_COMMIT_PUSH_DEPLOY.md` |
 | Cursor Execution Protocol | `docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md` |
 | Audit / Freeze lane | `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md` |
-| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_005_FINDINGS.md` |
+| Latest audit findings | `reports/PEOPLE_AUDIT_SLICE_006_FINDINGS.md` |
 | ADR index | `docs/adr/_index.md` |
 | Next build note | `develop_notes/NEXT_CURSOR_BUILD.md` |
 | Active build | `contracts/governance/active-build.json` |
 
 ## Current next-ready work
 
-1. `PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0` (primary — docs only)  
+1. `PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0` (primary — docs only)  
 2. Audit lane freeze readiness (independent)
 
-Phase 3: IS-300…302 approved. Relationships are governed business concepts. **No physical FK may invent a business relationship.** Implementation not authorized.
+Phase 3: IS-300…303 approved. Integrity doctrine locked. **No physical FK/CHECK may invent a business invariant.** Implementation not authorized.
 
 ## Allowed now
 

@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.8  
+**Version:** 1.9  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -125,6 +125,25 @@ No migration/ORM relationship may appear unless it exists in IS-302 (or amendmen
 No physical foreign key may invent a business relationship.
 ```
 
+### 9.0.6 Integrity doctrine (mandatory)
+
+Authority: PEOPLE-IS-303 §4; Decision Log D-075.
+
+```text
+A database constraint may enforce an approved business invariant.
+It may not invent one.
+
+Application validation may explain an invariant.
+It may not weaken it.
+
+Physical enforcement may use multiple mechanisms later.
+The logical invariant remains technology-neutral and authoritative.
+```
+
+Authority hierarchy: Catalog 01 → IS-200 → IS-201 → IS-202 → IS-302 → IS-303.  
+Source conflicts MUST be surfaced as issues/ADRs — never silently chosen.  
+No CHECK/UNIQUE/FK/index/trigger/validator may appear unless backed by a `CON-*` card (or amendment/ADR).
+
 ---
 
 ## 9.1 Start-of-Run Requirements
@@ -245,11 +264,11 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0
+PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0
 ```
 
 Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-Slices 001–005 complete.
+Slices 001–006 complete.
 
 No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 

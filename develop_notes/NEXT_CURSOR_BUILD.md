@@ -3,10 +3,10 @@
 ## Primary
 
 ```text
-PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0
+PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0
 ```
 
-Docs only — uniqueness, checks, immutability, concurrency integrity. No SQL/Prisma/migrations.
+Docs only — read-model composition, projections, non-authoritative query surfaces. No SQL/Prisma/migrations.
 
 ## Independent lane
 
@@ -18,6 +18,7 @@ PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 
 * Relationships = governed business concepts (IS-302)  
 * No physical FK may invent a business relationship  
+* DB may enforce / must not invent; app may explain / must not weaken (IS-303)  
 * Logical ≠ physical  
 
 ## Mode

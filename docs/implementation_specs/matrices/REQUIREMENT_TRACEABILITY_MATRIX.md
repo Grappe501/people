@@ -87,4 +87,13 @@
 | REQ-REL-003 | Resolution must not own canonical person masters | IS-302 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
 | REQ-REL-004 | Queue projection must not write claims | IS-302 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
 
+| REQ-CON-001 | Persisted integrity rules require CON-* cards | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Constraint review | Docs | FULLY_MAPPED |
+| REQ-CON-002 | Physical DB constraints must not invent invariants | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Schema gate | Future PKG | FULLY_MAPPED |
+| REQ-CON-003 | Application validation must not weaken invariants | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Validation review | Future PKG | FULLY_MAPPED |
+| REQ-CON-004 | Lifecycle constraints cite Catalog 01 only | IS-303 / Cat 01 | N/A | N/A | N/A | N/A | N/A | N/A | STATE-* | N/A | N/A | N/A | State review | Future PKG | FULLY_MAPPED |
+| REQ-CON-005 | Resolution must not write canonical person masters | IS-303 / IS-200 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-CON-007 | Queue/READ_MODEL must not write claims/resolutions | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-CON-008 | Source conflicts surfaced as issues/ADRs | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Audit lane | Docs | FULLY_MAPPED |
+| REQ-CON-009 | IS-303 creates no SQL/Prisma/migrations/validators | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

@@ -1007,3 +1007,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-302; AUDIT-SLICE-005; `reports/PEOPLE_IS_302_COMPLETION_REPORT.md` |
 | Revisit trigger | IS-303; ISSUE-CANONICAL-001 physical FK decision |
+
+### D-075
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0 is the canonical Logical Constraints and Integrity specification. Path: `docs/implementation_specs/300_database/PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY.md`. It defines CON-* cards consolidating Catalog 01 / IS-200…302 invariants with questionnaire C1–C28 across identity, uniqueness, requiredness, referential, cardinality, lifecycle, state-transition, ownership, temporal, ordering, immutability, append-only, concurrency, sensitivity, retention, cross-aggregate, and external-boundary categories. Standing integrity doctrine: a database constraint may enforce an approved business invariant but may not invent one; application validation may explain an invariant but may not weaken it; physical enforcement may use multiple mechanisms later while the logical invariant remains technology-neutral and authoritative. Authority hierarchy Catalog 01 → IS-200 → IS-201 → IS-202 → IS-302 → IS-303 locked; source conflicts must be surfaced as issues/ADRs. Page active image FK direction resolved logically as page-owned `source_image_id` (CON-REF-PAGE-IMAGE-ACTIVE). (2) AUDIT-SLICE-006 verifies docs-only posture, constraint contradiction visibility, and Gate G-10 blockers. Application implementation and migrationsAuthorized remain false. |
+| Reason | Complete logical integrity rules before read models and migration governance so physical schema translates governed invariants. |
+| Alternatives | Encode CHECK/UNIQUE DDL now; let ORM invent constraints; silently pick rules where docs conflict. |
+| Consequences | Next primary IS is PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0. Gate G-10 remains closed. |
+| Related files | PEOPLE-IS-303; AUDIT-SLICE-006; `reports/PEOPLE_IS_303_COMPLETION_REPORT.md` |
+| Revisit trigger | IS-304; IS-305; ISSUE-CANONICAL-001; ISSUE-DBA-001; ISSUE-AUDIT-001 |
