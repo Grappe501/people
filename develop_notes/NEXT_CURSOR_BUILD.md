@@ -3,55 +3,38 @@
 ## Build ID
 
 ```text
-PEOPLE-WORKFLOW-UX-DESIGN-1.0
+PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0
 ```
 
 ## Type
 
-Design-only. **No application code authorized.**
+Design-only. **No application code. No database migrations.**
 
 ---
 
 ## Purpose
 
-Fully design the operating workflows and interfaces for People Intake.
+Completely design:
 
----
-
-## Expected Design Deliverables
-
-- User roles
-- Capture workflow
-- Batch workflow
-- Image-quality workflow
-- Shared queue
-- Page claiming
-- Ten-entry transcription
-- Matching review
-- Exceptions
-- State machines
-- Mobile UX
-- Tablet and desktop UX
-- Image viewer
-- Form behavior
-- Accessibility
-- Interface copy
-
----
-
-## Gates Advanced
-
-This build targets progress toward:
-
-- Gate G-3: Workflow Design
-- Gate G-4: UX Design
-
-It does **not** authorize Gate G-10.
+- Canonical people integration
+- Intake domain model
+- Entity relationships
+- Field dictionary
+- Raw versus normalized data
+- Provenance
+- Match rules
+- Conflict handling
+- Database boundaries
+- Private image storage
+- File metadata
+- Retention
+- Migration strategy
+- Rollback strategy
 
 ---
 
 ## Preconditions
 
-1. `PEOPLE-GOVERNANCE-FOUNDATION-1.0` complete
-2. `npm run governance:all` passes
-3. Active build still has `applicationCodeAuthorized: false` unless intentionally updated for the new design build metadata only
+1. `PEOPLE-WORKFLOW-UX-DESIGN-1.0` complete
+2. Workflow/UX docs marked `draft_complete`
+3. `applicationCodeAuthorized` remains `false`

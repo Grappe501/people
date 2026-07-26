@@ -1,0 +1,60 @@
+{
+  "document": "screen-inventory",
+  "build": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
+  "status": "draft_complete",
+  "totalScreens": 44,
+  "groups": {
+    "authentication": ["Sign In", "Access Denied", "Account Disabled"],
+    "capture": [
+      "Uploader Home",
+      "New Batch",
+      "Camera Capture",
+      "Select Images",
+      "Review Images",
+      "Upload Progress",
+      "Upload Complete",
+      "My Batches",
+      "Batch Detail"
+    ],
+    "transcription": [
+      "Data Entry Home",
+      "Shared Queue",
+      "Page Workspace",
+      "Full-Screen Image Viewer",
+      "Mobile Person Entry",
+      "Desktop Entry Grid",
+      "Page Review",
+      "Page Submitted",
+      "My Work",
+      "Correction Queue"
+    ],
+    "matching": [
+      "Reviewer Home",
+      "Match Queue",
+      "Match Workspace",
+      "Field Conflict Review",
+      "Create New Person Review",
+      "Match Complete",
+      "Deferred Review"
+    ],
+    "administration": [
+      "Admin Overview",
+      "Batch Management",
+      "Queue Management",
+      "Claim Detail",
+      "Exception Queue",
+      "User Management",
+      "Audit Search",
+      "Audit Detail",
+      "Settings"
+    ],
+    "shared": [
+      "Help",
+      "Notifications",
+      "Account",
+      "Session Expired",
+      "Offline State",
+      "General Error"
+    ]
+  }
+}

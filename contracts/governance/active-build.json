@@ -1,9 +1,9 @@
 {
   "project": "People Intake",
   "projectRoot": "H:\\people",
-  "buildId": "PEOPLE-GOVERNANCE-FOUNDATION-1.0",
-  "phase": "-1",
-  "phaseName": "Governance Foundation",
+  "buildId": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
+  "phase": "0",
+  "phaseName": "Complete Design",
   "status": "active",
   "applicationCodeAuthorized": false,
   "databaseChangesAuthorized": false,
@@ -36,5 +36,6 @@
     "No production deployment",
     "No edits outside H:\\people"
   ],
-  "nextRecommendedBuild": "PEOPLE-WORKFLOW-UX-DESIGN-1.0"
+  "previousBuild": "PEOPLE-GOVERNANCE-FOUNDATION-1.0",
+  "nextRecommendedBuild": "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0"
 }

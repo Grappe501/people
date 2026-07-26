@@ -1,6 +1,6 @@
 # People Intake — Governance Validation Report
 
-Generated: 2026-07-26T03:11:22.467Z
+Generated: 2026-07-26T03:17:00.037Z
 
 ## Results
 
@@ -29,6 +29,20 @@ Generated: 2026-07-26T03:11:22.467Z
 - PASS: Document exists: docs/00_governance/PEOPLE_INTAKE_SOURCE_OF_TRUTH_REGISTRY.md
 - PASS: Document exists: docs/00_governance/PEOPLE_INTAKE_DECISION_LOG.md
 - PASS: Document exists: docs/00_governance/PEOPLE_INTAKE_GLOSSARY.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_USER_ROLES.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_CAPTURE_WORKFLOW.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_MATCHING_WORKFLOW.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_EXCEPTION_WORKFLOWS.md
+- PASS: Document exists: docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_UX_ARCHITECTURE.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_MOBILE_SCREEN_SPEC.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_TABLET_DESKTOP_SPEC.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_IMAGE_VIEWER_SPEC.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_FORM_BEHAVIOR_SPEC.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_ACCESSIBILITY_SPEC.md
+- PASS: Document exists: docs/03_ux/PEOPLE_INTAKE_CONTENT_AND_COPY_GUIDE.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Document exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
@@ -50,7 +64,7 @@ Generated: 2026-07-26T03:11:22.467Z
 - PASS: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md contains heading/marker: Gate G-10
 - PASS: active-build prohibits application code
 - PASS: active-build prohibits database changes
-- PASS: nextRecommendedBuild is PEOPLE-WORKFLOW-UX-DESIGN-1.0
+- PASS: nextRecommendedBuild is PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0
 - PASS: active-build projectRoot is H:\people
 - PASS: build-phase-registry has 10 phases
 - PASS: Schema parses: contracts/schemas/governance-document.schema.json
@@ -64,10 +78,24 @@ Generated: 2026-07-26T03:11:22.467Z
 - PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_DESIGN_BEFORE_CODE_PROTOCOL.md
 - PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_DECISION_LOG.md
 - PASS: Indexed complete doc exists: docs/00_governance/PEOPLE_INTAKE_GLOSSARY.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_USER_ROLES.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_CAPTURE_WORKFLOW.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_MATCHING_WORKFLOW.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_EXCEPTION_WORKFLOWS.md
+- PASS: Indexed complete doc exists: docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_UX_ARCHITECTURE.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_MOBILE_SCREEN_SPEC.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_TABLET_DESKTOP_SPEC.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_IMAGE_VIEWER_SPEC.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_FORM_BEHAVIOR_SPEC.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_ACCESSIBILITY_SPEC.md
+- PASS: Indexed complete doc exists: docs/03_ux/PEOPLE_INTAKE_CONTENT_AND_COPY_GUIDE.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md
 - PASS: Indexed complete doc exists: docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md
-- PASS: Seeded decisions found: 20
+- PASS: Seeded decisions found: 28
 - PASS: Decision IDs are unique
 - PASS: Prohibited path absent: src
 - PASS: Prohibited path absent: app

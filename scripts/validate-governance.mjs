@@ -94,6 +94,20 @@ const requiredDocs = [
   "docs/00_governance/PEOPLE_INTAKE_SOURCE_OF_TRUTH_REGISTRY.md",
   "docs/00_governance/PEOPLE_INTAKE_DECISION_LOG.md",
   "docs/00_governance/PEOPLE_INTAKE_GLOSSARY.md",
+  "docs/02_workflows/PEOPLE_INTAKE_USER_ROLES.md",
+  "docs/02_workflows/PEOPLE_INTAKE_CAPTURE_WORKFLOW.md",
+  "docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md",
+  "docs/02_workflows/PEOPLE_INTAKE_MATCHING_WORKFLOW.md",
+  "docs/02_workflows/PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md",
+  "docs/02_workflows/PEOPLE_INTAKE_EXCEPTION_WORKFLOWS.md",
+  "docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md",
+  "docs/03_ux/PEOPLE_INTAKE_UX_ARCHITECTURE.md",
+  "docs/03_ux/PEOPLE_INTAKE_MOBILE_SCREEN_SPEC.md",
+  "docs/03_ux/PEOPLE_INTAKE_TABLET_DESKTOP_SPEC.md",
+  "docs/03_ux/PEOPLE_INTAKE_IMAGE_VIEWER_SPEC.md",
+  "docs/03_ux/PEOPLE_INTAKE_FORM_BEHAVIOR_SPEC.md",
+  "docs/03_ux/PEOPLE_INTAKE_ACCESSIBILITY_SPEC.md",
+  "docs/03_ux/PEOPLE_INTAKE_CONTENT_AND_COPY_GUIDE.md",
   "docs/08_implementation/PEOPLE_INTAKE_CURSOR_EXECUTION_PROTOCOL.md",
   "docs/08_implementation/PEOPLE_INTAKE_BUILD_GATES.md",
   "docs/08_implementation/PEOPLE_INTAKE_PROGRESS_LEDGER.md",
@@ -130,8 +144,8 @@ if (active) {
   else fail("active-build must set applicationCodeAuthorized=false");
   if (active.databaseChangesAuthorized === false) pass("active-build prohibits database changes");
   else fail("active-build must set databaseChangesAuthorized=false");
-  if (active.nextRecommendedBuild === "PEOPLE-WORKFLOW-UX-DESIGN-1.0") {
-    pass("nextRecommendedBuild is PEOPLE-WORKFLOW-UX-DESIGN-1.0");
+  if (active.nextRecommendedBuild === "PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0") {
+    pass("nextRecommendedBuild is PEOPLE-DATA-MATCHING-STORAGE-DESIGN-1.0");
   } else {
     fail(`Unexpected nextRecommendedBuild: ${active.nextRecommendedBuild}`);
   }

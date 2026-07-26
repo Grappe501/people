@@ -43,7 +43,7 @@ Validation: `npm run governance:validate`
 
 ## Gate G-3: Workflow Design
 
-Future gate requiring:
+Requires:
 
 - Capture workflow
 - Transcription workflow
@@ -53,11 +53,13 @@ Future gate requiring:
 - Exception workflows
 - User roles document
 
+**Status after PEOPLE-WORKFLOW-UX-DESIGN-1.0:** draft package complete (not frozen)
+
 ---
 
 ## Gate G-4: UX Design
 
-Future gate requiring:
+Requires:
 
 - Mobile screen specification
 - Tablet and desktop specification
@@ -66,6 +68,8 @@ Future gate requiring:
 - Accessibility
 - Content guide
 - UX architecture
+
+**Status after PEOPLE-WORKFLOW-UX-DESIGN-1.0:** draft package complete (not frozen)
 
 ---
 

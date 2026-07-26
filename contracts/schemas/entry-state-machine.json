@@ -1,0 +1,26 @@
+{
+  "document": "conceptual-entry-state-machine",
+  "build": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
+  "status": "draft_complete",
+  "note": "Conceptual UX/workflow states. Engineering enums finalized later.",
+  "states": [
+    "Draft",
+    "Transcribed",
+    "Matching",
+    "Exact Match",
+    "Possible Match",
+    "No Match",
+    "Conflict",
+    "Linked Existing",
+    "Created New",
+    "Needs Correction",
+    "Completed"
+  ],
+  "matchingOutcomes": [
+    "Exact Match",
+    "Possible Match",
+    "No Match",
+    "Conflict",
+    "Needs Correction"
+  ]
+}

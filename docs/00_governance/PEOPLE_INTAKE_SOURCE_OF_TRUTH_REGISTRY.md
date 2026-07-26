@@ -46,15 +46,10 @@ Lower layers may not silently redefine higher layers.
 
 ## Planned Canonical Files (Later Volumes)
 
+Workflow and UX volumes (DOC-008–DOC-021) are now `draft_complete` under `docs/02_workflows/` and `docs/03_ux/`.
+
 | Area | Planned canonical file |
 | --- | --- |
-| User roles | `docs/02_workflows/PEOPLE_INTAKE_USER_ROLES.md` |
-| Capture workflow | `docs/02_workflows/PEOPLE_INTAKE_CAPTURE_WORKFLOW.md` |
-| Transcription workflow | `docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md` |
-| Matching workflow | `docs/02_workflows/PEOPLE_INTAKE_MATCHING_WORKFLOW.md` |
-| Queue and claiming | `docs/02_workflows/PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md` |
-| State machines | `docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md` |
-| UX architecture | `docs/03_ux/PEOPLE_INTAKE_UX_ARCHITECTURE.md` |
 | Domain model | `docs/04_data/PEOPLE_INTAKE_DOMAIN_MODEL.md` |
 | Database architecture | `docs/04_data/PEOPLE_INTAKE_DATABASE_ARCHITECTURE.md` |
 | Canonical person contract | `docs/04_data/PEOPLE_INTAKE_CANONICAL_PERSON_CONTRACT.md` |

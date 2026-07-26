@@ -1,0 +1,31 @@
+{
+  "document": "conceptual-page-state-machine",
+  "build": "PEOPLE-WORKFLOW-UX-DESIGN-1.0",
+  "status": "draft_complete",
+  "note": "Conceptual UX/workflow states. Engineering enums finalized later.",
+  "states": [
+    "Uploading",
+    "Uploaded",
+    "Image Review",
+    "Ready for Entry",
+    "Assigned",
+    "In Progress",
+    "Entry Complete",
+    "Matching",
+    "Needs Match Review",
+    "Needs Correction",
+    "Completed",
+    "Archived"
+  ],
+  "userLabels": {
+    "Uploaded": "Ready for Image Review",
+    "Ready for Entry": "Ready for Entry",
+    "Assigned": "Assigned",
+    "In Progress": "In Progress",
+    "Entry Complete": "Entry Complete",
+    "Matching": "Matching",
+    "Needs Match Review": "Needs Match Review",
+    "Needs Correction": "Needs Correction",
+    "Completed": "Completed"
+  }
+}

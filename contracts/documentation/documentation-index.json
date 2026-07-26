@@ -86,154 +86,154 @@
       "title": "PEOPLE_INTAKE_USER_ROLES",
       "path": "docs/02_workflows/PEOPLE_INTAKE_USER_ROLES.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-009",
       "title": "PEOPLE_INTAKE_CAPTURE_WORKFLOW",
       "path": "docs/02_workflows/PEOPLE_INTAKE_CAPTURE_WORKFLOW.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-010",
       "title": "PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW",
       "path": "docs/02_workflows/PEOPLE_INTAKE_TRANSCRIPTION_WORKFLOW.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-011",
       "title": "PEOPLE_INTAKE_MATCHING_WORKFLOW",
       "path": "docs/02_workflows/PEOPLE_INTAKE_MATCHING_WORKFLOW.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-012",
       "title": "PEOPLE_INTAKE_QUEUE_AND_CLAIMING",
       "path": "docs/02_workflows/PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-013",
       "title": "PEOPLE_INTAKE_EXCEPTION_WORKFLOWS",
       "path": "docs/02_workflows/PEOPLE_INTAKE_EXCEPTION_WORKFLOWS.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-014",
       "title": "PEOPLE_INTAKE_STATE_MACHINES",
       "path": "docs/02_workflows/PEOPLE_INTAKE_STATE_MACHINES.md",
       "volume": "2",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-015",
       "title": "PEOPLE_INTAKE_UX_ARCHITECTURE",
       "path": "docs/03_ux/PEOPLE_INTAKE_UX_ARCHITECTURE.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-016",
       "title": "PEOPLE_INTAKE_MOBILE_SCREEN_SPEC",
       "path": "docs/03_ux/PEOPLE_INTAKE_MOBILE_SCREEN_SPEC.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-017",
       "title": "PEOPLE_INTAKE_TABLET_DESKTOP_SPEC",
       "path": "docs/03_ux/PEOPLE_INTAKE_TABLET_DESKTOP_SPEC.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-018",
       "title": "PEOPLE_INTAKE_IMAGE_VIEWER_SPEC",
       "path": "docs/03_ux/PEOPLE_INTAKE_IMAGE_VIEWER_SPEC.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-019",
       "title": "PEOPLE_INTAKE_FORM_BEHAVIOR_SPEC",
       "path": "docs/03_ux/PEOPLE_INTAKE_FORM_BEHAVIOR_SPEC.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-020",
       "title": "PEOPLE_INTAKE_ACCESSIBILITY_SPEC",
       "path": "docs/03_ux/PEOPLE_INTAKE_ACCESSIBILITY_SPEC.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-021",
       "title": "PEOPLE_INTAKE_CONTENT_AND_COPY_GUIDE",
       "path": "docs/03_ux/PEOPLE_INTAKE_CONTENT_AND_COPY_GUIDE.md",
       "volume": "3",
-      "status": "planned",
+      "status": "draft_complete",
       "requiredForDesignFreeze": true,
       "dependsOn": [],
       "governs": [],
-      "lastValidatedAt": null
+      "lastValidatedAt": "2026-07-25"
     },
     {
       "id": "DOC-022",

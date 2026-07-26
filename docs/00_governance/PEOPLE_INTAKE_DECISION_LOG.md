@@ -286,12 +286,125 @@ Statuses: `accepted` | `provisional` | `superseded` | `open`
 
 ---
 
+## Decisions Locked in PEOPLE-WORKFLOW-UX-DESIGN-1.0
+
+### D-021
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Capture, transcription, and matching remain separate workspaces (plus Manage). |
+| Reason | Different jobs, locations, and cognitive loads. |
+| Alternatives | Single combined workspace. |
+| Consequences | Role homes and navigation differ by workspace. |
+| Related files | `PEOPLE_INTAKE_UX_ARCHITECTURE.md`, `PEOPLE_INTAKE_USER_ROLES.md` |
+| Revisit trigger | Proven confusion in usability testing |
+
+### D-022
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | A page is the queue work item; each page supports up to ten independent intake entries. |
+| Reason | Hard-copy sheets contain multiple people; page-centric office work. |
+| Alternatives | One person per image as queue unit. |
+| Consequences | Claims, submit, and completion are page-level. |
+| Related files | Transcription and queue workflow docs |
+| Revisit trigger | Physical form capacity change |
+
+### D-023
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Data entry completes the entire page before matching; matching does not interrupt typing. |
+| Reason | Protect transcription speed. |
+| Alternatives | Inline duplicate prompts per row. |
+| Consequences | Post-submit matching queue. |
+| Related files | `PEOPLE_INTAKE_MATCHING_WORKFLOW.md` |
+| Revisit trigger | Strong operational need for inline exact-match only |
+
+### D-024
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Mobile entry is one person at a time; tablet/desktop may use a ten-row grid. |
+| Reason | Phone width cannot host eight fields across. |
+| Alternatives | Same UI on all devices. |
+| Consequences | Dual layout specs. |
+| Related files | Mobile and tablet/desktop specs |
+| Revisit trigger | None expected |
+
+### D-025
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Standard worker action is Claim Next Page with atomic exclusive claims. |
+| Reason | Parallel office work without collisions. |
+| Alternatives | Manual-only page picking. |
+| Consequences | Claim renewal, expiration, admin reassignment required. |
+| Related files | `PEOPLE_INTAKE_QUEUE_AND_CLAIMING.md` |
+| Revisit trigger | Single-operator deployment only |
+
+### D-026
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Drafts autosave; claims expire after inactivity; drafts survive expiration. |
+| Reason | Mobile interruption and weak signal are expected. |
+| Alternatives | Manual save only; discard expired drafts. |
+| Consequences | Local/offline draft behavior and conflict protection. |
+| Related files | Transcription and queue docs |
+| Revisit trigger | Exact TTL mechanics in later design |
+
+### D-027
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Bad images move to an exception/image-review path; Unreadable and Not Provided remain separate; Volunteer/Email List use Yes, No, Blank. |
+| Reason | Preserve evidence and avoid invented No answers. |
+| Alternatives | Boolean-only fields; silent No for blank. |
+| Consequences | Field-options UI and exception queues. |
+| Related files | Form behavior; exception workflows |
+| Revisit trigger | Legal consent model change |
+
+### D-028
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-25 |
+| Status | accepted |
+| Decision | Primary submission action is Submit Page & Open Next; Exact/Possible/No Match/Conflict are distinct; uncertain matching requires humans; UI language stays plain. |
+| Reason | Fastest correct office loop with safe matching. |
+| Alternatives | Always return to queue; auto-merge uncertain matches. |
+| Consequences | Reviewer workspace and copy guide constraints. |
+| Related files | Content guide; matching workflow |
+| Revisit trigger | None for Version 1 |
+
+---
+
 ## Open Non-Blocking Questions
 
-These do not block governance foundation completion; they must be resolved during later design volumes:
+Deferred to later design volumes (especially data/matching/storage):
 
 1. Exact private storage provider choice (Supabase Storage vs S3-compatible vs other).
 2. Preferred vs alternative canonical people integration model details against live RedDirt schema.
-3. Final claim expiration minutes (30 recommended) and renewal events.
+3. Exact claim-renewal timing mechanics (30 minutes recommended).
 4. Exact auto-link criteria for EXACT matches.
-5. Retention default (keep indefinitely vs timed deletion after verification).
+5. Whether no-match entries auto-create people immediately.
+6. Whether canonical people permit multiple active phones/emails.
+7. Retention default for source images.
+8. Exact match-score formula.
+9. Exact offline storage technology.
+10. Exact API routes, package versions, migration order, and production DB permissions.
