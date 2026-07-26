@@ -23,7 +23,12 @@ NONE — no migrations, SQL, Prisma, seeds, netlify.toml, src/
 
 ## Commit / Push / Remote
 
-Filled after Git closeout.
+```text
+Commit:  bb89678d632a95a18b00e46072f40b906ef57ff7
+Branch:  master
+Push:    PASS (7c498cc..bb89678)
+Remote:  PASS — origin/master contains commit
+```
 
 ## Netlify
 
