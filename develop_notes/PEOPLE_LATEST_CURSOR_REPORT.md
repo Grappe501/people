@@ -22,7 +22,12 @@ NONE — no netlify.toml, no .github/workflows, no application source
 
 ## Commit / Push / Remote
 
-Filled after Git closeout in this return.
+```text
+Commit:  2ebb60b5268c10bdb0bf9f2902ef237372dfa3f5
+Branch:  master
+Push:    PASS (d89f91e..2ebb60b)
+Remote:  PASS — origin/master contains commit
+```
 
 ## Netlify
 
