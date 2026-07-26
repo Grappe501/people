@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/build-phase.schema.json",
+  "title": "BuildPhase",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "phaseId",
+    "name",
+    "purpose",
+    "entryConditions",
+    "authorizedChanges",
+    "forbiddenChanges",
+    "requiredOutputs",
+    "validationGates",
+    "exitConditions",
+    "nextPhase"
+  ],
+  "properties": {
+    "phaseId": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "purpose": { "type": "string", "minLength": 1 },
+    "entryConditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "authorizedChanges": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "forbiddenChanges": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "requiredOutputs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "validationGates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "exitConditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "nextPhase": { "type": ["string", "null"] }
+  }
+}

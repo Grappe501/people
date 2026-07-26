@@ -1,0 +1,12 @@
+{
+  "name": "people-intake",
+  "version": "0.0.0-governance",
+  "private": true,
+  "description": "Governance and design foundation for the People Intake System.",
+  "type": "module",
+  "scripts": {
+    "drive:validate": "node scripts/validate-h-drive.mjs",
+    "governance:validate": "node scripts/validate-governance.mjs",
+    "governance:all": "npm run drive:validate && npm run governance:validate"
+  }
+}

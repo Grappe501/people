@@ -1,0 +1,299 @@
+{
+  "phases": [
+    {
+      "exitConditions": [
+        "Governance foundation validated",
+        "Next design build identified"
+      ],
+      "nextPhase": "0",
+      "authorizedChanges": [
+        "Documentation",
+        "Governance contracts",
+        "Validation scripts",
+        "Reports"
+      ],
+      "purpose": "Establish scope, rules, boundaries, naming, source of truth, H-drive and design-before-code enforcement.",
+      "entryConditions": [
+        "Project root authorized at H:\\\\people"
+      ],
+      "name": "Governance",
+      "forbiddenChanges": [
+        "Application code",
+        "Database changes",
+        "Migrations",
+        "Production deployment"
+      ],
+      "phaseId": "-1",
+      "requiredOutputs": [
+        "Master plan",
+        "Protocols",
+        "Decision log",
+        "Glossary",
+        "Active build registry",
+        "Validators"
+      ],
+      "validationGates": [
+        "G-1",
+        "G-2"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Design freeze approved"
+      ],
+      "nextPhase": "1",
+      "authorizedChanges": [
+        "Design documentation",
+        "JSON contracts",
+        "Diagrams",
+        "Validation scripts"
+      ],
+      "purpose": "Complete all design volumes and contracts before freeze.",
+      "entryConditions": [
+        "Phase -1 complete"
+      ],
+      "name": "Complete Design",
+      "forbiddenChanges": [
+        "Application code",
+        "Database migrations",
+        "Live integrations"
+      ],
+      "phaseId": "0",
+      "requiredOutputs": [
+        "Eight documentation volumes",
+        "Machine-readable contracts",
+        "Design audit inputs"
+      ],
+      "validationGates": [
+        "G-3",
+        "G-4",
+        "G-5",
+        "G-6",
+        "G-7",
+        "G-8",
+        "G-9"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Foundation smoke tests pass"
+      ],
+      "nextPhase": "2",
+      "authorizedChanges": [
+        "Application foundation under approved map",
+        "Schema/migrations as approved"
+      ],
+      "purpose": "Implement app shell, auth, DB/storage adapters, env validation, audit and test foundation.",
+      "entryConditions": [
+        "Gate G-10 Implementation Authorization"
+      ],
+      "name": "Technical Foundation",
+      "forbiddenChanges": [
+        "Undocumented schema changes",
+        "Public image exposure"
+      ],
+      "phaseId": "1",
+      "requiredOutputs": [
+        "Auth shell",
+        "DB connection",
+        "Storage adapter",
+        "Test infrastructure"
+      ],
+      "validationGates": [
+        "Typecheck",
+        "Lint",
+        "Foundation tests",
+        "H-drive preflight"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Field upload path works end-to-end in non-prod"
+      ],
+      "nextPhase": "3",
+      "authorizedChanges": [
+        "Capture/upload features within frozen contracts"
+      ],
+      "purpose": "Batch creation, mobile capture, multi-image upload, private storage, queue creation.",
+      "entryConditions": [
+        "Phase 1 complete"
+      ],
+      "name": "Capture and Upload",
+      "forbiddenChanges": [
+        "OCR",
+        "Public URLs",
+        "Out-of-scope messaging"
+      ],
+      "phaseId": "2",
+      "requiredOutputs": [
+        "Batch upload flow",
+        "Private stored pages in queue"
+      ],
+      "validationGates": [
+        "Upload tests",
+        "Storage authz tests"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Dual-user claim race handled safely"
+      ],
+      "nextPhase": "4",
+      "authorizedChanges": [
+        "Queue and claim implementation"
+      ],
+      "purpose": "Queue views, atomic claiming, renewal, expiration, resume, reassignment, concurrency protection.",
+      "entryConditions": [
+        "Phase 2 complete"
+      ],
+      "name": "Shared Queue and Claims",
+      "forbiddenChanges": [
+        "Last-write-wins shared editing"
+      ],
+      "phaseId": "3",
+      "requiredOutputs": [
+        "Claim APIs",
+        "Queue UI",
+        "Concurrency tests"
+      ],
+      "validationGates": [
+        "Concurrency tests",
+        "Claim conflict tests"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Submit page and open next works"
+      ],
+      "nextPhase": "5",
+      "authorizedChanges": [
+        "Transcription UI and services"
+      ],
+      "purpose": "Image viewer, phone and grid entry, autosave, review, submit, open next.",
+      "entryConditions": [
+        "Phase 3 complete"
+      ],
+      "name": "Ten-Entry Transcription",
+      "forbiddenChanges": [
+        "Inline uncertain merge interruptions as default"
+      ],
+      "phaseId": "4",
+      "requiredOutputs": [
+        "Ten-entry transcription flow",
+        "Draft recovery"
+      ],
+      "validationGates": [
+        "Form validation tests",
+        "Autosave recovery tests"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Exact and possible match paths complete"
+      ],
+      "nextPhase": "6",
+      "authorizedChanges": [
+        "Matching engine and review UI per frozen rules"
+      ],
+      "purpose": "Exact matching, candidates, review, link/create, provenance, completion.",
+      "entryConditions": [
+        "Phase 4 complete"
+      ],
+      "name": "Matching and Canonical People",
+      "forbiddenChanges": [
+        "Automatic uncertain merges",
+        "Discarding raw transcription"
+      ],
+      "phaseId": "5",
+      "requiredOutputs": [
+        "Matching review",
+        "Person link/create with provenance"
+      ],
+      "validationGates": [
+        "Matching tests",
+        "Authorization tests"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Operator admin path usable"
+      ],
+      "nextPhase": "7",
+      "authorizedChanges": [
+        "Admin and reporting features"
+      ],
+      "purpose": "Metrics, batch progress, users, exceptions, audit search, reassignment, retention controls.",
+      "entryConditions": [
+        "Phase 5 complete"
+      ],
+      "name": "Administration and Reporting",
+      "forbiddenChanges": [
+        "Punitive scoring systems as product focus"
+      ],
+      "phaseId": "6",
+      "requiredOutputs": [
+        "Queue metrics",
+        "Admin reassignment",
+        "Audit search"
+      ],
+      "validationGates": [
+        "Admin authz tests"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Launch checklist prerequisites met"
+      ],
+      "nextPhase": "8",
+      "authorizedChanges": [
+        "Hardening fixes within scope"
+      ],
+      "purpose": "Security review, accessibility, performance, error recovery, mobile and concurrency testing, deployment validation.",
+      "entryConditions": [
+        "Phase 6 complete"
+      ],
+      "name": "Hardening",
+      "forbiddenChanges": [
+        "Scope expansion without design amendment"
+      ],
+      "phaseId": "7",
+      "requiredOutputs": [
+        "Hardening report",
+        "Passing critical tests"
+      ],
+      "validationGates": [
+        "Security audit",
+        "A11y checks",
+        "Concurrency suite"
+      ]
+    },
+    {
+      "exitConditions": [
+        "Definition of Done satisfied"
+      ],
+      "nextPhase": null,
+      "authorizedChanges": [
+        "Approved production configuration and migration"
+      ],
+      "purpose": "Production environment, migrations, storage bucket, onboarding, training, checklist, rollback prep, smoke test.",
+      "entryConditions": [
+        "Phase 7 complete",
+        "Launch approval"
+      ],
+      "name": "Launch",
+      "forbiddenChanges": [
+        "Undocumented production changes"
+      ],
+      "phaseId": "8",
+      "requiredOutputs": [
+        "Production smoke test",
+        "Rollback procedure ready"
+      ],
+      "validationGates": [
+        "Launch checklist"
+      ]
+    }
+  ],
+  "version": "1.0",
+  "project": "People Intake"
+}

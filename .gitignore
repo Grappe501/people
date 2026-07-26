@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.next/
+dist/
+build/
+coverage/
+.netlify/
+.cache/
+.tmp/
+.test-output/
+.local-storage/
+.npm-cache/
+*.log
+uploads/
+private-uploads/

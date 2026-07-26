@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/decision-record.schema.json",
+  "title": "DecisionRecord",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decisionId",
+    "date",
+    "status",
+    "decision",
+    "reason",
+    "alternatives",
+    "consequences",
+    "relatedFiles",
+    "revisitTrigger"
+  ],
+  "properties": {
+    "decisionId": {
+      "type": "string",
+      "pattern": "^D-[0-9]{3}$"
+    },
+    "date": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": ["accepted", "provisional", "superseded", "open"]
+    },
+    "decision": { "type": "string", "minLength": 1 },
+    "reason": { "type": "string", "minLength": 1 },
+    "alternatives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "consequences": { "type": "string", "minLength": 1 },
+    "relatedFiles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "revisitTrigger": { "type": "string", "minLength": 1 }
+  }
+}

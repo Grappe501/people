@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://people.local/schemas/governance-document.schema.json",
+  "title": "GovernanceDocument",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "path",
+    "status",
+    "version",
+    "requiredForDesignFreeze"
+  ],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "path": { "type": "string", "minLength": 1 },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "draft_complete",
+        "in_review",
+        "approved",
+        "frozen",
+        "superseded"
+      ]
+    },
+    "version": { "type": "string", "minLength": 1 },
+    "volume": { "type": "string" },
+    "governs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "dependsOn": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "requiredForDesignFreeze": { "type": "boolean" },
+    "lastValidatedAt": { "type": ["string", "null"] },
+    "lastReviewedAt": { "type": ["string", "null"] }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "project": "People Intake",
+  "projectRoot": "H:\\people",
+  "buildId": "PEOPLE-GOVERNANCE-FOUNDATION-1.0",
+  "phase": "-1",
+  "phaseName": "Governance Foundation",
+  "status": "active",
+  "applicationCodeAuthorized": false,
+  "databaseChangesAuthorized": false,
+  "migrationsAuthorized": false,
+  "deploymentAuthorized": false,
+  "authorizedPaths": [
+    "docs/",
+    "contracts/",
+    "diagrams/",
+    "develop_notes/",
+    "scripts/",
+    "reports/"
+  ],
+  "forbiddenPaths": [
+    "src/",
+    "app/",
+    "pages/",
+    "api/",
+    "prisma/",
+    "migrations/",
+    "components/",
+    "public/",
+    "netlify/functions/"
+  ],
+  "hardBoundaries": [
+    "No intentional project writes to C:\\",
+    "No application code before design freeze",
+    "No database changes",
+    "No production secrets",
+    "No production deployment",
+    "No edits outside H:\\people"
+  ],
+  "nextRecommendedBuild": "PEOPLE-WORKFLOW-UX-DESIGN-1.0"
+}
