@@ -1046,3 +1046,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Phase 3 docs complete. Gate G-10 remains closed. First physical schema package not authorized. |
 | Related files | PEOPLE-IS-305; AUDIT-SLICE-008; `reports/PEOPLE_IS_305_COMPLETION_REPORT.md` |
 | Revisit trigger | Gate G-10 review; ISSUE-FREEZE-001; ISSUE-DBA-001; first MG-* when authorized |
+
+### D-078
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 is the primary engineering focus after Phase 3 documentation completion (D-077). (2) PEOPLE-GATE-G10-READINESS-ASSESSMENT-1.0 (`reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md`) and AUDIT-SLICE-009 are accepted as the evidence-based Gate G-10 readiness assessment. Verdict: **REMAIN CLOSED**. The assessment answers only whether documented G-10 prerequisites are met; it does NOT open Gate G-10 and does NOT grant Implementation Authorization. (3) Open issues are triaged (BLOCKING_G10 / BLOCKING_MG / BLOCKING_PACKAGE / CONDITIONAL / DEFERRED / MITIGATED) in the open-issue register. Design Freeze Approval Report refreshed and remains **DENIED**. (4) Application implementation, migrationsAuthorized, and first MG-* execution remain unauthorized. Next work continues on audit/freeze remediation (ADR acceptance by Steve, ISSUE-DBA-001, Critical issue disposition) until a future reassessment. |
+| Reason | Produce objective G-10 readiness evidence after Phase 3 docs complete, preserving Steve/Ernie/Burt separation. |
+| Alternatives | Infer G-10 open from Phase 3 complete; auto-authorize implementation; skip triage. |
+| Consequences | Gate G-10 remains closed. Primary lane remains audit/freeze. Implementation Authorization stays a separate future Steve decision. |
+| Related files | `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md`; `reports/PEOPLE_AUDIT_SLICE_009_FINDINGS.md`; design freeze report; open-issue register |
+| Revisit trigger | Design freeze APPROVED; blocking ADR acceptances; Critical issue closures; reassessment request |

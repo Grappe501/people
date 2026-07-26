@@ -294,8 +294,8 @@ PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
 Phase 3 (IS-300…305) documentation is complete.  
-Gate G-10 remains **CLOSED**. Implementation / migrations **NOT AUTHORIZED**.  
-Independent audit lane is now the primary focus for freeze/G-10 readiness.
+Gate G-10 readiness verdict (D-078): **REMAIN CLOSED** — `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md`.  
+This does **not** authorize implementation. Implementation Authorization is a separate Steve decision after G-10 (if opened).
 
 No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 

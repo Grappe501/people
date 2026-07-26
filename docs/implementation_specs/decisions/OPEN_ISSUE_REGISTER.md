@@ -2,32 +2,35 @@
 
 **Program:** PEOPLE-IMPLEMENTATION-SPECIFICATION-PROGRAM-1.0  
 **Governed by:** PEOPLE-IS-004  
-**Last Updated:** 2026-07-26
+**Last Updated:** 2026-07-26  
+**Triage authority:** AUDIT-SLICE-009 / PEOPLE-GATE-G10-READINESS-ASSESSMENT-1.0 (D-078)
 
-| Issue ID | Title | Severity | Blocking | Required By | Status |
+**Triage classes:** `BLOCKING_G10` | `BLOCKING_MG` | `BLOCKING_PACKAGE` | `CONDITIONAL` | `DEFERRED` | `MITIGATED`
+
+| Issue ID | Title | Severity | Triage | Required By | Status |
 | --- | --- | --- | --- | --- | --- |
-| ISSUE-AUTH-001 | Authentication provider and session architecture not formally approved; auth **method** conflict (Google OAuth vs magic-link/password) unresolved in IS-101 | CRITICAL | Yes before Phase 9 / implementation | Phase 9 / ADR-004 | OPEN |
-| ISSUE-STORAGE-001 | Object storage provider not formally approved; Catalog 4 `STORAGE_PROVIDER=Netlify` seed conflicts with private-image posture in IS-101 | CRITICAL | Yes before upload implementation | Upload IS / ADR-005 | OPEN |
-| ISSUE-PLATFORM-001 | Application framework not Decision-Log accepted (IS-101 recommends Next.js+React+TS as PROPOSED) | CRITICAL | Yes before coding; recommendation recorded in IS-101 | IS-101 / ADR-001 | OPEN |
-| ISSUE-DATABASE-001 | Database provider and access strategy not formally selected | CRITICAL | Yes before Phase 3 | Phase 3 / ADR-002/003 | OPEN |
-| ISSUE-JOBS-001 | Background-job runtime not selected | CRITICAL | Yes before Phase 7 implementation readiness | Phase 7 / ADR-006 | OPEN |
-| ISSUE-CANONICAL-001 | Canonical person integration boundary requires exact contract | CRITICAL | Yes before promotion implementation | Promotion IS | OPEN |
-| ISSUE-RETENTION-001 | Exact retention durations require policy approval | HIGH | Yes before production launch; not blocking early docs | Launch | OPEN |
-| ISSUE-NOTIFY-001 | Version 1 notification channels require formal selection | MEDIUM | No for docs; yes before notification implementation | Notify IS | OPEN |
-| ISSUE-HDRIVE-001 | H-drive-only execution enforcement mechanism requires formal design; IS-104 documents operational standard; automated guard still pending ADR-020 | CRITICAL | Yes before development tooling / package installation | Phase 1 / ADR-020 / IS-104 | OPEN |
-| ISSUE-CATALOG-009 | Catalog 09 Traceability DESIGN COMPLETE (foundation); full inventory remains amendment-driven | MEDIUM | No for library close; yes for claiming system-wide completeness | Amendments / IS phases | OPEN |
-| ISSUE-REPO-001 | Target docs/ layout (master/volumes/…) not yet migrated from live Volume tree | MEDIUM | No for docs authorship; yes before layout cutover package | IS-100 follow-on | OPEN |
-| ISSUE-REPO-002 | Exact .gitignore / cache env vars depend on framework ADRs | MEDIUM | Yes before app scaffolding | IS-101 / ADR-020 | OPEN |
-| ISSUE-MOD-001 | Precise split of intake_entries ownership between MOD-DRAFTS and MOD-TRANSCRIPTIONS | HIGH | Yes before entry implementation packages | IS-200 / IS-201 / domain follow-on | OPEN |
-| ISSUE-MOD-002 | Whether reports/exports use shared read models or dedicated views | MEDIUM | Yes before reports/exports packages | IS-102 / reporting IS | OPEN |
-| ISSUE-GHN-001 | Optional rename of GitHub repo `people` → `people-intake-system` (IS-100 suggestion) | LOW | No | Ops / Decision Log | OPEN |
-| ISSUE-GHN-002 | Optional migrate default branch `master` → `main` | LOW | No | Ops / Decision Log | OPEN |
-| ISSUE-FREEZE-001 | Design freeze blocked pending Critical ADR/issue remediation via independent audit lane | CRITICAL | Yes before Gate G-10 | PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0 | OPEN |
-| ISSUE-AUDIT-001 | Field dictionary / pre-catalog workflow status labels drift vs Catalog 01 (FIND-AUDIT-001/005) | MEDIUM | Yes before claiming enum finality | IS-202 / AUDIT-SLICE-002 | MITIGATED — banners + IS-202; retain until freeze review |
-| ISSUE-DBA-001 | Shared DB compatibility audit not yet executed; conceptual tables must not be assumed to exist | HIGH | Yes before migrationsAuthorized | IS-300 / shared-DB audit | OPEN |
+| ISSUE-AUTH-001 | Authentication provider/session; method conflict unresolved | CRITICAL | BLOCKING_G10 | Phase 9 / ADR-004 | OPEN |
+| ISSUE-STORAGE-001 | Object storage not approved; Cat 4 Netlify seed conflict | CRITICAL | BLOCKING_G10 (CONDITIONAL for non-upload core only with Owner waiver) | Upload IS / ADR-005 | OPEN |
+| ISSUE-PLATFORM-001 | Application framework not Decision-Log accepted | CRITICAL | BLOCKING_G10 | IS-101 / ADR-001 | OPEN |
+| ISSUE-DATABASE-001 | Database provider/access not formally selected | CRITICAL | BLOCKING_G10 / BLOCKING_MG | Physical schema / ADR-002/003 (Phase 3 **docs** completed technology-neutral; selection still required before G-10) | OPEN |
+| ISSUE-JOBS-001 | Background-job runtime not selected | CRITICAL | DEFERRED (with Decision Log) past first MG core; BLOCKING_PACKAGE for Phase 7 | Phase 7 / ADR-006 | OPEN |
+| ISSUE-CANONICAL-001 | Canonical person integration boundary requires exact contract | CRITICAL | CONDITIONAL for core soft-ref; BLOCKING_PACKAGE for promotion | Promotion IS / ADR-016 | OPEN |
+| ISSUE-RETENTION-001 | Exact retention durations require policy approval | HIGH | DEFERRED to launch | Launch / ADR-017 | OPEN |
+| ISSUE-NOTIFY-001 | V1 notification channels require formal selection | MEDIUM | DEFERRED | Notify IS / ADR-007 | OPEN |
+| ISSUE-HDRIVE-001 | H-drive enforcement mechanism; automated guard pending | CRITICAL | BLOCKING_G10 tooling | ADR-020 / IS-104 | OPEN |
+| ISSUE-CATALOG-009 | Catalog 09 full inventory amendment-driven | MEDIUM | DEFERRED | Amendments | OPEN |
+| ISSUE-REPO-001 | Target docs/ layout migration | MEDIUM | DEFERRED | IS-100 follow-on | OPEN |
+| ISSUE-REPO-002 | Exact .gitignore / cache env vars depend on framework ADRs | MEDIUM | BLOCKING_PACKAGE scaffolding | IS-101 / ADR-020 | OPEN |
+| ISSUE-MOD-001 | intake_entries ownership split MOD-DRAFTS vs MOD-TRANSCRIPTIONS | HIGH | BLOCKING_PACKAGE entry impl | IS-200 / IS-201 | OPEN |
+| ISSUE-MOD-002 | Reports/exports shared RM vs dedicated views | MEDIUM | DEFERRED | IS-304 amendment / reporting | OPEN |
+| ISSUE-GHN-001 | Optional rename GitHub repo | LOW | DEFERRED | Ops | OPEN |
+| ISSUE-GHN-002 | Optional migrate default branch master→main | LOW | DEFERRED | Ops | OPEN |
+| ISSUE-FREEZE-001 | Design freeze blocked pending Critical ADR/issue remediation | CRITICAL | BLOCKING_G10 | Audit/freeze lane | OPEN |
+| ISSUE-AUDIT-001 | Field-dictionary status labels vs Catalog 01 | MEDIUM | MITIGATED — retain until freeze review | IS-202 / audit | MITIGATED |
+| ISSUE-DBA-001 | Shared DB compatibility audit not executed | HIGH | BLOCKING_MG / migrationsAuthorized | Shared-DB audit | OPEN |
 
-Related ADRs: ADR-001…ADR-020 in `DECISION_REGISTER.md`.  
-Audit lane charter: `docs/00_governance/lanes/PEOPLE_AUDIT_REMEDIATION_AND_QUALITY_OPS_FREEZE.md`.  
-Latest findings: `reports/PEOPLE_AUDIT_SLICE_008_FINDINGS.md`.
+Related ADRs: ADR-001…ADR-020 all **OPEN / PROPOSED** (`docs/adr/_index.md`).  
+G-10 readiness: `reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md` — **REMAIN CLOSED**.  
+Latest findings: `reports/PEOPLE_AUDIT_SLICE_009_FINDINGS.md`.
 
-Phase 3 documentation complete (IS-300…305). Gate G-10 remains CLOSED. Implementation Authorization is a separate decision.
+Phase 3 documentation complete (IS-300…305). Gate G-10 remains CLOSED. Implementation Authorization is a separate Steve decision.

@@ -1,6 +1,6 @@
 # People Intake — Governance Validation Report
 
-Generated: 2026-07-26T07:03:46.074Z
+Generated: 2026-07-26T07:10:36.215Z
 
 ## Results
 
@@ -214,7 +214,7 @@ Generated: 2026-07-26T07:03:46.074Z
 - PASS: Indexed complete doc exists: docs/16_implementation_packages/PACKAGE_TEMPLATE.md
 - PASS: Indexed complete doc exists: docs/16_implementation_packages/PKG-0.0-SPEC-LIBRARY-BOOTSTRAP.md
 - PASS: Indexed complete doc exists: docs/16_implementation_packages/README.md
-- PASS: Seeded decisions found: 77
+- PASS: Seeded decisions found: 78
 - PASS: Decision IDs are unique
 - PASS: Prohibited path absent: src
 - PASS: Prohibited path absent: app

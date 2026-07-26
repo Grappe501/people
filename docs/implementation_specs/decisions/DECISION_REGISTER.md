@@ -28,6 +28,7 @@
 | D-075 | PEOPLE-IS-303-LOGICAL-CONSTRAINTS-AND-INTEGRITY-1.0 APPROVED; integrity doctrine locked; AUDIT-SLICE-006 |
 | D-076 | PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0 APPROVED; read-model doctrine locked; AUDIT-SLICE-007 |
 | D-077 | PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0 APPROVED; Phase 3 docs complete; G-10 still CLOSED; AUDIT-SLICE-008 |
+| D-078 | Audit/freeze primary; Gate G-10 readiness REMAIN CLOSED; issue triage; freeze still DENIED; AUDIT-SLICE-009 |
 
 ## Phase 0 approved decisions
 

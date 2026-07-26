@@ -6,22 +6,30 @@
 PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ```
 
-Phase 3 (IS-300…305) documentation is complete. Focus: Critical ADR/issue remediation, design-freeze readiness, Gate G-10 evaluation inputs.
+## Gate G-10 readiness (D-078)
+
+```text
+Verdict: REMAIN CLOSED
+Evidence: reports/PEOPLE_GATE_G10_READINESS_ASSESSMENT.md
+```
+
+This does **not** authorize implementation. Implementation Authorization is a separate Steve decision after G-10 (if opened).
+
+## Ordered remediation (docs/governance only)
+
+1. Steve ADR acceptance for blocking ADRs (001–005, 020 minimum)  
+2. ISSUE-DBA-001 shared-DB compatibility audit (read-only)  
+3. Critical issue disposition per open-issue triage  
+4. Re-issue Design Freeze as APPROVED only when exit criteria pass  
+5. Re-run Gate G-10 readiness assessment  
 
 ## Explicit non-goals
 
 ```text
-Do NOT open Gate G-10 in this lane by implication.
+Do NOT open Gate G-10 by implication.
 Do NOT create migrations, SQL, Prisma, or application code.
-Do NOT treat Phase 3 complete as implementation authorization.
+Do NOT treat Phase 3 complete or this audit as Implementation Authorization YES.
 ```
-
-## Standing locks
-
-* Migration implements approved design — never creates it (IS-305)  
-* Read models project truth / disposable (IS-304)  
-* DB may enforce / must not invent (IS-303)  
-* Relationships = governed business concepts (IS-302)  
 
 ## Mode
 
@@ -29,5 +37,5 @@ Do NOT treat Phase 3 complete as implementation authorization.
 DOCUMENTATION_AND_SPECIFICATION_ONLY
 ```
 
-Gate G-10: **CLOSED**  
+Gate G-10: **REMAIN CLOSED**  
 `migrationsAuthorized`: **false**
