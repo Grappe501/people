@@ -96,4 +96,10 @@
 | REQ-CON-008 | Source conflicts surfaced as issues/ADRs | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Audit lane | Docs | FULLY_MAPPED |
 | REQ-CON-009 | IS-303 creates no SQL/Prisma/migrations/validators | IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
 
+| REQ-RM-001 | Governed presentation surfaces require RM-* cards | IS-304 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Read-model review | Docs | FULLY_MAPPED |
+| REQ-RM-002 | Read models must not accept authoritative claim/resolution/promotion/state writes | IS-304 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-RM-003 | Read models must not redefine Catalog 01 / domain concepts | IS-304 / Cat 01 | N/A | N/A | N/A | N/A | N/A | N/A | STATE-* | N/A | N/A | N/A | Projection review | Future PKG | FULLY_MAPPED |
+| REQ-RM-005 | Queue/worklist projections remain non-owners | IS-304 / IS-303 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Boundary tests | Future PKG | FULLY_MAPPED |
+| REQ-RM-008 | IS-304 creates no SQL views/Prisma/migrations/caches | IS-304 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | Artifact sweep | Docs | FULLY_MAPPED |
+
 Do not invent catalog keys to fill future rows. Use `PENDING` or `NOT_APPLICABLE` with rationale. Catalog Library is locked at 0–9.

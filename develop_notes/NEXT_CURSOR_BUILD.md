@@ -3,10 +3,10 @@
 ## Primary
 
 ```text
-PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0
+PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0
 ```
 
-Docs only — read-model composition, projections, non-authoritative query surfaces. No SQL/Prisma/migrations.
+Docs only — migration package rules, sequencing, rollback, authorization gates. No executable migrations.
 
 ## Independent lane
 
@@ -17,8 +17,8 @@ PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0
 ## Standing locks
 
 * Relationships = governed business concepts (IS-302)  
-* No physical FK may invent a business relationship  
 * DB may enforce / must not invent; app may explain / must not weaken (IS-303)  
+* Read models project truth / do not create truth / are disposable (IS-304)  
 * Logical ≠ physical  
 
 ## Mode

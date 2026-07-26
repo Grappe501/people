@@ -1020,3 +1020,16 @@ See `reports/PEOPLE_OPEN_DECISIONS_REGISTER.md` for the authoritative blocking a
 | Consequences | Next primary IS is PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0. Gate G-10 remains closed. |
 | Related files | PEOPLE-IS-303; AUDIT-SLICE-006; `reports/PEOPLE_IS_303_COMPLETION_REPORT.md` |
 | Revisit trigger | IS-304; IS-305; ISSUE-CANONICAL-001; ISSUE-DBA-001; ISSUE-AUDIT-001 |
+
+### D-076
+
+| Field | Value |
+| --- | --- |
+| Date | 2026-07-26 |
+| Status | accepted |
+| Decision | (1) PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0 is the canonical Read Model Specifications. Path: `docs/implementation_specs/300_database/PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS.md`. It defines RM-* logical read models with questionnaire M1–M24 covering consumers, source LT/REL/CON, projection boundaries, technology-neutral refresh/consistency (IMMEDIATE/BOUNDED/EVENTUAL as business expectations), filter/search/sort/pagination, aggregations/derived fields, security trimming, Catalog 08 sensitivity, audit visibility, retention, ownership, traceability, and package ownership. Standing doctrine: read models exist for consumption not ownership; project truth and do not create truth; may derive but never redefine approved business concepts; are disposable while the governed domain remains authoritative. Queue/worklist projections remain non-writers. (2) AUDIT-SLICE-007 verifies docs-only posture and G-10 blocker visibility. Application implementation and migrationsAuthorized remain false. |
+| Reason | Complete logical presentation/query surfaces before migration governance so physical projections translate governed read models. |
+| Alternatives | Invent SQL views now; let UI DTOs become alternate truth; skip read-model catalog. |
+| Consequences | Next primary IS is PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0. Gate G-10 remains closed. Phase 3 persistence architecture nearly complete (migration governance remains). |
+| Related files | PEOPLE-IS-304; AUDIT-SLICE-007; `reports/PEOPLE_IS_304_COMPLETION_REPORT.md` |
+| Revisit trigger | IS-305; ISSUE-MOD-002; ISSUE-CANONICAL-001 |

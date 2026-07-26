@@ -1,7 +1,7 @@
 # People Intake — Cursor Execution Protocol
 
 **Status:** draft_complete  
-**Version:** 1.9  
+**Version:** 2.0  
 **Build:** PEOPLE-PROJECT-CONSTITUTION-3.0  
 **Authority:** Governs all future Cursor interactions for this project
 
@@ -144,6 +144,19 @@ Authority hierarchy: Catalog 01 → IS-200 → IS-201 → IS-202 → IS-302 → 
 Source conflicts MUST be surfaced as issues/ADRs — never silently chosen.  
 No CHECK/UNIQUE/FK/index/trigger/validator may appear unless backed by a `CON-*` card (or amendment/ADR).
 
+### 9.0.7 Read-model doctrine (mandatory)
+
+Authority: PEOPLE-IS-304 §4; Decision Log D-076.
+
+```text
+Read models exist for consumption, not ownership.
+Read models project truth. They do not create truth.
+A read model may derive information. It may never redefine an approved business concept.
+Read models are disposable. The governed domain is authoritative.
+```
+
+No SQL view / materialized projection / reporting dual-write may appear unless backed by an `RM-*` card (or amendment/ADR). Queue and worklist projections MUST NOT accept claim/resolution authoritative writes.
+
 ---
 
 ## 9.1 Start-of-Run Requirements
@@ -264,11 +277,11 @@ Respect:
 ## Recommended Next Build
 
 ```text
-PEOPLE-IS-304-READ-MODEL-SPECIFICATIONS-1.0
+PEOPLE-IS-305-MIGRATION-GOVERNANCE-1.0
 ```
 
 Independent lane: `PEOPLE-AUDIT-REMEDIATION-AND-QUALITY-OPS-FREEZE-1.0`  
-Slices 001–006 complete.
+Slices 001–007 complete.
 
 No application code, migrations, SQL, or Prisma until freeze APPROVED and Gate G-10 / migrationsAuthorized opens.
 
